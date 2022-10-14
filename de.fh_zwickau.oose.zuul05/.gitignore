@@ -17,3 +17,5 @@ bin
 *.class
 *.log
 *.jar
+# Ignore Gradle build output directory
+build
