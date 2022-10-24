@@ -1,5 +1,3 @@
-package de.fh_zwickau.oose.zuul05;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class Test {
