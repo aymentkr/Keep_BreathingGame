@@ -46,6 +46,39 @@ class GoCommandTest {
 
 			wasserZimmer.setExit(GO, obstZimmer);
 
+		}
+			
+			@Test
+			void testGOCommandGetDescription() {	
+				assertEquals("Beweg in einen anderen Raum", goCommand.getDescription());
+			
+			}
+			@Test
+			void testGoToEssenRoom() {
+				player.setCurrentRoom(schlaffZimmer);
+				//assertEquals(essenZimmer, player.getCurrentRoom());
+				player.walk(GO);
+				//gehe.execute(player);
+				assertEquals(essenZimmer, player.getCurrentRoom());	
+			}
+			@Test
+			void testGoToWasserRoom() {
+				player.setCurrentRoom(essenZimmer);
+				//assertEquals(essenZimmer, player.getCurrentRoom());
+				player.walk(GO);
+				//gehe.execute(player);
+				assertEquals(wasserZimmer, player.getCurrentRoom());	
+			}
+	       @Test
+			void testGoToObstRoom() {
+				player.setCurrentRoom(wasserZimmer);
+				//assertEquals(essenZimmer, player.getCurrentRoom());
+				player.walk(GO);
+				//gehe.execute(player);
+				assertEquals(obstZimmer, player.getCurrentRoom());	
+			
+			
+
 			
 		}}
 	
