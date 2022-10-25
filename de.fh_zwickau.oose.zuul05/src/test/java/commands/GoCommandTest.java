@@ -20,7 +20,7 @@ class GoCommandTest {
 	  // private final String BACK = "zurück";
 	   private final String GO = "gehe";
 	  // private final String GOHOME = "gehe zum schlaff zimmer";	
-
+       private final String DACH="dach";
 		public Player player;
 		public BackCommand backComand;
 		public GoCommand goCommand;
@@ -28,6 +28,7 @@ class GoCommandTest {
 		public Room schlaffZimmer;
 		public Room obstZimmer;
 		public Room wasserZimmer;
+		public Room dach;
 		
 		
 		@BeforeEach
@@ -39,12 +40,15 @@ class GoCommandTest {
 			this.schlaffZimmer=new Room(SCHLAFFZIMMER);
 			this.obstZimmer=new Room(OBSTZIMMER);
 			this.wasserZimmer=new Room(WASSERZIMMER);
+			this.dach=new Room(DACH);
 			
 			schlaffZimmer.setExit(GO, essenZimmer);
 
 			essenZimmer.setExit(GO, wasserZimmer);
 
 			wasserZimmer.setExit(GO, obstZimmer);
+			
+			obstZimmer.setExit(GO, dach);
 
 		}
 			
@@ -80,7 +84,19 @@ class GoCommandTest {
 			
 
 			
-		}}
+		}
+	       @Test
+	   			void testGoToDach() {
+	   				player.setCurrentRoom(obstZimmer);
+	   				//assertEquals(essenZimmer, player.getCurrentRoom());
+	   				player.walk(GO);
+	   				//gehe.execute(player);
+	   				assertEquals(dach, player.getCurrentRoom());	
+	   			
+	   			
+
+	   			
+	   		}}
 	
 	
 	
