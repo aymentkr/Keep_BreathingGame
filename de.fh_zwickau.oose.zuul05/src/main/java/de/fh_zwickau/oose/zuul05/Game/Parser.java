@@ -1,4 +1,7 @@
 package de.fh_zwickau.oose.zuul05.Game;
+import de.fh_zwickau.oose.zuul05.Game.commands.Command;
+import de.fh_zwickau.oose.zuul05.Game.commands.CommandWords;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
@@ -29,7 +32,7 @@ class Parser
         commandwords = new CommandWords();
     }
 
-    public Command getCommand() 
+    public Command getCommand()
     {
         String inputLine = "";   // In dieser Variablen wird die vom Spieler eingegebene Zeile stehen.
         String word1;

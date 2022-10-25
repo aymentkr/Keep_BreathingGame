@@ -5,10 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f9bc96b-9881-47cc-92bf-c3eda27a3dca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/projekt.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/students-2022ws-05" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/BackCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/EatCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/SleepCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/test/java/commands/GoCommandTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/distributions/Keep_Breathing.tar" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/distributions/Keep_Breathing.tar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/distributions/Keep_Breathing.zip" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/distributions/Keep_Breathing.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/css/base-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/css/base-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/js/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/js/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/scripts/Keep_Breathing" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/scripts/Keep_Breathing" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/CommandWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/CommandWords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/GoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/GoCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/HelpCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/NullCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/NullCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/QuitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/QuitCommand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +73,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -62,20 +94,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Computer Science/Bachelor/WHZ/3. Semester/Objektorientierte Softwareentwicklung/projekt/students-2022ws-05/de.fh_zwickau.oose.zuul05",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Computer Science/Bachelor/WHZ/3. Semester/Objektorientierte Softwareentwicklung/projekt/students-2022ws-05/de.fh_zwickau.oose.zuul05&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Gradle.de.fh_zwickau.oose.zuul05 [build]">
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="de.fh_zwickau.oose.zuul05.Game.commands" />
+    </key>
+  </component>
+  <component name="RunManager">
     <configuration name="D:/Computer Science/Bachelor/WHZ/3. Semester/Objektorientierte Softwareentwicklung/projekt/students-2022ws-05/de.fh_zwickau.oose.zuul05" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -95,7 +134,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="de.fh_zwickau.oose.zuul05 [assembleDist]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="de.fh_zwickau.oose.zuul05 [assembleDist]" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05" />
@@ -116,7 +155,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="de.fh_zwickau.oose.zuul05 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="de.fh_zwickau.oose.zuul05 [build]" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05" />
@@ -166,8 +205,6 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.de.fh_zwickau.oose.zuul05 [build]" />
-        <item itemvalue="Gradle.de.fh_zwickau.oose.zuul05 [assembleDist]" />
         <item itemvalue="Gradle.de.fh_zwickau.oose.zuul05 [clean]" />
       </list>
     </recent_temporary>
@@ -181,11 +218,24 @@
       <option name="presentableId" value="Default" />
       <updated>1666626852863</updated>
       <workItem from="1666626854338" duration="990000" />
+      <workItem from="1666633129809" duration="10092000" />
+      <workItem from="1666662551606" duration="395000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

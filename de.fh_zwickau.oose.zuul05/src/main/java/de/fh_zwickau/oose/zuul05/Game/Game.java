@@ -20,7 +20,9 @@ package de.fh_zwickau.oose.zuul05.Game;
  * @author  Michael Kolling and David J. Barnes
  */
 
-class Game 
+import de.fh_zwickau.oose.zuul05.Game.commands.Command;
+
+class Game
 {
     private final Parser parser;
     private final Player player;
