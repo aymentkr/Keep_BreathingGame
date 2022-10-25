@@ -59,6 +59,39 @@ class BackCommandTest {
 				assertEquals("Gehe in den Schlafraum", backComand.getDescription());
 			
 			}
+			@Test
+			void testBackFromObstRoom() {
+				player.setCurrentRoom(obstZimmer);
+				//assertEquals(essenZimmer, player.getCurrentRoom());
+				player.walk(BACK);
+				//gehe.execute(player);
+				assertEquals(wasserZimmer, player.getCurrentRoom());	
+			}
+			@Test
+			void testBackFromWasserRoom() {
+				player.setCurrentRoom(wasserZimmer);
+				//assertEquals(essenZimmer, player.getCurrentRoom());
+				player.walk(BACK);
+				//gehe.execute(player);
+				assertEquals(essenZimmer, player.getCurrentRoom());	
+			}
+			@Test
+			void testBackFromEssenRoom() {
+				player.setCurrentRoom(essenZimmer);
+				//assertEquals(essenZimmer, player.getCurrentRoom());
+				player.walk(BACK);
+				//gehe.execute(player);
+				assertEquals(schlaffZimmer, player.getCurrentRoom());	
+			}
+			@Test
+			void testWalkingBackToSchlafZimmerfromAnyRoom() {
+				player.setCurrentRoom(obstZimmer);
+				//assertEquals(essenZimmer, player.getCurrentRoom());
+				player.walk(GOHOME);
+				//gehe.execute(player);
+				assertEquals(schlaffZimmer, player.getCurrentRoom());	
+			}
+
 
 
 }
