@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="commands.GoCommandTest" tests="5" skipped="0" failures="5" errors="0" timestamp="2022-10-25T01:42:16" hostname="AYMENTKZZ" time="0.033">
+<testsuite name="commands.GoCommandTest" tests="5" skipped="0" failures="5" errors="0" timestamp="2022-10-25T02:01:47" hostname="AYMENTKZZ" time="0.036">
   <properties/>
-  <testcase name="testReturnWalkAfterOneWalk()" classname="commands.GoCommandTest" time="0.019">
+  <testcase name="testReturnWalkAfterOneWalk()" classname="commands.GoCommandTest" time="0.022">
     <failure message="org.opentest4j.AssertionFailedError: expected: &lt;de.fh_zwickau.oose.zuul05.Game.Room@12591ac8&gt; but was: &lt;schlaffzimmer&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;de.fh_zwickau.oose.zuul05.Game.Room@12591ac8&gt; but was: &lt;schlaffzimmer&gt;
 	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -9,7 +9,7 @@
 	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
 	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
 	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1141)
-	at app//commands.GoCommandTest.testReturnWalkAfterOneWalk(GoCommandTest.java:46)
+	at app//commands.GoCommandTest.testReturnWalkAfterOneWalk(GoCommandTest.java:70)
 	at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base@17.0.5/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -97,7 +97,7 @@
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testWalkOneTime()" classname="commands.GoCommandTest" time="0.005">
+  <testcase name="testWalkOneTime()" classname="commands.GoCommandTest" time="0.006">
     <failure message="org.opentest4j.AssertionFailedError: expected: &lt;de.fh_zwickau.oose.zuul05.Game.Room@3e78b6a5&gt; but was: &lt;obstzimmer&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;de.fh_zwickau.oose.zuul05.Game.Room@3e78b6a5&gt; but was: &lt;obstzimmer&gt;
 	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -105,7 +105,7 @@
 	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
 	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
 	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1141)
-	at app//commands.GoCommandTest.testWalkOneTime(GoCommandTest.java:66)
+	at app//commands.GoCommandTest.testWalkOneTime(GoCommandTest.java:96)
 	at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base@17.0.5/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -193,7 +193,7 @@
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testWalkTwoTimes()" classname="commands.GoCommandTest" time="0.002">
+  <testcase name="testWalkTwoTimes()" classname="commands.GoCommandTest" time="0.001">
     <failure message="org.opentest4j.AssertionFailedError: expected: &lt;de.fh_zwickau.oose.zuul05.Game.Room@41f69e84&gt; but was: &lt;obstzimmer&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;de.fh_zwickau.oose.zuul05.Game.Room@41f69e84&gt; but was: &lt;obstzimmer&gt;
 	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -201,7 +201,7 @@
 	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
 	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
 	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1141)
-	at app//commands.GoCommandTest.testWalkTwoTimes(GoCommandTest.java:75)
+	at app//commands.GoCommandTest.testWalkTwoTimes(GoCommandTest.java:108)
 	at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base@17.0.5/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -297,7 +297,7 @@
 	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
 	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
 	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1141)
-	at app//commands.GoCommandTest.testReturnWalkTwoTimes(GoCommandTest.java:59)
+	at app//commands.GoCommandTest.testReturnWalkTwoTimes(GoCommandTest.java:86)
 	at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base@17.0.5/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -393,7 +393,7 @@
 	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
 	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
 	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1141)
-	at app//commands.GoCommandTest.testReturnWalkFromBeginning(GoCommandTest.java:37)
+	at app//commands.GoCommandTest.testReturnWalkFromBeginning(GoCommandTest.java:58)
 	at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base@17.0.5/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
