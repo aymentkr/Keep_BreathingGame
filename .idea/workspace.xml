@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f9bc96b-9881-47cc-92bf-c3eda27a3dca" name="Changes" comment="connection between the rooms">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +89,7 @@
       <recent name="de.fh_zwickau.oose.zuul05.Game.commands" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.D:/Computer Science/Bachelor/WHZ/3. Semester/Objektorientierte Softwareentwicklung/projekt/students-2022ws-05/de.fh_zwickau.oose.zuul05">
+  <component name="RunManager">
     <configuration name="D:/Computer Science/Bachelor/WHZ/3. Semester/Objektorientierte Softwareentwicklung/projekt/students-2022ws-05/de.fh_zwickau.oose.zuul05" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -195,7 +197,8 @@
       <workItem from="1666662551606" duration="911000" />
       <workItem from="1666780113816" duration="11000" />
       <workItem from="1666781786352" duration="168000" />
-      <workItem from="1666787248319" duration="1662000" />
+      <workItem from="1666787248319" duration="1851000" />
+      <workItem from="1666789992772" duration="14000" />
     </task>
     <task id="LOCAL-00001" summary="add additional JUnit Test class for the command &quot;gehe&quot; &#10;write the description of each command">
       <created>1666663174373</created>
@@ -239,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666788861437</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="connection between the rooms">
+      <created>1666788936572</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1666788936572</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
