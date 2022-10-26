@@ -63,12 +63,12 @@ class Game
         schlaffraum.setExit("unten", essenraum);
         essenraum.setExit("links", getraenkraum);
         getraenkraum.setExit("Links", obstraum);
-        schlaffraum.setExit("Links", schiffsdach);
+        schlaffraum.setExit("Links",schiffsdach);
 
 
         essenraum.setExit("oben", schlaffraum);
         getraenkraum.setExit("Recht", essenraum);
-        obstraum.setExit("Recht", obstraum);
+        obstraum.setExit("Recht",obstraum);
         schiffsdach.setExit("Recht",schlaffraum);
 
         // Der Spieler startet das Spiel draußen vor der Hochschule:

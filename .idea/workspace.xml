@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f9bc96b-9881-47cc-92bf-c3eda27a3dca" name="Changes" comment="add additional JUnit Test class for the command &quot;gehe&quot;&#10;write the description of each command">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4f9bc96b-9881-47cc-92bf-c3eda27a3dca" name="Changes" comment="connection between the rooms">
       <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,6 +53,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -87,7 +87,7 @@
       <recent name="de.fh_zwickau.oose.zuul05.Game.commands" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.D:/Computer Science/Bachelor/WHZ/3. Semester/Objektorientierte Softwareentwicklung/projekt/students-2022ws-05/de.fh_zwickau.oose.zuul05">
     <configuration name="D:/Computer Science/Bachelor/WHZ/3. Semester/Objektorientierte Softwareentwicklung/projekt/students-2022ws-05/de.fh_zwickau.oose.zuul05" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -195,7 +195,7 @@
       <workItem from="1666662551606" duration="911000" />
       <workItem from="1666780113816" duration="11000" />
       <workItem from="1666781786352" duration="168000" />
-      <workItem from="1666787248319" duration="1552000" />
+      <workItem from="1666787248319" duration="1662000" />
     </task>
     <task id="LOCAL-00001" summary="add additional JUnit Test class for the command &quot;gehe&quot; &#10;write the description of each command">
       <created>1666663174373</created>
@@ -225,7 +225,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666788439719</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add additional JUnit Test class for the command &quot;gehe&quot;&#10;write the description of each command">
+      <created>1666788830720</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666788830720</updated>
+    </task>
+    <task id="LOCAL-00006" summary="connection between the rooms">
+      <created>1666788861437</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1666788861437</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,7 +260,9 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add additional JUnit Test class for the command &quot;gehe&quot; &#10;write the description of each command" />
     <MESSAGE value="create the rooms" />
+    <MESSAGE value="connexion between the rooms" />
     <MESSAGE value="add additional JUnit Test class for the command &quot;gehe&quot;&#10;write the description of each command" />
-    <option name="LAST_COMMIT_MESSAGE" value="add additional JUnit Test class for the command &quot;gehe&quot;&#10;write the description of each command" />
+    <MESSAGE value="connection between the rooms" />
+    <option name="LAST_COMMIT_MESSAGE" value="connection between the rooms" />
   </component>
 </project>
