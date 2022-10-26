@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="commands.BackCommandTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-10-26T22:23:47" hostname="AYMENTKZZ" time="0.031">
+  <properties/>
+  <testcase name="testWalkingBackToSchlafZimmerfromAnyRoom()" classname="commands.BackCommandTest" time="0.023"/>
+  <testcase name="testBackFromObstRoom()" classname="commands.BackCommandTest" time="0.001"/>
+  <testcase name="testBackFromWasserRoom()" classname="commands.BackCommandTest" time="0.001"/>
+  <testcase name="testBackFromEssenRoom()" classname="commands.BackCommandTest" time="0.001"/>
+  <system-out><![CDATA[Deine Position: schlaffzimmer.
+Ausgänge:
+Deine Position: wasserZimmer.
+Ausgänge: gehe zum schlaff zimmer zurück
+Deine Position: essenZimmer.
+Ausgänge: gehe zum schlaff zimmer zurück
+Deine Position: schlaffzimmer.
+Ausgänge:
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
