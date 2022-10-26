@@ -4,36 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f9bc96b-9881-47cc-92bf-c3eda27a3dca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/BackCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/EatCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/SleepCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/test/java/commands/GoCommandTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="4f9bc96b-9881-47cc-92bf-c3eda27a3dca" name="Changes" comment="add additional JUnit Test class for the command &quot;gehe&quot;&#10;write the description of each command">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/distributions/Keep_Breathing.tar" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/distributions/Keep_Breathing.tar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/distributions/Keep_Breathing.zip" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/distributions/Keep_Breathing.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/css/base-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/css/base-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/js/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/js/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/scripts/Keep_Breathing" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/scripts/Keep_Breathing" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/CommandWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/CommandWords.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/GoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/GoCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/HelpCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/NullCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/NullCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/QuitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/QuitCommand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,8 +192,40 @@
       <updated>1666626852863</updated>
       <workItem from="1666626854338" duration="990000" />
       <workItem from="1666633129809" duration="10092000" />
-      <workItem from="1666662551606" duration="395000" />
+      <workItem from="1666662551606" duration="911000" />
+      <workItem from="1666780113816" duration="11000" />
+      <workItem from="1666781786352" duration="168000" />
+      <workItem from="1666787248319" duration="1552000" />
     </task>
+    <task id="LOCAL-00001" summary="add additional JUnit Test class for the command &quot;gehe&quot; &#10;write the description of each command">
+      <created>1666663174373</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666663174373</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update README.md">
+      <created>1666781895747</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666781895747</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add additional JUnit Test class for the command &quot;gehe&quot; &#10;write the description of each command">
+      <created>1666781899944</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666781899944</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add additional JUnit Test class for the command &quot;gehe&quot;&#10;write the description of each command">
+      <created>1666788439719</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666788439719</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +244,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="add additional JUnit Test class for the command &quot;gehe&quot; &#10;write the description of each command" />
+    <MESSAGE value="create the rooms" />
+    <MESSAGE value="add additional JUnit Test class for the command &quot;gehe&quot;&#10;write the description of each command" />
+    <option name="LAST_COMMIT_MESSAGE" value="add additional JUnit Test class for the command &quot;gehe&quot;&#10;write the description of each command" />
   </component>
 </project>

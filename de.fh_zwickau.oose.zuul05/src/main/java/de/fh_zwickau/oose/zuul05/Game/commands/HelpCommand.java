@@ -4,15 +4,16 @@ import de.fh_zwickau.oose.zuul05.Game.Player;
 
 /**
  * Implementatiierung des Kommandos "hilfe"
- * 
+ *
  * @author Michael Kolling
  */
 public class HelpCommand extends Command
 {
     private final CommandWords commandWords;
-    
+
     /**
-     * Konstruktor  
+     * Konstruktor
+     *
      * @param words eine Instanz der Klasse CommandWords.
      */
     public HelpCommand(CommandWords words)

@@ -50,31 +50,29 @@ class Game
      */
     private void createRooms()
     {
-        Room draussen, hoersaal, mensa, computerraum, adminraum;
+        Room schlaffraum, obstraum, essenraum, getraenkraum, schiffsdach;
       
         // Räume erzeugen:
-        draussen = new Room("vor dem Haupteingang der Hochschule");
-        hoersaal = new Room("in einem Hörsaal");
-        mensa = new Room("in der Mensa");
-        computerraum = new Room("in einem Computerraum");
-        adminraum = new Room("im Raum des Computer-Admins");
+        schlaffraum = new Room("im Ruheraum");
+        obstraum = new Room("iPlatz der Kategorie Obst");
+        essenraum = new Room("Platz der Kategorie Essen");
+        getraenkraum = new Room("Platz der Kategorie Getraenke");
+        schiffsdach = new Room("in der Schiff Oberfläche");
         
         // Ausgänge aufbauen:
-        draussen.setExit("osten", hoersaal);
-        draussen.setExit("süden", computerraum);
-        draussen.setExit("westen", mensa);
+        schlaffraum.setExit("unten", essenraum);
+        essenraum.setExit("links", getraenkraum);
+        getraenkraum.setExit("Links", obstraum);
+        schlaffraum.setExit("Links", schiffsdach);
 
-        hoersaal.setExit("westen", draussen);
 
-        mensa.setExit("osten", draussen);
+        essenraum.setExit("oben", schlaffraum);
+        getraenkraum.setExit("Recht", essenraum);
+        obstraum.setExit("Recht", obstraum);
+        schiffsdach.setExit("Recht",schlaffraum);
 
-        computerraum.setExit("norden", draussen);
-        computerraum.setExit("osten", adminraum);
-
-        adminraum.setExit("westen", computerraum);
-        
         // Der Spieler startet das Spiel draußen vor der Hochschule:
-        player.setCurrentRoom(draussen);
+        player.setCurrentRoom(schlaffraum);
     }
 
 
@@ -103,8 +101,8 @@ class Game
     private void printWelcome()
     {
         System.out.println();
-        System.out.println("Willkommen in der Welt von Zuul!");
-        System.out.println("Die Welt von Zuul ist ein neues, unglaublich langweiliges Adventure-Spiel.");
+        System.out.println("Willkommen beim Keep Breathing !");
+        System.out.println("das Spiel des Überlebens und des Lebens neuer Abenteuer.");
         System.out.println("Gib 'hilfe' ein, um Hilfe zu bekommen.");
         System.out.println();
         System.out.println(player.getCurrentRoom().getLongDescription());
