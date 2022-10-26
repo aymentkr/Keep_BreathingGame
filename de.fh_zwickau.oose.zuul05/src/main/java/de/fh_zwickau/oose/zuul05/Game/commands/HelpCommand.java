@@ -26,24 +26,26 @@ public class HelpCommand extends Command
      * Gib einen kurzen Hilfetext und alle gültigen Kommandoworte aus.
      * @return immer false.
      */
-    public boolean execute(Player player)
-    {
-        System.out.println("""
+    public boolean execute(Player player) {
+        // make sure the split afterwards has at least size one
+        if (hasSecondWord()) {
+            System.out.println(commandWords.get(getSecondWord()).getDescription());
+        } else {
+            System.out.println("""
                 Du bist einsam, verloren und hungrig
                 In einem verlorenen Schiff
                 Alle um dich herum sind gestorben
                 
                 Mögliche Kommandos sind:
                 """
-        );
-        for (String name: CommandWords.getCommands().keySet()) {
-            String key = name.toString();
-            String value = CommandWords.getCommands().get(name).getDescription();
-            System.out.println(key + " :  " + value);
+            );
+            for (String name: CommandWords.getCommands().keySet()) {
+                String value = CommandWords.getCommands().get(name).getDescription();
+                System.out.println("- "+name);
+            }
         }
         return false;
     }
-
     @Override
     public String getDescription() {
         return "sehe alle möglichen Kommandos";

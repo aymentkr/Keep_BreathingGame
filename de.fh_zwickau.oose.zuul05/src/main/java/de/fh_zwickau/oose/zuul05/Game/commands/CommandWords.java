@@ -42,7 +42,7 @@ public class CommandWords
         }
         // Andernfalls liefere das passende Command-Objekt zurück.
         else {
-            return (Command)commands.get(word);
+            return commands.get(word);
    	
         }
     }

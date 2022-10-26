@@ -4,7 +4,7 @@ import de.fh_zwickau.oose.zuul05.Game.Player;
 
 /**
  * Implementierung des Kommandos "gehe"
- * 
+ *
  * @author Michael Kolling
  * @version 1.0 (December 2002)
  */
@@ -41,6 +41,13 @@ public class GoCommand extends Command
 
     @Override
     public String getDescription() {
-        return "Beweg in einen anderen Raum";
+        return """
+    Beweg in einen anderen Raum
+    Es gibt viele Möglichkeiten, sich durch Tippen von Raum zu Raum zu bewegen
+    wie folgt: - gehe links
+               - gehe recht
+               - gehe unten
+               - gehe oben
+    """;
     }
 }

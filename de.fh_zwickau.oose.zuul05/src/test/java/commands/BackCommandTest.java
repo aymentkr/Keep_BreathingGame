@@ -53,12 +53,7 @@ class BackCommandTest {
 				
 			}
 			
-			
-			@Test
-			void testBackCommandGetDescription() {	
-				assertEquals("Gehe in den Schlafraum", backComand.getDescription());
-			
-			}
+
 			@Test
 			void testBackFromObstRoom() {
 				player.setCurrentRoom(obstZimmer);
