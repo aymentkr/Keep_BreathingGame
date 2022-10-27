@@ -4,26 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f9bc96b-9881-47cc-92bf-c3eda27a3dca" name="Changes" comment="connection between the rooms">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="4f9bc96b-9881-47cc-92bf-c3eda27a3dca" name="Changes" comment="fix help/back command">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/distributions/Keep_Breathing.tar" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/distributions/Keep_Breathing.tar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/distributions/Keep_Breathing.zip" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/distributions/Keep_Breathing.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/classes/commands.GoCommandTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/packages/commands.html" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/packages/commands.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/TEST-commands.GoCommandTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/app/src/main/java/de/fh_zwickau/oose/zuul05/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/app/src/test/java/de/fh_zwickau/oose/zuul05/AppTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/BackCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/BackCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/CommandWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/CommandWords.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/GoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/GoCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/HelpCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/test/java/commands/BackCommandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/test/java/commands/BackCommandTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/app/src/main/java/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/app/src/main/java/de/fh_zwickau/oose/zuul05/Game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/app/src/main/java/de/fh_zwickau/oose/zuul05/Game/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/app/src/main/java/de/fh_zwickau/oose/zuul05/Game/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/app/src/main/java/de/fh_zwickau/oose/zuul05/Game/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/BackCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/app/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/BackCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/app/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/CommandWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/app/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/CommandWords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/EatCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/app/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/EatCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/GoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/app/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/GoCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/app/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/HelpCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/NullCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/app/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/NullCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/QuitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/app/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/QuitCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/SleepCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/app/src/main/java/de/fh_zwickau/oose/zuul05/Game/commands/SleepCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/app/src/main/java/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/app/src/main/java/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/app/src/main/java/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/resources/de/fh_zwickau/oose/zuul05/Game/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/app/src/main/resources/de/fh_zwickau/oose/zuul05/Game/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,16 +54,16 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Keep_Breathing" type="f1a62948:ProjectNode" />
+                <item name="de.fh_zwickau.oose.zuul05" type="f1a62948:ProjectNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Keep_Breathing" type="f1a62948:ProjectNode" />
+                <item name="de.fh_zwickau.oose.zuul05" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Keep_Breathing" type="f1a62948:ProjectNode" />
+                <item name="de.fh_zwickau.oose.zuul05" type="f1a62948:ProjectNode" />
                 <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
@@ -108,6 +113,10 @@
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="de.fh_zwickau.oose.zuul05.Game.commands" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Computer Science\Bachelor\WHZ\3. Semester\Objektorientierte Softwareentwicklung\projekt\students-2022ws-05\de.fh_zwickau.oose.zuul05\app\src\main" />
+      <recent name="D:\Computer Science\Bachelor\WHZ\3. Semester\Objektorientierte Softwareentwicklung\projekt\students-2022ws-05\de.fh_zwickau.oose.zuul05\app\src" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -226,7 +235,11 @@
       <workItem from="1666781786352" duration="168000" />
       <workItem from="1666787248319" duration="1851000" />
       <workItem from="1666789992772" duration="4523000" />
-      <workItem from="1666822406893" duration="4948000" />
+      <workItem from="1666822406893" duration="5256000" />
+      <workItem from="1666827790140" duration="590000" />
+      <workItem from="1666882595003" duration="395000" />
+      <workItem from="1666883025198" duration="86000" />
+      <workItem from="1667051038559" duration="303000" />
     </task>
     <task id="LOCAL-00001" summary="add additional JUnit Test class for the command &quot;gehe&quot; &#10;write the description of each command">
       <created>1666663174373</created>
@@ -284,7 +297,28 @@
       <option name="project" value="LOCAL" />
       <updated>1666790200287</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="connection between the rooms">
+      <created>1666827472082</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666827472082</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix help/back command">
+      <created>1666827493599</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1666827493599</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix help/back command">
+      <created>1666827539211</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1666827539211</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,6 +342,7 @@
     <MESSAGE value="connexion between the rooms" />
     <MESSAGE value="add additional JUnit Test class for the command &quot;gehe&quot;&#10;write the description of each command" />
     <MESSAGE value="connection between the rooms" />
-    <option name="LAST_COMMIT_MESSAGE" value="connection between the rooms" />
+    <MESSAGE value="fix help/back command" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix help/back command" />
   </component>
 </project>
