@@ -22,7 +22,7 @@ import java.util.StringTokenizer;
  * @author  Michael Kolling and David J. Barnes
  */
 
-class Parser 
+public class Parser 
 {
 
     private CommandWords commandwords;  // enthält alle erlaubten Kommandowörter

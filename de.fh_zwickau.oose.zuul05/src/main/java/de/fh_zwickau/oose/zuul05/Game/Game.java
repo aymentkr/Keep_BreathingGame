@@ -32,8 +32,8 @@ class Game
      */
     public Game() 
     {
-        player = new Player();
-        parser = new Parser();
+    	player = new Player();
+    	parser = new Parser();
         createRooms();
     }
     
