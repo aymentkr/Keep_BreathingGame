@@ -14,8 +14,6 @@ public class BackCommand extends Command {
 
     @Override
     public String getDescription() {
-        return """
-    In den zuletzt besuchten Raum wechseln.
-    Dies kann nicht verwendet werden, wenn Sie noch nicht bereits bewegt haben.""";
+        return "Gehe mal zueruck";
     }
 }

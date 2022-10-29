@@ -32,8 +32,8 @@ class Game
      */
     public Game() 
     {
-    	player = new Player();
-    	parser = new Parser();
+        player = new Player();
+        parser = new Parser();
         createRooms();
     }
     
@@ -78,7 +78,8 @@ class Game
      *  Die Hauptroutine des Spiels
      *  Läuft in einer Schleife, bis das Spiel beendet wird.
      */
-    public void play() {
+    public void play() 
+    {            
         printWelcome();
 
         // Hier werden wiederholt Kommando-Eingaben gelesen und die
