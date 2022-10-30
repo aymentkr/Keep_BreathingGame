@@ -1,4 +1,4 @@
-package de.fh_zwickau.oose.zuul05.Game;
+package de.fh_zwickau.oose.zuul05;
 /*
  * 
  * Dies ist die Hauptklasse des Spiels "Die Welt von Zuul"
@@ -20,7 +20,7 @@ package de.fh_zwickau.oose.zuul05.Game;
  * @author  Michael Kolling and David J. Barnes
  */
 
-import de.fh_zwickau.oose.zuul05.Game.commands.Command;
+import de.fh_zwickau.oose.zuul05.commands.Command;
 
 class Game
 {

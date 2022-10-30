@@ -1,4 +1,4 @@
-package de.fh_zwickau.oose.zuul05.Game.commands;
+package de.fh_zwickau.oose.zuul05.commands;
 import java.util.HashMap;
 import java.util.Iterator;
 

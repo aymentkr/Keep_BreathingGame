@@ -1,4 +1,4 @@
-package de.fh_zwickau.oose.zuul05.Game;
+package de.fh_zwickau.oose.zuul05;
 
 import java.util.Stack;
 
