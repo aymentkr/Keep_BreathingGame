@@ -1,6 +1,6 @@
-package de.fh_zwickau.oose.zuul05.Game.commands;
+package de.fh_zwickau.oose.zuul05.commands;
 
-import de.fh_zwickau.oose.zuul05.Game.Player;
+import de.fh_zwickau.oose.zuul05.Player;
 
 /**
  * The type Sleep command.

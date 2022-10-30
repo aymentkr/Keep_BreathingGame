@@ -1,10 +1,10 @@
-package de.fh_zwickau.oose.zuul05.Game;
-import de.fh_zwickau.oose.zuul05.Game.commands.Command;
-import de.fh_zwickau.oose.zuul05.Game.commands.CommandWords;
-
+package de.fh_zwickau.oose.zuul05;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
+
+import de.fh_zwickau.oose.zuul05.commands.Command;
+import de.fh_zwickau.oose.zuul05.commands.CommandWords;
 
 /**
  * Dieser Parser liest die Eingaben des Spielers und versucht, sie als Kommando
