@@ -22,7 +22,7 @@ package de.fh_zwickau.oose.zuul05.Game;
 
 import de.fh_zwickau.oose.zuul05.Game.commands.Command;
 
-class Game
+public class Game
 {
     private final Parser parser;
     private final Player player;
@@ -104,5 +104,9 @@ class Game
         System.out.println("Gib 'hilfe' ein, um Hilfe zu bekommen.");
         System.out.println();
         System.out.println(player.getCurrentRoom().getLongDescription());
+    }
+
+    public Player getPlayer() {
+        return player;
     }
 }

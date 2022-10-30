@@ -50,4 +50,8 @@ public class HelpCommand extends Command
     public String getDescription() {
         return "sehe alle möglichen Kommandos";
     }
+
+    public String getCommandWord() {
+        return commandWords.toString();
+    }
 }
