@@ -48,6 +48,27 @@ class HelpCommandTest {
 
         assertEquals("Selbst füttern", helpCommand.getCommandWord());
 
+    }
+    @Test
+    void testHelpCommandWithCommandSchlafen() {
+
+        helpCommand.setSecondWord("schlafen");
+        helpCommand.execute(game.getPlayer());
+
+
+        assertEquals("Ruhe dich aus und mach dich bereit für den nächsten Tag", helpCommand.getCommandWord());
+
+
+    }
+    @Test
+    void testHelpCommandWithCommandZurueck() {
+
+        helpCommand.setSecondWord("zurueck");
+        helpCommand.execute(game.getPlayer());
+
+
+        assertEquals("Gehe mal zurueck", helpCommand.getCommandWord());
+
 
     }
 

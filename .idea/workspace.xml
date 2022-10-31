@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f9bc96b-9881-47cc-92bf-c3eda27a3dca" name="Changes" comment="testBackCommandFromGetraenkraumToEssenraum hinzugefügt" />
+    <list default="true" id="4f9bc96b-9881-47cc-92bf-c3eda27a3dca" name="Changes" comment="Creat GoCommandTest-BackCommandTest-HelpCommandTest">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_10_2022_19_56__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_10_2022_19_56__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/css/base-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/css/base-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/js/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/js/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/packages/de.fh_zwickau.oose.zuul05.commands.html" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/packages/de.fh_zwickau.oose.zuul05.commands.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,12 +52,7 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Keep_Breathing" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Keep_Breathing" type="f1a62948:ProjectNode" />
-                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -106,30 +113,7 @@
       <command value="gradle build" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.HelpCommandTest.testHelpCommandWithCommandGehe">
-    <configuration name="BackCommandTest.testBackCommandFromEssenraumToSchlaffraum" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;de.fh_zwickau.oose.zuul05.commands.BackCommandTest.testBackCommandFromEssenraumToSchlaffraum&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.HelpCommandTest.testHelpCommandWithCommandZurueck">
     <configuration name="BackCommandTest.testBackCommandFromGetraenkraumToEssenraum" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -176,29 +160,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="BackCommandTest.testBackCommandGetDescription" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;de.fh_zwickau.oose.zuul05.commands.BackCommandTest.testBackCommandGetDescription&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="D:/Computer Science/Bachelor/WHZ/3. Semester/Objektorientierte Softwareentwicklung/projekt/students-2022ws-05/de.fh_zwickau.oose.zuul05" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -218,6 +179,29 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="HelpCommandTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;de.fh_zwickau.oose.zuul05.commands.HelpCommandTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="HelpCommandTest.testHelpCommandWithCommandGehe" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -232,6 +216,29 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;de.fh_zwickau.oose.zuul05.commands.HelpCommandTest.testHelpCommandWithCommandGehe&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="HelpCommandTest.testHelpCommandWithCommandZurueck" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;de.fh_zwickau.oose.zuul05.commands.HelpCommandTest.testHelpCommandWithCommandZurueck&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -283,36 +290,23 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Keep_Breathing" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Keep_Breathing" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Gradle.D:/Computer Science/Bachelor/WHZ/3. Semester/Objektorientierte Softwareentwicklung/projekt/students-2022ws-05/de.fh_zwickau.oose.zuul05" />
       <item itemvalue="Gradle.de.fh_zwickau.oose.zuul05 [assembleDist]" />
       <item itemvalue="Gradle.de.fh_zwickau.oose.zuul05 [build]" />
-      <item itemvalue="Gradle.BackCommandTest.testBackCommandGetDescription" />
-      <item itemvalue="Gradle.BackCommandTest.testBackCommandFromEssenraumToSchlaffraum" />
+      <item itemvalue="Gradle.HelpCommandTest" />
+      <item itemvalue="Gradle.HelpCommandTest.testHelpCommandWithCommandZurueck" />
       <item itemvalue="Gradle.BackCommandTest.testBackCommandFromObstraumToGetraenkraum" />
       <item itemvalue="Gradle.BackCommandTest.testBackCommandFromGetraenkraumToEssenraum" />
       <item itemvalue="Gradle.HelpCommandTest.testHelpCommandWithCommandGehe" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.HelpCommandTest.testHelpCommandWithCommandZurueck" />
+        <item itemvalue="Gradle.HelpCommandTest" />
         <item itemvalue="Gradle.HelpCommandTest.testHelpCommandWithCommandGehe" />
         <item itemvalue="Gradle.BackCommandTest.testBackCommandFromGetraenkraumToEssenraum" />
         <item itemvalue="Gradle.BackCommandTest.testBackCommandFromObstraumToGetraenkraum" />
-        <item itemvalue="Gradle.BackCommandTest.testBackCommandFromEssenraumToSchlaffraum" />
-        <item itemvalue="Gradle.BackCommandTest.testBackCommandGetDescription" />
       </list>
     </recent_temporary>
   </component>
