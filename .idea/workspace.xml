@@ -106,7 +106,7 @@
       <command value="gradle build" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.BackCommandTest.testBackCommandFromEssenraumToSchlaffraum">
+  <component name="RunManager" selected="Gradle.BackCommandTest.testBackCommandFromObstraumToGetraenkraum">
     <configuration name="BackCommandTest.testBackCommandFromEssenraumToSchlaffraum" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -130,7 +130,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="BackCommandTest.testBackCommandFromGetraenkraumToEssenraum" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="BackCommandTest.testBackCommandFromObstraumToGetraenkraum" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05" />
@@ -143,7 +143,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;de.fh_zwickau.oose.zuul05.commands.BackCommandTest.testBackCommandFromGetraenkraumToEssenraum&quot;" />
+            <option value="&quot;de.fh_zwickau.oose.zuul05.commands.BackCommandTest.testBackCommandFromObstraumToGetraenkraum&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -300,19 +300,19 @@
       <item itemvalue="Gradle.D:/Computer Science/Bachelor/WHZ/3. Semester/Objektorientierte Softwareentwicklung/projekt/students-2022ws-05/de.fh_zwickau.oose.zuul05" />
       <item itemvalue="Gradle.de.fh_zwickau.oose.zuul05 [assembleDist]" />
       <item itemvalue="Gradle.de.fh_zwickau.oose.zuul05 [build]" />
-      <item itemvalue="Gradle.BackCommandTest.testBackCommandFromGetraenkraumToEssenraum" />
       <item itemvalue="Gradle.HelpCommandTest2" />
       <item itemvalue="Gradle.HelpCommandTest2.testHelpCommandWithCommandGehe" />
       <item itemvalue="Gradle.BackCommandTest.testBackCommandGetDescription" />
       <item itemvalue="Gradle.BackCommandTest.testBackCommandFromEssenraumToSchlaffraum" />
+      <item itemvalue="Gradle.BackCommandTest.testBackCommandFromObstraumToGetraenkraum" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.BackCommandTest.testBackCommandFromObstraumToGetraenkraum" />
         <item itemvalue="Gradle.BackCommandTest.testBackCommandFromEssenraumToSchlaffraum" />
         <item itemvalue="Gradle.BackCommandTest.testBackCommandGetDescription" />
         <item itemvalue="Gradle.HelpCommandTest2" />
         <item itemvalue="Gradle.HelpCommandTest2.testHelpCommandWithCommandGehe" />
-        <item itemvalue="Gradle.BackCommandTest.testBackCommandFromGetraenkraumToEssenraum" />
       </list>
     </recent_temporary>
   </component>

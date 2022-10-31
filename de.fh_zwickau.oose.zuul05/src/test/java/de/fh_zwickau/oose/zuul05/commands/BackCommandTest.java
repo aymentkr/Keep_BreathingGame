@@ -95,6 +95,24 @@ class BackCommandTest {
         assertEquals("Platz der Kategorie Getraenke", game.getPlayer().getCurrentRoom().getShortDescription());
 
     }
+    @Test
+    void testBackCommandFromGetraenkraumToEssenraum() {
+        goCommand.setSecondWord("unten");
+        goCommand.execute(game.getPlayer());
+        goCommand.setSecondWord("links");
+        goCommand.execute(game.getPlayer());
+
+
+
+
+        assertEquals("Platz der Kategorie Getraenke", game.getPlayer().getCurrentRoom().getShortDescription());
+
+        backCommand.execute(game.getPlayer());
+
+        assertEquals("Platz der Kategorie Essen", game.getPlayer().getCurrentRoom().getShortDescription());
+
+    }
+
 
 
 }
