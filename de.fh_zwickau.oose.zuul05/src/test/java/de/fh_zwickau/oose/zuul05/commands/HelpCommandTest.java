@@ -71,6 +71,30 @@ class HelpCommandTest {
 
 
     }
+    @Test
+    void testHelpCommandWithCommandHilfe() {
+
+        helpCommand.setSecondWord("hilfe");
+        helpCommand.execute(game.getPlayer());
+
+
+        assertEquals("sehe alle möglichen Kommandos", helpCommand.getCommandWord());
+
+
+    }
+    @Test
+    void testHelpCommandWithCommandEnde() {
+
+        helpCommand.setSecondWord("ende");
+        helpCommand.execute(game.getPlayer());
+
+
+        assertEquals("das Spiel verlassen", helpCommand.getCommandWord());
+
+
+    }
 
 
 }
+
+
