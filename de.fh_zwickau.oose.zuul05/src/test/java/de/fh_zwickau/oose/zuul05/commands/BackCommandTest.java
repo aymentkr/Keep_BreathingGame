@@ -58,5 +58,25 @@ class BackCommandTest {
         assertEquals("in der Schiff Oberfläche", game.getPlayer().getCurrentRoom().getShortDescription());
 
     }
+    @Test
+    void testBackCommandFromSchiffsdachToObstraum() {
+        goCommand.setSecondWord("unten");
+        goCommand.execute(game.getPlayer());
+        goCommand.setSecondWord("links");
+        goCommand.execute(game.getPlayer());
+        goCommand.setSecondWord("links");
+        goCommand.execute(game.getPlayer());
+        goCommand.setSecondWord("oben");
+        goCommand.execute(game.getPlayer());
+
+
+        assertEquals("in der Schiff Oberfläche", game.getPlayer().getCurrentRoom().getShortDescription());
+
+        backCommand.execute(game.getPlayer());
+
+        assertEquals("Platz der Kategorie Obst", game.getPlayer().getCurrentRoom().getShortDescription());
+
+    }
+
 
 }

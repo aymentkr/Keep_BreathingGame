@@ -106,7 +106,30 @@
       <command value="gradle build" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.HelpCommandTest2">
+  <component name="RunManager" selected="Gradle.BackCommandTest.testBackCommandFromEssenraumToSchlaffraum">
+    <configuration name="BackCommandTest.testBackCommandFromEssenraumToSchlaffraum" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;de.fh_zwickau.oose.zuul05.commands.BackCommandTest.testBackCommandFromEssenraumToSchlaffraum&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="BackCommandTest.testBackCommandFromGetraenkraumToEssenraum" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -130,7 +153,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="BackCommandTest.testBackCommandFromObstraumToGetraenkraum" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="BackCommandTest.testBackCommandGetDescription" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05" />
@@ -143,30 +166,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;de.fh_zwickau.oose.zuul05.commands.BackCommandTest.testBackCommandFromObstraumToGetraenkraum&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="BackCommandTest.testBackCommandFromSchiffsdachToObstraum" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;de.fh_zwickau.oose.zuul05.commands.BackCommandTest.testBackCommandFromSchiffsdachToObstraum&quot;" />
+            <option value="&quot;de.fh_zwickau.oose.zuul05.commands.BackCommandTest.testBackCommandGetDescription&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -300,19 +300,19 @@
       <item itemvalue="Gradle.D:/Computer Science/Bachelor/WHZ/3. Semester/Objektorientierte Softwareentwicklung/projekt/students-2022ws-05/de.fh_zwickau.oose.zuul05" />
       <item itemvalue="Gradle.de.fh_zwickau.oose.zuul05 [assembleDist]" />
       <item itemvalue="Gradle.de.fh_zwickau.oose.zuul05 [build]" />
-      <item itemvalue="Gradle.BackCommandTest.testBackCommandFromSchiffsdachToObstraum" />
-      <item itemvalue="Gradle.BackCommandTest.testBackCommandFromObstraumToGetraenkraum" />
       <item itemvalue="Gradle.BackCommandTest.testBackCommandFromGetraenkraumToEssenraum" />
       <item itemvalue="Gradle.HelpCommandTest2" />
       <item itemvalue="Gradle.HelpCommandTest2.testHelpCommandWithCommandGehe" />
+      <item itemvalue="Gradle.BackCommandTest.testBackCommandGetDescription" />
+      <item itemvalue="Gradle.BackCommandTest.testBackCommandFromEssenraumToSchlaffraum" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.BackCommandTest.testBackCommandFromEssenraumToSchlaffraum" />
+        <item itemvalue="Gradle.BackCommandTest.testBackCommandGetDescription" />
         <item itemvalue="Gradle.HelpCommandTest2" />
         <item itemvalue="Gradle.HelpCommandTest2.testHelpCommandWithCommandGehe" />
         <item itemvalue="Gradle.BackCommandTest.testBackCommandFromGetraenkraumToEssenraum" />
-        <item itemvalue="Gradle.BackCommandTest.testBackCommandFromObstraumToGetraenkraum" />
-        <item itemvalue="Gradle.BackCommandTest.testBackCommandFromSchiffsdachToObstraum" />
       </list>
     </recent_temporary>
   </component>
