@@ -6,18 +6,22 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import de.fh_zwickau.oose.zuul05.Game;
+import de.fh_zwickau.oose.zuul05.Player;
+import de.fh_zwickau.oose.zuul05.Room;
+import de.fh_zwickau.oose.zuul05.commands.BackCommand;
+import de.fh_zwickau.oose.zuul05.commands.GoCommand;
 
-class HelpCommandTest2 {
+
+class BackCommandTest {
+
     public Game game;
-    public HelpCommand helpCommand;
-    public CommandWords commandWords;
-
+    public BackCommand backCommand;
+    public GoCommand goCommand;
     @BeforeEach
     void init() {
         this.game=new Game();
-        this.commandWords=new CommandWords();
-        this.helpCommand=new  HelpCommand(commandWords);
+        this.backCommand=new BackCommand();
+        this.goCommand=new GoCommand();
+    }
 
-
-
-    }}
+}
