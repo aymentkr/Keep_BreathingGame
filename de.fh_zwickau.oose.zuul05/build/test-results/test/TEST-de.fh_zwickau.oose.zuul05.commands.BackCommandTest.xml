@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="de.fh_zwickau.oose.zuul05.commands.BackCommandTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-10-31T19:02:53" hostname="LAIS" time="0.027">
+<testsuite name="de.fh_zwickau.oose.zuul05.commands.BackCommandTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-10-31T19:06:59" hostname="LAIS" time="0.028">
   <properties/>
-  <testcase name="testBackCommandFromEssenraumToSchlaffraum()" classname="de.fh_zwickau.oose.zuul05.commands.BackCommandTest" time="0.027"/>
+  <testcase name="testBackCommandFromObstraumToGetraenkraum()" classname="de.fh_zwickau.oose.zuul05.commands.BackCommandTest" time="0.028"/>
   <system-out><![CDATA[Deine Position: Platz der Kategorie Essen.
 Ausgänge: links oben
-Deine Position: im Ruheraum.
-Ausgänge: unten links
+Deine Position: Platz der Kategorie Getraenke.
+Ausgänge: recht links
+Deine Position: Platz der Kategorie Obst.
+Ausgänge: recht oben
+Deine Position: Platz der Kategorie Getraenke.
+Ausgänge: recht links
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
