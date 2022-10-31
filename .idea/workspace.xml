@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f9bc96b-9881-47cc-92bf-c3eda27a3dca" name="Changes" comment="Init methode hinzufügen zur BackCommand test" />
+    <list default="true" id="4f9bc96b-9881-47cc-92bf-c3eda27a3dca" name="Changes" comment="testBackCommandFromGetraenkraumToEssenraum hinzugefügt" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,7 +106,7 @@
       <command value="gradle build" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.BackCommandTest.testBackCommandFromObstraumToGetraenkraum">
+  <component name="RunManager" selected="Gradle.BackCommandTest.testBackCommandFromGetraenkraumToEssenraum">
     <configuration name="BackCommandTest.testBackCommandFromEssenraumToSchlaffraum" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -121,6 +121,29 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;de.fh_zwickau.oose.zuul05.commands.BackCommandTest.testBackCommandFromEssenraumToSchlaffraum&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="BackCommandTest.testBackCommandFromGetraenkraumToEssenraum" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;de.fh_zwickau.oose.zuul05.commands.BackCommandTest.testBackCommandFromGetraenkraumToEssenraum&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -218,29 +241,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="HelpCommandTest2.testHelpCommandWithCommandGehe" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;de.fh_zwickau.oose.zuul05.commands.HelpCommandTest2.testHelpCommandWithCommandGehe&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="de.fh_zwickau.oose.zuul05 [assembleDist]" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -301,18 +301,18 @@
       <item itemvalue="Gradle.de.fh_zwickau.oose.zuul05 [assembleDist]" />
       <item itemvalue="Gradle.de.fh_zwickau.oose.zuul05 [build]" />
       <item itemvalue="Gradle.HelpCommandTest2" />
-      <item itemvalue="Gradle.HelpCommandTest2.testHelpCommandWithCommandGehe" />
       <item itemvalue="Gradle.BackCommandTest.testBackCommandGetDescription" />
       <item itemvalue="Gradle.BackCommandTest.testBackCommandFromEssenraumToSchlaffraum" />
       <item itemvalue="Gradle.BackCommandTest.testBackCommandFromObstraumToGetraenkraum" />
+      <item itemvalue="Gradle.BackCommandTest.testBackCommandFromGetraenkraumToEssenraum" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.BackCommandTest.testBackCommandFromGetraenkraumToEssenraum" />
         <item itemvalue="Gradle.BackCommandTest.testBackCommandFromObstraumToGetraenkraum" />
         <item itemvalue="Gradle.BackCommandTest.testBackCommandFromEssenraumToSchlaffraum" />
         <item itemvalue="Gradle.BackCommandTest.testBackCommandGetDescription" />
         <item itemvalue="Gradle.HelpCommandTest2" />
-        <item itemvalue="Gradle.HelpCommandTest2.testHelpCommandWithCommandGehe" />
       </list>
     </recent_temporary>
   </component>
@@ -481,7 +481,49 @@
       <option name="project" value="LOCAL" />
       <updated>1667242921915</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="testBackCommandGetDescription und testBackCommandFromEssenraumToSchlaffraum hinzufügt">
+      <created>1667243017564</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1667243017564</updated>
+    </task>
+    <task id="LOCAL-00022" summary="testBackCommandGetDescription und testBackCommandFromEssenraumToSchlaffraum hinzugefügt">
+      <created>1667243036746</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1667243036746</updated>
+    </task>
+    <task id="LOCAL-00023" summary="testBackCommandFromSchlaffraumToSchiffsdach hinzugefügt">
+      <created>1667243139227</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1667243139227</updated>
+    </task>
+    <task id="LOCAL-00024" summary="testBackCommandFromSchiffsdachToObstraum hinzugefügt">
+      <created>1667243186034</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1667243186034</updated>
+    </task>
+    <task id="LOCAL-00025" summary="testBackCommandFromObstraumToGetraenkraum hinzugefügt">
+      <created>1667243234566</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1667243234566</updated>
+    </task>
+    <task id="LOCAL-00026" summary="testBackCommandFromGetraenkraumToEssenraum hinzugefügt">
+      <created>1667243300237</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1667243300237</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -511,6 +553,12 @@
     <MESSAGE value="delete testing files" />
     <MESSAGE value="Init methode hinzufügt" />
     <MESSAGE value="Init methode hinzufügen zur BackCommand test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init methode hinzufügen zur BackCommand test" />
+    <MESSAGE value="testBackCommandGetDescription und testBackCommandFromEssenraumToSchlaffraum hinzufügt" />
+    <MESSAGE value="testBackCommandGetDescription und testBackCommandFromEssenraumToSchlaffraum hinzugefügt" />
+    <MESSAGE value="testBackCommandFromSchlaffraumToSchiffsdach hinzugefügt" />
+    <MESSAGE value="testBackCommandFromSchiffsdachToObstraum hinzugefügt" />
+    <MESSAGE value="testBackCommandFromObstraumToGetraenkraum hinzugefügt" />
+    <MESSAGE value="testBackCommandFromGetraenkraumToEssenraum hinzugefügt" />
+    <option name="LAST_COMMIT_MESSAGE" value="testBackCommandFromGetraenkraumToEssenraum hinzugefügt" />
   </component>
 </project>
