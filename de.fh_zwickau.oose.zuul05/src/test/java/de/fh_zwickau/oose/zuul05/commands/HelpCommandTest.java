@@ -20,4 +20,25 @@ class HelpCommandTest {
 
 
 
-    }}
+    }
+    @Test
+    void testHelpCommandWithCommandGehe() {
+
+        helpCommand.setSecondWord("gehe");
+        helpCommand.execute(game.getPlayer());
+
+
+        assertEquals("""
+			    Beweg in einen anderen Raum
+			    Es gibt viele Möglichkeiten, sich durch Tippen von Raum zu Raum zu bewegen
+			    wie folgt: - gehe links
+			               - gehe recht
+			               - gehe unten
+			               - gehe oben
+			    """, helpCommand.getCommandWord());
+
+
+    }
+
+
+}
