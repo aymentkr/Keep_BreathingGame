@@ -81,7 +81,26 @@ class GoCommandTest {
         assertEquals("in der Schiff Oberfläche", game.getPlayer().getCurrentRoom().getShortDescription());
 
     }
+    @Test
+    void testGoCommandFromschiffsdachToschlaffraum() {
+        goCommand.setSecondWord("unten");
+        goCommand.execute(game.getPlayer());
+        goCommand.setSecondWord("links");
+        goCommand.execute(game.getPlayer());
+        goCommand.setSecondWord("links");
+        goCommand.execute(game.getPlayer());
+        goCommand.setSecondWord("oben");
+        goCommand.execute(game.getPlayer());
+        goCommand.setSecondWord("recht");
+        goCommand.execute(game.getPlayer());
 
+        assertEquals("im Ruheraum", game.getPlayer().getCurrentRoom().getShortDescription());
+
+    }
+
+
+
+}
 
 
 }

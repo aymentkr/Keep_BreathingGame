@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f9bc96b-9881-47cc-92bf-c3eda27a3dca" name="Changes" comment="in HelpCommandTest Classe testHelpCommandWithCommandEnde-testHelpCommandWithCommandHilfe getestet">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4f9bc96b-9881-47cc-92bf-c3eda27a3dca" name="Changes" comment="in GoCommandTest Class testGoCommandGetDescription-testGoCommandSetSecondWordAndEcecute getestet">
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/classes/de.fh_zwickau.oose.zuul05.commands.HelpCommandTest.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/packages/de.fh_zwickau.oose.zuul05.commands.html" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/packages/de.fh_zwickau.oose.zuul05.commands.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/TEST-de.fh_zwickau.oose.zuul05.commands.HelpCommandTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/test/java/de/fh_zwickau/oose/zuul05/commands/GoCommandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/test/java/de/fh_zwickau/oose/zuul05/commands/GoCommandTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,30 +110,7 @@
       <command value="gradle build" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.HelpCommandTest">
-    <configuration name="BackCommandTest.testBackCommandFromGetraenkraumToEssenraum" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;de.fh_zwickau.oose.zuul05.commands.BackCommandTest.testBackCommandFromGetraenkraumToEssenraum&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.GoCommandTest">
     <configuration name="D:/Computer Science/Bachelor/WHZ/3. Semester/Objektorientierte Softwareentwicklung/projekt/students-2022ws-05/de.fh_zwickau.oose.zuul05" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -146,6 +126,29 @@
         <option name="vmOptions" />
       </ExternalSystemSettings>
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="GoCommandTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;de.fh_zwickau.oose.zuul05.commands.GoCommandTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
@@ -288,19 +291,19 @@
       <item itemvalue="Gradle.D:/Computer Science/Bachelor/WHZ/3. Semester/Objektorientierte Softwareentwicklung/projekt/students-2022ws-05/de.fh_zwickau.oose.zuul05" />
       <item itemvalue="Gradle.de.fh_zwickau.oose.zuul05 [assembleDist]" />
       <item itemvalue="Gradle.de.fh_zwickau.oose.zuul05 [build]" />
+      <item itemvalue="Gradle.GoCommandTest" />
       <item itemvalue="Gradle.HelpCommandTest" />
       <item itemvalue="Gradle.HelpCommandTest.testHelpCommandWithCommandEnde" />
       <item itemvalue="Gradle.HelpCommandTest.testHelpCommandWithCommandZurueck" />
-      <item itemvalue="Gradle.BackCommandTest.testBackCommandFromGetraenkraumToEssenraum" />
       <item itemvalue="Gradle.HelpCommandTest.testHelpCommandWithCommandGehe" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GoCommandTest" />
         <item itemvalue="Gradle.HelpCommandTest" />
         <item itemvalue="Gradle.HelpCommandTest.testHelpCommandWithCommandEnde" />
         <item itemvalue="Gradle.HelpCommandTest.testHelpCommandWithCommandZurueck" />
         <item itemvalue="Gradle.HelpCommandTest.testHelpCommandWithCommandGehe" />
-        <item itemvalue="Gradle.BackCommandTest.testBackCommandFromGetraenkraumToEssenraum" />
       </list>
     </recent_temporary>
   </component>
@@ -525,7 +528,28 @@
       <option name="project" value="LOCAL" />
       <updated>1667245876889</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="in GoCommandTest Class void testStartRoom getestet">
+      <created>1667246170632</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1667246170632</updated>
+    </task>
+    <task id="LOCAL-00030" summary="in GoCommandTest Class void testStartRoom getestet">
+      <created>1667246232665</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1667246232665</updated>
+    </task>
+    <task id="LOCAL-00031" summary="in GoCommandTest Class testGoCommandGetDescription-testGoCommandSetSecondWordAndEcecute getestet">
+      <created>1667246377572</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1667246377572</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -563,6 +587,8 @@
     <MESSAGE value="testBackCommandFromGetraenkraumToEssenraum hinzugefügt" />
     <MESSAGE value="in HelpCommandTest Classe testHelpCommandWithCommandZurueck-testHelpCommandWithCommandSchlafen getestet" />
     <MESSAGE value="in HelpCommandTest Classe testHelpCommandWithCommandEnde-testHelpCommandWithCommandHilfe getestet" />
-    <option name="LAST_COMMIT_MESSAGE" value="in HelpCommandTest Classe testHelpCommandWithCommandEnde-testHelpCommandWithCommandHilfe getestet" />
+    <MESSAGE value="in GoCommandTest Class void testStartRoom getestet" />
+    <MESSAGE value="in GoCommandTest Class testGoCommandGetDescription-testGoCommandSetSecondWordAndEcecute getestet" />
+    <option name="LAST_COMMIT_MESSAGE" value="in GoCommandTest Class testGoCommandGetDescription-testGoCommandSetSecondWordAndEcecute getestet" />
   </component>
 </project>
