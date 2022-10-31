@@ -4,38 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f9bc96b-9881-47cc-92bf-c3eda27a3dca" name="Changes" comment="delete testing files">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_10_2022_16_56__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_10_2022_16_56__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/distributions/Keep_Breathing.tar" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/distributions/Keep_Breathing.tar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/distributions/Keep_Breathing.zip" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/distributions/Keep_Breathing.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/classes/de.fh_zwickau.oose.zuul05.Game.commands.BackCommandTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/classes/de.fh_zwickau.oose.zuul05.Game.commands.GoCommandTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/classes/de.fh_zwickau.oose.zuul05.Game.commands.HelpCommandTest2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/css/base-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/css/base-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/js/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/js/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/reports/tests/test/packages/de.fh_zwickau.oose.zuul05.Game.commands.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/scripts/Keep_Breathing" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/scripts/Keep_Breathing" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/scripts/Keep_Breathing.bat" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/scripts/Keep_Breathing.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/TEST-de.fh_zwickau.oose.zuul05.Game.commands.BackCommandTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/TEST-de.fh_zwickau.oose.zuul05.Game.commands.GoCommandTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/TEST-de.fh_zwickau.oose.zuul05.Game.commands.HelpCommandTest2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/commands/BackCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/commands/BackCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/commands/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/de/fh_zwickau/oose/zuul05/commands/HelpCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/main/java/test/BackCommandTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/test/java/de/fh_zwickau/oose/zuul05/Game/commands/BackCommandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/test/java/de/fh_zwickau/oose/zuul05/commands/BackCommandTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/test/java/de/fh_zwickau/oose/zuul05/Game/commands/GoCommandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/test/java/de/fh_zwickau/oose/zuul05/commands/GoCommandTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/de.fh_zwickau.oose.zuul05/src/test/java/de/fh_zwickau/oose/zuul05/Game/commands/HelpCommandTest2.java" beforeDir="false" />
-    </list>
+    <list default="true" id="4f9bc96b-9881-47cc-92bf-c3eda27a3dca" name="Changes" comment="Init methode hinzufügen zur BackCommand test" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -498,7 +467,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667054012875</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Init methode hinzufügt">
+      <created>1667242763663</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1667242763663</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Init methode hinzufügen zur BackCommand test">
+      <created>1667242921915</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1667242921915</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -526,6 +509,8 @@
     <MESSAGE value="add test java" />
     <MESSAGE value="delete testing folder" />
     <MESSAGE value="delete testing files" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete testing files" />
+    <MESSAGE value="Init methode hinzufügt" />
+    <MESSAGE value="Init methode hinzufügen zur BackCommand test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init methode hinzufügen zur BackCommand test" />
   </component>
 </project>

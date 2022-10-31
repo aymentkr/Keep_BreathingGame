@@ -23,5 +23,20 @@ class BackCommandTest {
         this.backCommand=new BackCommand();
         this.goCommand=new GoCommand();
     }
+    @Test
+    void testBackCommandGetDescription() {
+        assertEquals("Gehe mal zurueck", backCommand.getDescription());
+    }
+
+    @Test
+    void testBackCommandFromEssenraumToSchlaffraum() {
+        goCommand.setSecondWord("unten");
+        goCommand.execute(game.getPlayer());
+        assertEquals("Platz der Kategorie Essen", game.getPlayer().getCurrentRoom().getShortDescription());
+
+        backCommand.execute(game.getPlayer());
+        assertEquals("im Ruheraum", game.getPlayer().getCurrentRoom().getShortDescription());
+
+    }
 
 }
