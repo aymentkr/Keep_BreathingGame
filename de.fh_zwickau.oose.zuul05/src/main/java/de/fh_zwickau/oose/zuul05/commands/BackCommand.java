@@ -14,6 +14,6 @@ public class BackCommand extends Command {
 
     @Override
     public String getDescription() {
-        return "Gehe mal zueruck";
+        return "Gehe mal zurueck";
     }
 }

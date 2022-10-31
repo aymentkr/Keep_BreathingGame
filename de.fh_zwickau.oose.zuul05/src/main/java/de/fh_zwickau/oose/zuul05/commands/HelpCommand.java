@@ -52,6 +52,6 @@ public class HelpCommand extends Command
     }
 
     public String getCommandWord() {
-        return commandWords.toString();
+        return commandWords.get(getSecondWord()).getDescription();
     }
 }

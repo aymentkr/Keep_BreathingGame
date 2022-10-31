@@ -54,7 +54,7 @@ public class Game
       
         // Räume erzeugen:
         schlaffraum = new Room("im Ruheraum");
-        obstraum = new Room("iPlatz der Kategorie Obst");
+        obstraum = new Room("Platz der Kategorie Obst");
         essenraum = new Room("Platz der Kategorie Essen");
         getraenkraum = new Room("Platz der Kategorie Getraenke");
         schiffsdach = new Room("in der Schiff Oberfläche");
@@ -67,6 +67,8 @@ public class Game
         essenraum.setExit("oben", schlaffraum);
         getraenkraum.setExit("recht", essenraum);
         obstraum.setExit("recht",obstraum);
+        obstraum.setExit("oben",schiffsdach);
+
         schiffsdach.setExit("recht",schlaffraum);
 
         // Der Spieler startet das Spiel draußen vor der Hochschule:
