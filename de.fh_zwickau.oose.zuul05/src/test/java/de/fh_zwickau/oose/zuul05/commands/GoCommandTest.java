@@ -43,6 +43,45 @@ class GoCommandTest {
         assertEquals("Platz der Kategorie Essen", game.getPlayer().getCurrentRoom().getShortDescription());
 
     }
+    @Test
+    void testGoCommandFromEssenraumToGetraenkraum() {
+        goCommand.setSecondWord("unten");
+        goCommand.execute(game.getPlayer());
+        goCommand.setSecondWord("links");
+        goCommand.execute(game.getPlayer());
+
+        assertEquals("Platz der Kategorie Getraenke", game.getPlayer().getCurrentRoom().getShortDescription());
+
+    }
+    @Test
+    void testGoCommandFromGetraenkraumToObstraum() {
+        goCommand.setSecondWord("unten");
+        goCommand.execute(game.getPlayer());
+        goCommand.setSecondWord("links");
+        goCommand.execute(game.getPlayer());
+        goCommand.setSecondWord("links");
+        goCommand.execute(game.getPlayer());
+
+
+        assertEquals("Platz der Kategorie Obst", game.getPlayer().getCurrentRoom().getShortDescription());
+
+    }
+    @Test
+    void testGoCommandFromObstraumToSchiffsdach() {
+        goCommand.setSecondWord("unten");
+        goCommand.execute(game.getPlayer());
+        goCommand.setSecondWord("links");
+        goCommand.execute(game.getPlayer());
+        goCommand.setSecondWord("links");
+        goCommand.execute(game.getPlayer());
+        goCommand.setSecondWord("oben");
+        goCommand.execute(game.getPlayer());
+
+
+        assertEquals("in der Schiff Oberfläche", game.getPlayer().getCurrentRoom().getShortDescription());
+
+    }
+
 
 
 }
