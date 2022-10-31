@@ -39,6 +39,17 @@ class HelpCommandTest {
 
 
     }
+    @Test
+    void testHelpCommandWithCommandEssen() {
+
+        helpCommand.setSecondWord("essen");
+        helpCommand.execute(game.getPlayer());
+
+
+        assertEquals("Selbst füttern", helpCommand.getCommandWord());
+
+
+    }
 
 
 }
