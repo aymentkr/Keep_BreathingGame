@@ -14,7 +14,7 @@ import java.util.StringTokenizer;
  * diese Eingabe als Kommando, bestehend aus ein oder zwei Wörtern, zu
  *  interpretieren. Das Kommando wird dann als Objekt der Command-Klasse
  *  zurückgeliefert.
- * 
+ * <p>
  * Der Parser greift auf eine Menge bekannter Kommandowörter zu.
  * Die Eingaben des Benutzers werden mit dieser Liste verglichen. Wenn die Eingabe
  * keinem gültigen Kommandowort entspricht, wird ein Objekt der Klasse
@@ -26,7 +26,7 @@ import java.util.StringTokenizer;
 class Parser 
 {
 
-    private CommandWords commandwords;  // enthält alle erlaubten Kommandowörter
+    private final CommandWords commandwords;  // enthält alle erlaubten Kommandowörter
 
     public Parser() 
     {

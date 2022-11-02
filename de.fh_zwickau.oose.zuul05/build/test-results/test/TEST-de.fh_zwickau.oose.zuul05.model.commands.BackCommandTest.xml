@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="de.fh_zwickau.oose.zuul05.model.commands.BackCommandTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-11-02T14:42:46" hostname="AYMENTKZZ" time="0.039">
+<testsuite name="de.fh_zwickau.oose.zuul05.model.commands.BackCommandTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-11-02T19:54:40" hostname="AYMENTKZZ" time="0.034">
   <properties/>
-  <testcase name="testBackCommandGetDescription()" classname="de.fh_zwickau.oose.zuul05.model.commands.BackCommandTest" time="0.018"/>
-  <testcase name="testBackCommandFromGetraenkraumToEssenraum()" classname="de.fh_zwickau.oose.zuul05.model.commands.BackCommandTest" time="0.008"/>
+  <testcase name="testBackCommandGetDescription()" classname="de.fh_zwickau.oose.zuul05.model.commands.BackCommandTest" time="0.016"/>
+  <testcase name="testBackCommandFromGetraenkraumToEssenraum()" classname="de.fh_zwickau.oose.zuul05.model.commands.BackCommandTest" time="0.006"/>
   <testcase name="testBackCommandFromObstraumToGetraenkraum()" classname="de.fh_zwickau.oose.zuul05.model.commands.BackCommandTest" time="0.001"/>
   <testcase name="testBackCommandFromSchlaffraumToSchiffsdach()" classname="de.fh_zwickau.oose.zuul05.model.commands.BackCommandTest" time="0.003"/>
-  <testcase name="testBackCommandFromEssenraumToSchlaffraum()" classname="de.fh_zwickau.oose.zuul05.model.commands.BackCommandTest" time="0.002"/>
+  <testcase name="testBackCommandFromEssenraumToSchlaffraum()" classname="de.fh_zwickau.oose.zuul05.model.commands.BackCommandTest" time="0.001"/>
   <testcase name="testBackCommandFromSchiffsdachToObstraum()" classname="de.fh_zwickau.oose.zuul05.model.commands.BackCommandTest" time="0.002"/>
   <system-out><![CDATA[Deine Position: Platz der Kategorie Essen.
 Ausgänge: links oben

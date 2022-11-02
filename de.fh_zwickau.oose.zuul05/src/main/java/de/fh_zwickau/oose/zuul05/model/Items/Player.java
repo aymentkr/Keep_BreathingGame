@@ -1,5 +1,6 @@
 package de.fh_zwickau.oose.zuul05.model.Items;
 
+import java.util.Optional;
 import java.util.Stack;
 
 /**
@@ -11,7 +12,7 @@ import java.util.Stack;
 public class Player
 {
     private Room currentRoom;
-    private Stack<Room> connection;
+    private final Stack<Room> connection;
     private boolean key;
     private int health;
 
@@ -47,13 +48,13 @@ public class Player
      */
     public void walk(String direction) {
         // Try to leave current room.
-        Room nextRoom = currentRoom.getExit(direction);
-        if (nextRoom == null)
+        Optional<Room> nextRoom = currentRoom.getExit(direction);
+        if (nextRoom.isEmpty())
             System.out.println("Da it keine Tür!");
         else {
             connection.push(getCurrentRoom());
-            setCurrentRoom(nextRoom);
-            System.out.println(nextRoom.getLongDescription());
+            setCurrentRoom(nextRoom.get());
+            System.out.println(nextRoom.get().getLongDescription());
         }
     }
 

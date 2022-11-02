@@ -41,7 +41,7 @@ public class HelpCommand extends Command
                 """
             );
             for (String name: CommandWords.getCommands().keySet()) {
-                String value = CommandWords.getCommands().get(name).getDescription();
+                // String value = CommandWords.getCommands().get(name).getDescription();
                 System.out.println("- "+name);
             }
         }
