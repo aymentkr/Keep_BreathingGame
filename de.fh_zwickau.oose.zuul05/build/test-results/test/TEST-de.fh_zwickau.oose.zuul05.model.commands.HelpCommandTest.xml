@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.fh_zwickau.oose.zuul05.model.commands.HelpCommandTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-11-02T19:54:40" hostname="AYMENTKZZ" time="0.007">
+  <properties/>
+  <testcase name="testHelpCommandWithCommandEnde()" classname="de.fh_zwickau.oose.zuul05.model.commands.HelpCommandTest" time="0.001"/>
+  <testcase name="testHelpCommandWithCommandGehe()" classname="de.fh_zwickau.oose.zuul05.model.commands.HelpCommandTest" time="0.001"/>
+  <testcase name="testHelpCommandWithCommandSchlafen()" classname="de.fh_zwickau.oose.zuul05.model.commands.HelpCommandTest" time="0.001"/>
+  <testcase name="testHelpCommandWithCommandEssen()" classname="de.fh_zwickau.oose.zuul05.model.commands.HelpCommandTest" time="0.001"/>
+  <testcase name="testHelpCommandWithCommandHilfe()" classname="de.fh_zwickau.oose.zuul05.model.commands.HelpCommandTest" time="0.001"/>
+  <testcase name="testHelpCommandWithCommandZurueck()" classname="de.fh_zwickau.oose.zuul05.model.commands.HelpCommandTest" time="0.001"/>
+  <system-out><![CDATA[das Spiel verlassen
+Beweg in einen anderen Raum
+Es gibt viele Möglichkeiten, sich durch Tippen von Raum zu Raum zu bewegen
+wie folgt: - gehe links
+           - gehe recht
+           - gehe unten
+           - gehe oben
+
+Ruhe dich aus und mach dich bereit für den nächsten Tag
+Selbst füttern
+sehe alle möglichen Kommandos
+Gehe mal zurueck
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

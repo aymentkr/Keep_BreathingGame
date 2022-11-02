@@ -23,10 +23,14 @@ import de.fh_zwickau.oose.zuul05.model.Commands.Command;
 import de.fh_zwickau.oose.zuul05.model.Items.Player;
 import de.fh_zwickau.oose.zuul05.model.Items.Room;
 
-public class Game
-{
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class Game {
     private final Parser parser;
     private final Player player;
+    private static int day;
+    public static final HashMap<String,Room> Rooms = new HashMap<String, Room>();
 
     /**
      * Konstruktor der Game-Klasse, legt auch die Raumstruktur fest.
@@ -36,6 +40,7 @@ public class Game
         player = new Player();
         parser = new Parser();
         createRooms();
+        day = 1;
     }
     
     /**
@@ -59,6 +64,13 @@ public class Game
         essenraum = new Room("Platz der Kategorie Essen");
         getraenkraum = new Room("Platz der Kategorie Getraenke");
         schiffsdach = new Room("in der Schiff Oberfläche");
+
+        Rooms.put("sleep",schlaffraum);
+        Rooms.put("fruit",obstraum);
+        Rooms.put("food",essenraum);
+        Rooms.put("drink",getraenkraum);
+        Rooms.put("roof",schiffsdach);
+
         
         // Ausgänge aufbauen:
         schlaffraum.setExit("unten", essenraum);
@@ -111,5 +123,12 @@ public class Game
 
     public Player getPlayer() {
         return player;
+    }
+
+    public static void nextDay(){
+        day++;
+    }
+    public static int getCurrentDay(){
+        return day;
     }
 }

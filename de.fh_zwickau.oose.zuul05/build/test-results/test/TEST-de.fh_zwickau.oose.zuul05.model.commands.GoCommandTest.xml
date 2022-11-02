@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.fh_zwickau.oose.zuul05.model.commands.GoCommandTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2022-11-02T19:54:40" hostname="AYMENTKZZ" time="0.013">
+  <properties/>
+  <testcase name="testGoCommandFromschiffsdachToschlaffraum()" classname="de.fh_zwickau.oose.zuul05.model.commands.GoCommandTest" time="0.005"/>
+  <testcase name="testGoCommandSetSecondWordAndEcecute()" classname="de.fh_zwickau.oose.zuul05.model.commands.GoCommandTest" time="0.001"/>
+  <testcase name="testStartRoom()" classname="de.fh_zwickau.oose.zuul05.model.commands.GoCommandTest" time="0.0"/>
+  <testcase name="testGoCommandFromObstraumToSchiffsdach()" classname="de.fh_zwickau.oose.zuul05.model.commands.GoCommandTest" time="0.001"/>
+  <testcase name="testGoCommandFromGetraenkraumToObstraum()" classname="de.fh_zwickau.oose.zuul05.model.commands.GoCommandTest" time="0.001"/>
+  <testcase name="testGoCommandGetDescription()" classname="de.fh_zwickau.oose.zuul05.model.commands.GoCommandTest" time="0.001"/>
+  <testcase name="testGoCommandFromEssenraumToGetraenkraum()" classname="de.fh_zwickau.oose.zuul05.model.commands.GoCommandTest" time="0.0"/>
+  <system-out><![CDATA[Deine Position: Platz der Kategorie Essen.
+Ausgänge: links oben
+Deine Position: Platz der Kategorie Getraenke.
+Ausgänge: recht links
+Deine Position: Platz der Kategorie Obst.
+Ausgänge: recht oben
+Deine Position: in der Schiff Oberfläche.
+Ausgänge: recht
+Deine Position: im Ruheraum.
+Ausgänge: unten links
+Deine Position: Platz der Kategorie Essen.
+Ausgänge: links oben
+Deine Position: Platz der Kategorie Essen.
+Ausgänge: links oben
+Deine Position: Platz der Kategorie Getraenke.
+Ausgänge: recht links
+Deine Position: Platz der Kategorie Obst.
+Ausgänge: recht oben
+Deine Position: in der Schiff Oberfläche.
+Ausgänge: recht
+Deine Position: Platz der Kategorie Essen.
+Ausgänge: links oben
+Deine Position: Platz der Kategorie Getraenke.
+Ausgänge: recht links
+Deine Position: Platz der Kategorie Obst.
+Ausgänge: recht oben
+Deine Position: Platz der Kategorie Essen.
+Ausgänge: links oben
+Deine Position: Platz der Kategorie Getraenke.
+Ausgänge: recht links
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

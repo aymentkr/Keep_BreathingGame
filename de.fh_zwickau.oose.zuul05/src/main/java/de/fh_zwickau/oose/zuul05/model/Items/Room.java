@@ -1,54 +1,57 @@
 package de.fh_zwickau.oose.zuul05.model.Items;
-import java.util.Set;
+
 import java.util.HashMap;
-import java.util.Iterator;
+import java.util.Optional;
+import java.util.Set;
 
 /**
- * 
  * Die Klasse "Room" stellt einen Raum (Ort) in der Spielewelt dar.
  * Die Räume sind miteinander durch Türen verbunden.
  * In jedem Raum sind in der HashMap exits die Ausgänge in alle möglichen Richtungen
  * als Referenz auf den dann erreichten Zielraum gespeichert.
- * 
- * @author  Michael Kolling and David J. Barnes
+ *
+ * @author Michael Kolling and David J. Barnes
  */
-
-public class Room 
+public class Room
 {
-    private String description;
+    private final String description;
     /**
      * Diese HashMap speichert die Ausgänge des Raumes.
      * Der Schlüssel ist die Bewegungsrichtung, der Eintrag dazu der bei Bewegung in diese
      * Richtung erreichte Raum.
      */
-    private HashMap<String, Room> exits;        
-    
+    private final HashMap<String, Room> exits;
+
     /**
      * Konstruktor der Klasse Raum.
      * Lege einen Raum mit einer Raumbeschreibung (description) an.
      * Die Raumbeschreibung ist so etwas wie
      * "der Fahrstuhl" oder "die Herrentoilette".
      * Der neu erzeugte Raum hat noch keine Ausgänge.
+     *
      * @param description Die Raumbeschreibung.
      */
-    public Room(String description) 
+    public Room(String description)
     {
         this.description = description;
-        exits = new HashMap<String, Room>();
+        exits = new HashMap<>();
     }
 
     /**
      * Lege die Ausgänge des Raumes fest.
+     *
      * @param direction Bewegungsrichtung.
-     * @param neighbor Der bei Bewegung in diese Richtung erreichte Zielraum.
+     * @param neighbor  Der bei Bewegung in diese Richtung erreichte Zielraum.
      */
-    public void setExit(String direction, Room neighbor) 
+    public void setExit(String direction, Room neighbor)
     {
         exits.put(direction, neighbor);
     }
 
     /**
      * Gib die Raumbeschreibung zurück, so wie sie im Konstruktor angegeben wurde.
+     *
+     * @return the short description
      */
     public String getShortDescription()
     {
@@ -57,8 +60,10 @@ public class Room
 
     /**
      * Gib eine längere Beschreibung des Raumes zurück. Beispiel-Format:
-     *     Deine Position: die Herrentoilette.
-     *     Ausgänge: Norden Westen.
+     * Deine Position: die Herrentoilette.
+     * Ausgänge: Norden Westen.
+     *
+     * @return the long description
      */
     public String getLongDescription()
     {
@@ -72,23 +77,22 @@ public class Room
      */
     private String getExitString()
     {
-        String returnString = "Ausgänge:";
+        StringBuilder returnString = new StringBuilder("Ausgänge:");
         Set<String> keys = exits.keySet();
-        for(Iterator<String> iter = keys.iterator(); iter.hasNext(); )
-            returnString += " " + iter.next();
-        return returnString;
+        for (String key : keys) returnString.append(" ").append(key);
+        return returnString.toString();
     }
 
-   
-    
+
     /**
      * Gib den Raum zurück, der bei Bewegung in eine Richtung erreicht wird
+     *
      * @param direction Bewegungsrichtung.
      * @return erreichter Zielraum, <null>, wenn es in die angegebene Richtung keinen Ausgang gibt.
      */
-    public Room getExit(String direction) 
-    {
-        return exits.get(direction);
+    public Optional<Room> getExit(String direction) {
+        //Optional.ofNullable - allows passed parameter to be null
+        return Optional.ofNullable(exits.get(direction));
     }
 }
 
