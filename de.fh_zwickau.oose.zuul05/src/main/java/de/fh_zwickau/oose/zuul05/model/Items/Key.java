@@ -15,13 +15,12 @@ public class Key extends Item{
      */
     public Key(String name, String description) {
         super(name, description);
-        makeItUnavailable();
     }
 
     @Override
     public void use(Player player) {
         if (player.getCurrentRoom() == Game.Rooms.get("food")){
-            if (this.isAvailable())player.setCurrentRoom(Game.Rooms.get("food"));
+            if (player.getItem("schluessel").isPresent())player.setCurrentRoom(Game.Rooms.get("food"));
             else System.out.println("You need to get the key first!");
         }
         else System.out.println("You need to go to the Food Room first!");

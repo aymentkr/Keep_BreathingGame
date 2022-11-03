@@ -31,8 +31,7 @@ public abstract class Command
      * Liefert das zweite Wort des Kommandos (<null>, wenn kein zweites Wort eingegeben wurde).
      * @return Das zweite Wort des Kommandos (Rückgabe ist <null>, wenn kein zweites Wort eingegeben wurde).
      */
-    public String getSecondWord()
-    {
+    public String getSecondWord() {
         return secondWord;
     }
 

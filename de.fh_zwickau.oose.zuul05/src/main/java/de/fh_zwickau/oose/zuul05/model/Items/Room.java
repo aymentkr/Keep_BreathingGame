@@ -75,8 +75,7 @@ public class Room
      * Beispiel:
      * Ausgänge: Norden Westen.
      */
-    private String getExitString()
-    {
+    private String getExitString() {
         StringBuilder returnString = new StringBuilder("Ausgänge:");
         Set<String> keys = exits.keySet();
         for (String key : keys) returnString.append(" ").append(key);

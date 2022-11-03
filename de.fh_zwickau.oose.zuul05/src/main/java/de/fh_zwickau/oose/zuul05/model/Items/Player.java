@@ -1,8 +1,8 @@
 package de.fh_zwickau.oose.zuul05.model.Items;
 
 import de.fh_zwickau.oose.zuul05.controller.ScreenController;
-import de.fh_zwickau.oose.zuul05.model.Game;
 
+import java.util.HashMap;
 import java.util.Optional;
 import java.util.Stack;
 
@@ -12,22 +12,20 @@ import java.util.Stack;
  *
  * @author Michael Kolling
  */
-public class Player
-{
+public class Player {
     private Room currentRoom;
     private final Stack<Room> connection;
-    private Item key;
+    private HashMap<String, Item> stuff;
     private int health;
-    ScreenController controller = null;
 
     /**
      * Konstruktor für die Player-Klasse.
      */
     public Player() {
         currentRoom = null;
-        key = new Key("essenraumschlüssel","Den Schlüssel der Tür zum Essensraum");
         health = 75;
         connection = new Stack<Room>();
+        stuff = new HashMap<>();
     }
 
     /**
@@ -35,8 +33,7 @@ public class Player
      *
      * @return the current room
      */
-    public Room getCurrentRoom()
-    {
+    public Room getCurrentRoom() {
         return currentRoom;
     }
 
@@ -45,8 +42,7 @@ public class Player
      *
      * @param room the room
      */
-    public void setCurrentRoom(Room room)
-    {
+    public void setCurrentRoom(Room room) {
         currentRoom = room;
     }
 
@@ -71,8 +67,8 @@ public class Player
     /**
      * Returnback.
      */
-    public void returnback(){
-        if (!connection.empty()){
+    public void returnback() {
+        if (!connection.empty()) {
             Room backroom = connection.pop();
             setCurrentRoom(backroom);
             System.out.println(backroom.getLongDescription());
@@ -80,35 +76,38 @@ public class Player
             System.out.println("Das ist leider nicht möglich!");
     }
 
-    public void sleep() throws Exception {
-        health-=75;
-        key.makeItUnavailable();
-        testloss();
-        Game.nextDay();
-        if (Game.getCurrentDay() == 10) {
-            controller.EndScene("Woohoo! You Won!");
-        }
-    }
-
-
     /**
      * Is alive boolean.
      *
      * @return the boolean
      */
     public boolean isAlive() {
-        return health>0;
+        return health > 0;
     }
 
     public int getHealth() {
         return health;
     }
+
     public void setHealth(int health) {
         this.health = health;
     }
+
     public void testloss() {
-    if (!isAlive()) {
-        controller.EndScene("You are dead!");
+        if (!isAlive()) {
+            ScreenController.EndScene("You are dead!");
+        }
     }
+
+    public Optional<Item> getItem(String name) {
+        return Optional.ofNullable(stuff.get(name));
+    }
+
+    public void addItem(Item item) {
+        stuff.put(item.getName(), item);
+    }
+
+    public void removeItem(Item item) {
+        stuff.remove(item.getName());
     }
 }

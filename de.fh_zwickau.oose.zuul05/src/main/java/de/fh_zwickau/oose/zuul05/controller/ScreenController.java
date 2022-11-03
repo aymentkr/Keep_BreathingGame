@@ -15,14 +15,14 @@ public class ScreenController {
     @FXML
     Label text;
     @FXML
-    private Pane gameView;
+    private static Pane gameView;
 
 
     public void setText(String text) {
         this.text.setText(text);
     }
 
-    public void EndScene(String text) {
+    public static void EndScene(String text) {
         Stage thisStage = (Stage) gameView.getScene().getWindow();
         thisStage.hide();
         FXMLLoader loader = MainApplication.getLoader("EndScene.fxml");

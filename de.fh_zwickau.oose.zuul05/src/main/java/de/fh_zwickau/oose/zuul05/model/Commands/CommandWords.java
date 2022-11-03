@@ -23,8 +23,8 @@ public class CommandWords
         commands.put("schlafen", new SleepCommand());
         commands.put("zurueck", new BackCommand());
         commands.put("hilfe", new HelpCommand(this));
+        commands.put("benutze", new UseCommand());
         commands.put("ende", new QuitCommand());
-
 
     }
 
