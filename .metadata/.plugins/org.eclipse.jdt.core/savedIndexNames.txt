@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+C:\Users\laisg\eclipse\students-2022ws-05\.metadata\.plugins\org.eclipse.jdt.core
+3593918968.index
+1865797976.index
+331111621.index
+2553540283.index

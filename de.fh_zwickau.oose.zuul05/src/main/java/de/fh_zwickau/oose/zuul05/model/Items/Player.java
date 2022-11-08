@@ -76,14 +76,6 @@ public class Player {
             System.out.println("Das ist leider nicht möglich!");
     }
 
-    /**
-     * Is alive boolean.
-     *
-     * @return the boolean
-     */
-    public boolean isAlive() {
-        return health > 0;
-    }
 
     public int getHealth() {
         return health;
@@ -94,7 +86,7 @@ public class Player {
     }
 
     public void testloss() {
-        if (!isAlive()) {
+        if (health <= 0) {
             ScreenController.EndScene("You are dead!");
         }
     }

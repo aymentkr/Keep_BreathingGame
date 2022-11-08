@@ -1,5 +1,6 @@
 package de.fh_zwickau.oose.zuul05.model.Items;
 
+import de.fh_zwickau.oose.zuul05.model.Commands.GoCommand;
 import de.fh_zwickau.oose.zuul05.model.Game;
 
 /**
@@ -19,7 +20,8 @@ public class Key extends Item{
 
     @Override
     public void use(Player player) {
-        if (player.getCurrentRoom() == Game.Rooms.get("food")){
+        if (player.getCurrentRoom() == Game.Rooms.get("sleep")){
+            GoCommand goCommand= new GoCommand();
             if (player.getItem("schluessel").isPresent())player.setCurrentRoom(Game.Rooms.get("food"));
             else System.out.println("You need to get the key first!");
         }
