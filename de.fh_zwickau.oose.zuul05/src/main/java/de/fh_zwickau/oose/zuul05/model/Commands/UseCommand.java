@@ -12,7 +12,7 @@ public class UseCommand extends Command{
         if (hasSecondWord()) {
             Optional<Item> optionalItem = player.getItem(getSecondWord());
             if (optionalItem.isPresent())
-            optionalItem.ifPresent(item -> item.use(player));
+                optionalItem.ifPresent(item -> item.use(player));
             else System.out.println("Sie haben kein gültiges Item");
         }
         else System.out.println("Welches Item möchten Sie benutzen?");
