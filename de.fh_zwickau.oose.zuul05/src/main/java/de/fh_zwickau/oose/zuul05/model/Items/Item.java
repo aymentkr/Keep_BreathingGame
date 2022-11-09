@@ -9,16 +9,23 @@ public abstract class Item {
     private final String description;
     boolean available;
 
+
+
+
     /**
      * Constructor for objects of class Item
      *
      * @param name        the name
      * @param description the description
      */
+
     public Item(String name, String description) {
         this.name = name;
         this.description = description;
     }
+
+
+
 
     /**
      * This returns the description of an item.
@@ -28,8 +35,6 @@ public abstract class Item {
     public String getDescription() {
         return description;
     }
-
-
     /**
      * Gets item description.
      *
@@ -59,16 +64,7 @@ public abstract class Item {
     }
 
 
-    public boolean isAvailable() {
-        Player player=new Player();
-        if(player.getItem("schluessel").isPresent()){
-            return available=true;
-        }else{
-            System.out.println("Sie haben kein schluessel");
-        }
-        return available=false;
-
-    }
-
+    public abstract boolean isAvailable();
 
 }
+
