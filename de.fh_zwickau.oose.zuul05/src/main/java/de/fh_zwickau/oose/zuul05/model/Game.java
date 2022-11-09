@@ -111,7 +111,7 @@ public class Game {
         System.out.println("Willkommen beim Keep Breathing !");
         System.out.println("das Spiel des Überlebens und des Lebens neuer Abenteuer.");
         System.out.println("Gib 'hilfe' ein, um Hilfe zu bekommen.");
-        System.out.println();
+        System.out.println("dein lebensPunkte equal : "+player.getHealth());
         System.out.println(player.getCurrentRoom().getLongDescription());
     }
 

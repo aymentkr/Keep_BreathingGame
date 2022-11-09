@@ -17,7 +17,11 @@ public class SleepCommand extends Command {
         player.setHealth(player.getHealth()-75);
         player.testloss();
         player.nextDay();
-        if (player.getCurrentDay() == 10) {
+        System.out.println("guten morgen  dein Aktuel lebensPunkte equals : "+player.getHealth());
+        System.out.println("du bist am "+player.getCurrentDay()+". tag " );
+        System.out.println(7-player.getCurrentDay()+" Tage bleiben bis zur Ankunft des Rettungsschiffes " );
+
+        if (player.getCurrentDay() == 7) {
             ScreenController.EndScene("Woohoo! You Won!");
         }
         for (Item i : player.getStuff().values()) {
