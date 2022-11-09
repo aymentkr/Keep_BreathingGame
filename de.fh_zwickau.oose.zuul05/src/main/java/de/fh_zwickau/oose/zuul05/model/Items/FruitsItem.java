@@ -1,6 +1,7 @@
 package de.fh_zwickau.oose.zuul05.model.Items;
 
 public class FruitsItem extends Item{
+    Player player;
     /**
      * Constructor for objects of class Item
      *
@@ -13,6 +14,22 @@ public class FruitsItem extends Item{
 
     @Override
     public void use(Player player) {
-        player.setHealth(player.getHealth()+10);
+        if (isAvailable()) {
+            player.setHealth(player.getHealth() + 15);
+            player.removeItem(new FruitsItem("obst","fügt 15 punkt zum lebenspunkte"));
+
+        }
     }
+    @Override
+    public boolean isAvailable() {
+        //kann man das optional machen??
+        player=new Player();
+        if(player.getItem("obst").isPresent()){
+            return available=true;
+        }else{
+            System.out.println("Sie haben kein obst");
+        }
+        return available=false;
+
+}
 }
