@@ -23,12 +23,12 @@ import java.util.StringTokenizer;
  * @author  Michael Kolling and David J. Barnes
  */
 
-class Parser 
+class Parser
 {
 
     private final CommandWords commandwords;  // enthält alle erlaubten Kommandowörter
 
-    public Parser() 
+    public Parser()
     {
         commandwords = new CommandWords();
     }
@@ -41,14 +41,14 @@ class Parser
 
         System.out.print("> ");     // Zeichen ">" als Eingabeaufforderung ausgeben
 
-        BufferedReader reader = 
-            new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader reader =
+                new BufferedReader(new InputStreamReader(System.in));
         try {
             inputLine = reader.readLine();
         }
         catch(java.io.IOException exc) {
             System.out.println ("Fehler beim Lesen von: "
-                                + exc.getMessage());
+                    + exc.getMessage());
         }
 
         StringTokenizer tokenizer = new StringTokenizer(inputLine);
@@ -74,6 +74,6 @@ class Parser
      */
     public void showCommands()
     {
-    	commandwords.showAll();
+        commandwords.showAll();
     }
 }

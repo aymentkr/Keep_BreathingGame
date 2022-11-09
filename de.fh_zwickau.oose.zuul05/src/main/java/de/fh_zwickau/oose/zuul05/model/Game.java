@@ -1,22 +1,22 @@
 package de.fh_zwickau.oose.zuul05.model;
 /*
- * 
+ *
  * Dies ist die Hauptklasse des Spiels "Die Welt von Zuul"
- * 
+ *
  * "Die Welt von Zuul" ist ein einfaches textbasiertes Adventure-Spiel.
  * Der Spieler kann in der Welt herumlaufen.
  * Um das Spiel interessanter zu machen, sollten weitere Kommandos eingebaut werden!
- * 
+ *
  * Um das Spiel zu spielen, wird in der main-Methode eine Instanz dieser Klasse
  * erzeugt und die play-Methode aufgerufen.
- * 
+ *
  * Diese Klasse sorgt dafür, dass alle nötigen Objekte erzeugt und
  * initialisiert werden: Es werden alle Räume angelegt, der Parser
  * erzeugt und das Spiel gestartet.
- * 
+ *
  * In einer Endlosschleife wird dann dafür gesorgt, dass eingegebene Kommandos
  * analysiert und ausgeführt werden.
- * 
+ *
  * @author  Michael Kolling and David J. Barnes
  */
 import de.fh_zwickau.oose.zuul05.model.Commands.Command;
@@ -28,50 +28,44 @@ import java.util.HashMap;
 
 public class Game {
     private final Parser parser;
-    private final Player player;
-    private static int day;
-    public static final HashMap<String,Room> Rooms = new HashMap<String, Room>();
+    private static Player player;
+
 
     /**
      * Konstruktor der Game-Klasse, legt auch die Raumstruktur fest.
      */
-    public Game() 
+    public Game()
     {
         player = new Player();
         parser = new Parser();
         createRooms();
-        day = 1;
     }
-    
+
     /**
      * Die main-Methode instanziiert eine neue Game-Klasse und startet das Spiel.
      */
     public static void main(String[] args) {
-    	Game game = new Game();
-    	game.play();
+        Game game = new Game();
+        game.play();
     }
 
     /**
      * Erzeugt alle Räume und die Verbindungen zwischen ihnen.
      */
-    private void createRooms()
+    public static void createRooms()
     {
         Room schlaffraum, obstraum, essenraum, getraenkraum, schiffsdach;
-      
+
         // Räume erzeugen:
         schlaffraum = new Room("im Ruheraum");
         obstraum = new Room("Platz der Kategorie Obst");
         essenraum = new Room("Platz der Kategorie Essen");
+        essenraum.setGeschlossen(true);
         getraenkraum = new Room("Platz der Kategorie Getraenke");
         schiffsdach = new Room("in der Schiff Oberfläche");
 
-        Rooms.put("sleep",schlaffraum);
-        Rooms.put("fruit",obstraum);
-        Rooms.put("food",essenraum);
-        Rooms.put("drink",getraenkraum);
-        Rooms.put("roof",schiffsdach);
 
-        
+
         // Ausgänge aufbauen:
         schlaffraum.setExit("unten", essenraum);
         essenraum.setExit("links", getraenkraum);
@@ -93,17 +87,17 @@ public class Game {
      *  Die Hauptroutine des Spiels
      *  Läuft in einer Schleife, bis das Spiel beendet wird.
      */
-    public void play() 
-    {            
+    public void play()
+    {
         printWelcome();
 
         // Hier werden wiederholt Kommando-Eingaben gelesen und die
         // Kommandos ausgeführt, bis das Spiel beendet ist.
-                
+
         boolean finished = false;
         while(! finished) {
             Command command = parser.getCommand();
-                finished = command.execute(player);
+            finished = command.execute(player);
         }
         System.out.println("Danke fürs Spielen! Schönen Tag noch!");
     }
@@ -125,10 +119,4 @@ public class Game {
         return player;
     }
 
-    public static void nextDay(){
-        day++;
-    }
-    public static int getCurrentDay(){
-        return day;
-    }
 }

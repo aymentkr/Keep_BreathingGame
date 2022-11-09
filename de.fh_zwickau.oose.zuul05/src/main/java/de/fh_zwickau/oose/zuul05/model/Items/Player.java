@@ -15,15 +15,17 @@ import java.util.Stack;
 public class Player {
     private Room currentRoom;
     private final Stack<Room> connection;
-    private HashMap<String, Item> stuff;
+    private final HashMap<String, Item> stuff;
     private int health;
+    private int day;
 
     /**
      * Konstruktor für die Player-Klasse.
      */
     public Player() {
         currentRoom = null;
-        health = 75;
+        health = 100;
+        day = 1;
         connection = new Stack<Room>();
         stuff = new HashMap<>();
     }
@@ -56,7 +58,9 @@ public class Player {
         // Try to leave current room.
         Optional<Room> nextRoom = currentRoom.getExit(direction);
         if (nextRoom.isEmpty())
-            System.out.println("Da it keine Tür!");
+            System.out.println("Da ist keine Tür!");
+        else if (nextRoom.get().isGeschlossen())
+            System.out.println("Die Tür ist geschlossen.");
         else {
             connection.push(getCurrentRoom());
             setCurrentRoom(nextRoom.get());
@@ -95,11 +99,33 @@ public class Player {
         return Optional.ofNullable(stuff.get(name));
     }
 
+    public HashMap<String, Item> getStuff(){
+        return stuff;
+    }
+
     public void addItem(Item item) {
+        item.setAvailable(true);
         stuff.put(item.getName(), item);
     }
 
+
     public void removeItem(Item item) {
+        item.setAvailable(false);
         stuff.remove(item.getName());
+    }
+
+    public void removeAllItems() {
+        stuff.clear();
+    }
+
+    public void removeConnection(){
+        connection.clear();
+    }
+
+    public void nextDay(){
+        day++;
+    }
+    public int getCurrentDay(){
+        return day;
     }
 }

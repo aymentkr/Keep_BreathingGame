@@ -20,9 +20,9 @@ public class HelpCommand extends Command
     public HelpCommand(CommandWords words)
     {
         commandWords = words; // Dadurch weiß die HelpCommand-Klasse,
-                              // welche Kommandos es gibt.
+        // welche Kommandos es gibt.
     }
-    
+
     /**
      * Gib einen kurzen Hilfetext und alle gültigen Kommandoworte aus.
      * @return immer false.

@@ -4,7 +4,7 @@ import de.fh_zwickau.oose.zuul05.model.Items.Player;
 
 /**
  * Implementierung des Kommandos "ende"
- * 
+ *
  * @author Michael Kolling
  */
 public class QuitCommand extends Command
@@ -19,12 +19,12 @@ public class QuitCommand extends Command
 
     /**
      * "ende" wurde eingegeben.
-      * @return immer true (dadurch wird das Spiel beendet).
-     * 
+     * @return immer true (dadurch wird das Spiel beendet).
+     *
      */
     public boolean execute(Player player)
     {
-    	return true;
+        return true;
     }
 
     @Override

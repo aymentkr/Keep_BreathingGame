@@ -15,6 +15,7 @@ import java.util.Set;
 public class Room
 {
     private final String description;
+    private boolean geschlossen = false;
     /**
      * Diese HashMap speichert die Ausgänge des Raumes.
      * Der Schlüssel ist die Bewegungsrichtung, der Eintrag dazu der bei Bewegung in diese
@@ -69,7 +70,7 @@ public class Room
     {
         return "Deine Position: " + description + ".\n" + getExitString();
     }
-    
+
     /**
      * Gib einen String zurück, der die Ausgänge des Raumes beschreibt.
      * Beispiel:
@@ -92,6 +93,14 @@ public class Room
     public Optional<Room> getExit(String direction) {
         //Optional.ofNullable - allows passed parameter to be null
         return Optional.ofNullable(exits.get(direction));
+    }
+
+    public boolean isGeschlossen() {
+        return geschlossen;
+    }
+
+    public void setGeschlossen(boolean geschlossen) {
+        this.geschlossen = geschlossen;
     }
 }
 

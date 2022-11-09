@@ -3,15 +3,15 @@ package de.fh_zwickau.oose.zuul05.model.Commands;
 import de.fh_zwickau.oose.zuul05.model.Items.Player;
 
 /**
- * 
+ *
  * Diese Klasse ist eine abstrakte Oberklasse für alle Kommandoklassen des Spiels.
  * Jedes Kommando, das der Spieler eingeben kann, wird als Unterklasse hiervon implementiert.
- * 
+ *
  * Objekte der Klasse Command können ein optionales Objektwort (Attribut secondWord) enthalten,
  * wenn bei der Eingabe in der Kommandozeile ein zweites Wort eingegeben wurde.
  * Besteht das Kommando aus nur einem Wort, ist das Objektwort <null>.
- * 
- * 
+ *
+ *
  * @author  Michael Kolling and David J. Barnes
  */
 
@@ -55,7 +55,7 @@ public abstract class Command
     /**
      * Führe dss Kommando aus. Liefert als Ergebnis einen booleschen Wert, der aussagt,
      * ob das Spiel beendet werden soll.
-     * 
+     *
      * @return True, wenn das Spiel beendet werden soll, andernfalls false.
      */
     public abstract boolean execute(Player player);

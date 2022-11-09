@@ -4,6 +4,8 @@ import de.fh_zwickau.oose.zuul05.model.Commands.Command;
 import de.fh_zwickau.oose.zuul05.model.Commands.GoCommand;
 import de.fh_zwickau.oose.zuul05.model.Game;
 
+import java.util.Optional;
+
 /**
  * The type Key.
  */
@@ -20,27 +22,19 @@ public class Key extends Item {
     }
 
     @Override
-    public boolean isAvailable() {
-        //kann man das optional machen??
-        Player player = new Player();
-        if (player.getItem("schluessel").isPresent()) {
-            return available = true;
-        } else {
-            System.out.println("Sie haben kein schluessel");
-        }
-        return available = false;
-
-    }
-
-    @Override
     public void use(Player player) {
+        Optional<Room> roomOptional = player.getCurrentRoom().getExit("essenraum");
+        if (roomOptional.isPresent()) {
+            roomOptional.get().setGeschlossen(false);
+            System.out.println("Der Raum ist jetzt aufgeschlossen");
+        }
+
+        /*
         GoCommand goCommand = new GoCommand();
-        if (player.getCurrentRoom() == Game.Rooms.get("sleep")) {
-            if (goCommand.getSecondWord().equals("unten")) {
-                if (isAvailable()) {
-                    //  goCommand.execute(player);
-                    player.setCurrentRoom(Game.Rooms.get("food"));
-                    player.removeItem(new Key("schluessel", "oeffnet essensRaum"));
+        if (isAvailable()) {
+            Game.Rooms.get("food").setGeschlossen(false);
+            goCommand.execute(player);
+            player.removeItem(this);
                 } else System.out.println("You need to get the key first!");
             } else if (player.getCurrentRoom() == Game.Rooms.get("drink")) {
                 if (goCommand.getSecondWord().equals("recht")) {
@@ -50,7 +44,8 @@ public class Key extends Item {
                         player.removeItem(new Key("schluessel", "oeffnet essensRaum"));
                     } else System.out.println("You need to get the key first!");
                 }
-            }
         }
+
+        */
     }
 }

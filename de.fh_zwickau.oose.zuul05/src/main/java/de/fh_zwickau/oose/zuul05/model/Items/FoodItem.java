@@ -1,9 +1,12 @@
 package de.fh_zwickau.oose.zuul05.model.Items;
 
-import java.util.HashMap;
-
+/**
+ * The type Food item.
+ */
 public class FoodItem extends Item {
 
+
+    public final int lebenspunkt = 55;
 
     /**
      * Constructor for objects of class Item
@@ -19,22 +22,9 @@ public class FoodItem extends Item {
     @Override
     public void use(Player player) {
         if (isAvailable()) {
-            player.setHealth(player.getHealth() + 55);
-            player.removeItem(new FoodItem("food", "fügt 55 punkt zum lebenspunkte"));
+            player.setHealth(player.getHealth() + lebenspunkt);
+            setAvailable(false);
         }
     }
 
-    @Override
-    public boolean isAvailable() {
-
-        //kann man das optional machen??
-        Player player = new Player();
-        if (player.getItem("food").isPresent()) {
-            return available = true;
-        } else {
-            System.out.println("Sie haben kein food");
-        }
-        return available = false;
-
-    }
 }

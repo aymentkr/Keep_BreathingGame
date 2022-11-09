@@ -7,9 +7,7 @@ public abstract class Item {
     // instance variables
     private final String name;
     private final String description;
-    boolean available;
-
-
+    private boolean available = true;
 
 
     /**
@@ -18,13 +16,10 @@ public abstract class Item {
      * @param name        the name
      * @param description the description
      */
-
     public Item(String name, String description) {
         this.name = name;
         this.description = description;
     }
-
-
 
 
     /**
@@ -35,6 +30,7 @@ public abstract class Item {
     public String getDescription() {
         return description;
     }
+
     /**
      * Gets item description.
      *
@@ -63,8 +59,18 @@ public abstract class Item {
         return this.name;
     }
 
+    public void setAvailable(boolean available) {
+        this.available = available;
+    }
 
-    public abstract boolean isAvailable();
+    /**
+     * Is available boolean.
+     *
+     * @return the boolean
+     */
+    public boolean isAvailable(){
+        return available;
+    }
 
 }
 
