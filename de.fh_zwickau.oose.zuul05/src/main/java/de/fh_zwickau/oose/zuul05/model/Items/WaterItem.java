@@ -13,6 +13,20 @@ public class WaterItem extends Item{
 
     @Override
     public void use(Player player) {
-        player.setHealth(player.getHealth()+15);
+        if (isAvailable()) {
+            player.setHealth(player.getHealth() + 10);
+            player.removeItem(new WaterItem("bottle","fügt 10 punkt zum lebenspunkte"));
+
+        }
+    }
+    @Override
+    public boolean isAvailable() {
+        Player player=new Player();
+        if(player.getItem("bottle").isPresent()){
+            return available=true;
+        }else{
+            System.out.println("Sie haben kein wasser flasche");
+        }
+        return available=false;
     }
 }

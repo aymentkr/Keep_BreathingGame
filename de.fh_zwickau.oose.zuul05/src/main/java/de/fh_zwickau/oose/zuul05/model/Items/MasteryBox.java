@@ -25,4 +25,9 @@ public class MasteryBox extends Item {
     public void use(Player player) {
         player.addItem(schluessel);
     }
+
+    @Override
+    public boolean isAvailable() {
+        return false;
+    }
 }
