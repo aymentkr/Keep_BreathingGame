@@ -19,7 +19,6 @@ public class CommandWords
     {
         commands = new HashMap<String, Command>();
         commands.put("gehe", new GoCommand());
-        commands.put("essen", new EatCommand());
         commands.put("schlafen", new SleepCommand());
         commands.put("zurueck", new BackCommand());
         commands.put("hilfe", new HelpCommand(this));
@@ -34,15 +33,15 @@ public class CommandWords
      */
     public Command get(String word)
     {
-    	// Wenn word kein gültiges Kommandowort ist, wird in der HashMap commands nichts gefunden.
-    	// In diesem Falle liefere ein NullCommand-Objekt zurück.
+        // Wenn word kein gültiges Kommandowort ist, wird in der HashMap commands nichts gefunden.
+        // In diesem Falle liefere ein NullCommand-Objekt zurück.
         if(commands.get(word) == null) {
-        	return new NullCommand();
+            return new NullCommand();
         }
         // Andernfalls liefere das passende Command-Objekt zurück.
         else {
             return commands.get(word);
-   	
+
         }
     }
 
