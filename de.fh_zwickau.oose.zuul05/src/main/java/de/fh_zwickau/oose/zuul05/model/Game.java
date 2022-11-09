@@ -77,6 +77,7 @@ public class Game {
         obstraum.setExit("oben",schiffsdach);
 
         schiffsdach.setExit("recht",schlaffraum);
+        schiffsdach.setExit("unten",obstraum);
 
         // Der Spieler startet das Spiel draußen vor der Hochschule:
         player.setCurrentRoom(schlaffraum);
