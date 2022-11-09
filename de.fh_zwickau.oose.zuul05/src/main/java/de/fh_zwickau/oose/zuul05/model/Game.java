@@ -73,7 +73,7 @@ public class Game {
         schlaffraum.setExit("links",schiffsdach);
         essenraum.setExit("oben", schlaffraum);
         getraenkraum.setExit("recht", essenraum);
-        obstraum.setExit("recht",obstraum);
+        obstraum.setExit("recht",getraenkraum);
         obstraum.setExit("oben",schiffsdach);
 
         schiffsdach.setExit("recht",schlaffraum);

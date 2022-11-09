@@ -60,7 +60,7 @@ public class Player {
         if (nextRoom.isEmpty())
             System.out.println("Da ist keine Tür!");
         else if (nextRoom.get().isGeschlossen())
-            System.out.println("Die Tür ist geschlossen.");
+            System.out.println("Die Tür ist geschlossen du müsst den Schluessel von der schiff Oberfläche bringen.");
         else {
             connection.push(getCurrentRoom());
             setCurrentRoom(nextRoom.get());
