@@ -20,7 +20,7 @@ public class SleepCommand extends Command {
         System.out.println("guten morgen  dein Aktuel lebensPunkte equals : "+player.getHealth());
         System.out.println("du bist am "+player.getCurrentDay()+". tag " );
         System.out.println(7-player.getCurrentDay()+" Tage bleiben bis zur Ankunft des Rettungsschiffes " );
-
+        System.out.println(player.getCurrentRoom().getLongDescription());
         if (player.getCurrentDay() == 7) {
             ScreenController.EndScene("Woohoo! You Won!");
         }
