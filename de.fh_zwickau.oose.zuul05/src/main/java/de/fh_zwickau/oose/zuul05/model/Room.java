@@ -95,12 +95,21 @@ public class Room
         return Optional.ofNullable(exits.get(direction));
     }
 
+    /**
+     * Is geschlossen boolean.
+     *
+     * @return the boolean
+     */
     public boolean isGeschlossen() {
         return geschlossen;
     }
 
+    /**
+     * Sets geschlossen.
+     *
+     * @param geschlossen the geschlossen
+     */
     public void setGeschlossen(boolean geschlossen) {
         this.geschlossen = geschlossen;
     }
 }
-

@@ -10,15 +10,14 @@ import de.fh_zwickau.oose.zuul05.model.Player;
  * The type Sleep command.
  */
 public class SleepCommand extends Command {
+
+    InfoCommand info = new InfoCommand();
     @Override
     public boolean execute(Player player) {
         player.setHealth(player.getHealth()-75);
         player.testloss();
         player.nextDay();
-        System.out.println("guten morgen  dein Aktuel lebensPunkte equals : "+player.getHealth());
-        System.out.println("du bist am "+player.getCurrentDay()+". tag " );
-        System.out.println(7-player.getCurrentDay()+" Tage bleiben bis zur Ankunft des Rettungsschiffes " );
-        System.out.println(player.getCurrentRoom().getLongDescription());
+        info.execute(player);
         if (player.getCurrentDay() == 7) {
             ScreenController.EndScene("Woohoo! You Won!");
         }

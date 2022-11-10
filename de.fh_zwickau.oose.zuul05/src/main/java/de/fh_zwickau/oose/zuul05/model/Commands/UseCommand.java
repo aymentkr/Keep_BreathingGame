@@ -5,6 +5,9 @@ import de.fh_zwickau.oose.zuul05.model.Player;
 
 import java.util.Optional;
 
+/**
+ * The type Use command.
+ */
 public class UseCommand extends Command{
 
     @Override

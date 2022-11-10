@@ -2,6 +2,7 @@ package de.fh_zwickau.oose.zuul05.model;
 
 import de.fh_zwickau.oose.zuul05.controller.ScreenController;
 import de.fh_zwickau.oose.zuul05.model.Items.Item;
+import de.fh_zwickau.oose.zuul05.model.Items.Key;
 import de.fh_zwickau.oose.zuul05.utils.PrintUtil;
 
 import java.util.HashMap;
@@ -16,7 +17,7 @@ import java.util.Stack;
  */
 public class Player {
     private Room currentRoom;
-    private final Stack<Room> roomHistory = new Stack<Room>();
+    private final Stack<Room> roomHistory = new Stack<>();
     private final HashMap<String, Item> stuff;
     private int health;
     private int day;
@@ -29,6 +30,7 @@ public class Player {
         health = 100;
         day = 1;
         stuff = new HashMap<>();
+        // addItem(new Key("schluessel", "Den Schlüssel der Tür zum Essensraum"));
     }
 
     /**
@@ -61,7 +63,7 @@ public class Player {
         if (nextRoom.isEmpty())
             PrintUtil.showMessage("Da ist keine Tür!");
         else if (nextRoom.get().isGeschlossen())
-            PrintUtil.showMessage("Die Tür ist geschlossen, Du müsst den Schluessel von der schiff Oberfläche bringen.");
+            PrintUtil.showMessage("Die Tür ist geschlossen! Du brauchst noch den Schluessel von der schiff Oberfläche, um hier hineinzukommen.");
         else {
             roomHistory.push(getCurrentRoom());
             setCurrentRoom(nextRoom.get());
@@ -82,51 +84,110 @@ public class Player {
     }
 
 
+    /**
+     * Gets health.
+     *
+     * @return the health
+     */
     public int getHealth() {
         return health;
     }
 
+    /**
+     * Sets health.
+     *
+     * @param health the health
+     */
     public void setHealth(int health) {
         this.health = health;
     }
 
+    /**
+     * Testloss.
+     */
     public void testloss() {
         if (health <= 0) {
             ScreenController.EndScene("You are dead!");
         }
     }
 
+    /**
+     * Gets item.
+     *
+     * @param name the name
+     * @return the item
+     */
     public Optional<Item> getItem(String name) {
         return Optional.ofNullable(stuff.get(name));
     }
 
+    /**
+     * Get stuff hash map.
+     *
+     * @return the hash map
+     */
     public HashMap<String, Item> getStuff(){
         return stuff;
     }
 
+    /**
+     * Add item.
+     *
+     * @param item the item
+     */
     public void addItem(Item item) {
         item.setAvailable(true);
         stuff.put(item.getName(), item);
     }
 
 
+    /**
+     * Remove item.
+     *
+     * @param item the item
+     */
     public void removeItem(Item item) {
         item.setAvailable(false);
         stuff.remove(item.getName());
     }
 
+    /**
+     * Remove all items.
+     */
     public void removeAllItems() {
         stuff.clear();
     }
 
+    /**
+     * Remove connection.
+     */
     public void removeConnection(){
         roomHistory.clear();
     }
 
+    /**
+     * Next day.
+     */
     public void nextDay(){
         day++;
     }
+
+    /**
+     * Get current day int.
+     *
+     * @return the int
+     */
     public int getCurrentDay(){
         return day;
+    }
+
+    /**
+     * Gets room in exit direction.
+     *
+     * @param direction the direction
+     * @return the room in exit direction
+     */
+    public Optional<Room> getRoomInExitDirection(String direction) {
+        return currentRoom.getExit(direction);
     }
 }

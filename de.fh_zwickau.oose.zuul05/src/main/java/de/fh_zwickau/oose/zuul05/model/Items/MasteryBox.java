@@ -26,6 +26,7 @@ public class MasteryBox extends Item {
     @Override
     public void use(Player player) {
         player.addItem(schluessel);
+        setAvailable(false);
     }
 
     @Override

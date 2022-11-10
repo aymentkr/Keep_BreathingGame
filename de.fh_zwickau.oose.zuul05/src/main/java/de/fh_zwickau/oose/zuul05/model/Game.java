@@ -22,8 +22,6 @@ package de.fh_zwickau.oose.zuul05.model;
 import de.fh_zwickau.oose.zuul05.model.Commands.Command;
 import de.fh_zwickau.oose.zuul05.utils.PrintUtil;
 
-import java.io.UnsupportedEncodingException;
-
 public class Game {
     private final Parser parser;
     private static Player player;
