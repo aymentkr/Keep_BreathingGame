@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="de.fh_zwickau.oose.zuul05.model.commands.BackCommandTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-11-10T22:22:31" hostname="LAIS" time="0.017">
+<testsuite name="de.fh_zwickau.oose.zuul05.model.commands.BackCommandTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-11-10T22:25:48" hostname="LAIS" time="0.021">
   <properties/>
-  <testcase name="testBackCommandWithPrecedentRoom()" classname="de.fh_zwickau.oose.zuul05.model.commands.BackCommandTest" time="0.017"/>
+  <testcase name="testBackCommandGetDescription()" classname="de.fh_zwickau.oose.zuul05.model.commands.BackCommandTest" time="0.01"/>
+  <testcase name="testBackCommandWithPrecedentRoom()" classname="de.fh_zwickau.oose.zuul05.model.commands.BackCommandTest" time="0.007"/>
+  <testcase name="testBackCommandWithOutPrecedentRoom()" classname="de.fh_zwickau.oose.zuul05.model.commands.BackCommandTest" time="0.001"/>
   <system-out><![CDATA[Deine Position: im Ruheraum.
 Ausgaunge: unten links
 Deine Position: in der Schiff Oberfläche.
 Ausgaunge: recht
+Das ist leider nicht möglich!
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
