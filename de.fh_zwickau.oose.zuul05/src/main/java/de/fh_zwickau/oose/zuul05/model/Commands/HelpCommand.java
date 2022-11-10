@@ -1,6 +1,7 @@
 package de.fh_zwickau.oose.zuul05.model.Commands;
 
-import de.fh_zwickau.oose.zuul05.model.Items.Player;
+import de.fh_zwickau.oose.zuul05.model.Player;
+import de.fh_zwickau.oose.zuul05.utils.PrintUtil;
 
 
 /**
@@ -30,9 +31,9 @@ public class HelpCommand extends Command
     public boolean execute(Player player) {
         // make sure the split afterwards has at least size one
         if (hasSecondWord()) {
-            System.out.println(commandWords.get(getSecondWord()).getDescription());
+            PrintUtil.showMessage(commandWords.get(getSecondWord()).getDescription());
         } else {
-            System.out.println("""
+            PrintUtil.showMessage("""
                 Du bist einsam, verloren und hungrig
                 In einem verlorenen Schiff
                 Alle um dich herum sind gestorben

@@ -1,7 +1,7 @@
 package de.fh_zwickau.oose.zuul05.model.Commands;
 
 import de.fh_zwickau.oose.zuul05.model.Items.Item;
-import de.fh_zwickau.oose.zuul05.model.Items.Player;
+import de.fh_zwickau.oose.zuul05.model.Player;
 
 import java.util.Optional;
 

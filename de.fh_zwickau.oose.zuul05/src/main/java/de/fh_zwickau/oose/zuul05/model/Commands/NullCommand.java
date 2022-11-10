@@ -1,6 +1,7 @@
 package de.fh_zwickau.oose.zuul05.model.Commands;
 
-import de.fh_zwickau.oose.zuul05.model.Items.Player;
+import de.fh_zwickau.oose.zuul05.model.Player;
+import de.fh_zwickau.oose.zuul05.utils.PrintUtil;
 
 
 /**
@@ -27,12 +28,12 @@ public class NullCommand extends Command
      */
     public boolean execute(Player player)
     {
-        System.out.println("Ich verstehe nicht, was Du meinst... Gib \"hilfe\" ein, um eine Liste der gültigen Kommandos zu sehen.");
+        PrintUtil.showMessage("Ich verstehe nicht, was Du meinst... Gib \"hilfe\" ein, um eine Liste der gültigen Kommandos zu sehen.");
         return false;
     }
 
     @Override
     public String getDescription() {
-        return null;
+        return "Das ist kein gültiges Kommando!";
     }
 }

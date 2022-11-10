@@ -20,11 +20,9 @@ package de.fh_zwickau.oose.zuul05.model;
  * @author  Michael Kolling and David J. Barnes
  */
 import de.fh_zwickau.oose.zuul05.model.Commands.Command;
-import de.fh_zwickau.oose.zuul05.model.Items.Player;
-import de.fh_zwickau.oose.zuul05.model.Items.Room;
+import de.fh_zwickau.oose.zuul05.utils.PrintUtil;
 
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.io.UnsupportedEncodingException;
 
 public class Game {
     private final Parser parser;
@@ -100,17 +98,16 @@ public class Game {
             Command command = parser.getCommand();
             finished = command.execute(player);
         }
-        System.out.println("Danke fürs Spielen! Schönen Tag noch!");
+        PrintUtil.showMessage("Danke fürs Spielen! Schönen Tag noch!");
     }
 
     /**
      * Gibt die Willkommensnachricht für den Spieler aus.
      */
-    private void printWelcome()
-    {
+    private void printWelcome() {
         System.out.println();
         System.out.println("Willkommen beim Keep Breathing !");
-        System.out.println("das Spiel des Überlebens und des Lebens neuer Abenteuer.");
+        PrintUtil.showMessage("das Spiel des Überlebens und des Lebens neuer Abenteuer.");
         System.out.println("Gib 'hilfe' ein, um Hilfe zu bekommen.");
         System.out.println("dein lebensPunkte equal : "+player.getHealth());
         System.out.println(player.getCurrentRoom().getLongDescription());

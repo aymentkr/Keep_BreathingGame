@@ -1,4 +1,6 @@
 package de.fh_zwickau.oose.zuul05.model.Commands;
+import de.fh_zwickau.oose.zuul05.utils.PrintUtil;
+
 import java.util.HashMap;
 
 /**
@@ -54,7 +56,7 @@ public class CommandWords
     public void showAll()
     {
         for (String s : commands.keySet()) {
-            System.out.print(s + "  ");
+            PrintUtil.showMessage(s + "  ");
         }
         System.out.println();
     }

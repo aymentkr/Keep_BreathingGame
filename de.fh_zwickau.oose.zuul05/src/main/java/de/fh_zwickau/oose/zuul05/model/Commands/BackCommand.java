@@ -1,6 +1,6 @@
 package de.fh_zwickau.oose.zuul05.model.Commands;
 
-import de.fh_zwickau.oose.zuul05.model.Items.Player;
+import de.fh_zwickau.oose.zuul05.model.Player;
 
 /**
  * The type Back command.
@@ -8,7 +8,7 @@ import de.fh_zwickau.oose.zuul05.model.Items.Player;
 public class BackCommand extends Command {
     @Override
     public boolean execute(Player player) {
-        player.returnback();
+        player.back();
         return false;
     }
 

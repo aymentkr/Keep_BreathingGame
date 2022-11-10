@@ -1,5 +1,7 @@
 package de.fh_zwickau.oose.zuul05.model.Items;
 
+import de.fh_zwickau.oose.zuul05.model.Player;
+
 /**
  * The type Mastery box.
  */

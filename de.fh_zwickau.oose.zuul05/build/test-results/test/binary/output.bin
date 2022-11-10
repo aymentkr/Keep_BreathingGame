@@ -1,75 +1,48 @@
-+Deine Position: Platz der Kategorie Essen.
-Ausgänge: links oben
-/Deine Position: Platz der Kategorie Getraenke.
-Ausgänge: recht links
-+Deine Position: Platz der Kategorie Essen.
-Ausgänge: links oben
-+Deine Position: Platz der Kategorie Essen.
-Ausgänge: links oben
-/Deine Position: Platz der Kategorie Getraenke.
-Ausgänge: recht links
-*Deine Position: Platz der Kategorie Obst.
-Ausgänge: recht oben
-/Deine Position: Platz der Kategorie Getraenke.
-Ausgänge: recht links
-+Deine Position: Platz der Kategorie Essen.
-Ausgänge: links oben
-/Deine Position: Platz der Kategorie Getraenke.
-Ausgänge: recht links
-*Deine Position: Platz der Kategorie Obst.
-Ausgänge: recht oben
+XDie Tür ist geschlossen, Du müsst den Schluessel von der schiff Oberfläche bringen.
++Deine Position: in der Schiff Oberfläche.
+Ausgaunge: unten recht
+XDie Tür ist geschlossen, Du müsst den Schluessel von der schiff Oberfläche bringen.
++Deine Position: in der Schiff Oberfläche.
+Ausgaunge: unten recht
+Da ist keine Tür!
+XDie Tür ist geschlossen, Du müsst den Schluessel von der schiff Oberfläche bringen.
 +Deine Position: in der Schiff Oberfläche.
-Ausgänge: recht
+Ausgaunge: unten recht
+Da ist keine Tür!
+Da ist keine Tür!
 Deine Position: im Ruheraum.
-Ausgänge: unten links
+Ausgaunge: unten links
 +Deine Position: in der Schiff Oberfläche.
-Ausgänge: recht
-+Deine Position: Platz der Kategorie Essen.
-Ausgänge: links oben
-Deine Position: im Ruheraum.
-Ausgänge: unten links
-+Deine Position: Platz der Kategorie Essen.
-Ausgänge: links oben
-/Deine Position: Platz der Kategorie Getraenke.
-Ausgänge: recht links
-*Deine Position: Platz der Kategorie Obst.
-Ausgänge: recht oben
+Ausgaunge: unten recht
+XDie Tür ist geschlossen, Du müsst den Schluessel von der schiff Oberfläche bringen.
+XDie Tür ist geschlossen, Du müsst den Schluessel von der schiff Oberfläche bringen.
 +Deine Position: in der Schiff Oberfläche.
-Ausgänge: recht
-*Deine Position: Platz der Kategorie Obst.
-Ausgänge: recht oben
-	+Deine Position: Platz der Kategorie Essen.
-	Ausgänge: links oben
-	/Deine Position: Platz der Kategorie Getraenke.
-	Ausgänge: recht links
-	*Deine Position: Platz der Kategorie Obst.
-	Ausgänge: recht oben
+Ausgaunge: unten recht
+Da ist keine Tür!
+Da ist keine Tür!
+Deine Position: im Ruheraum.
+Ausgaunge: unten links
+	XDie Tür ist geschlossen, Du müsst den Schluessel von der schiff Oberfläche bringen.
 	+Deine Position: in der Schiff Oberfläche.
-	Ausgänge: recht
+	Ausgaunge: unten recht
+	Da ist keine Tür!
+	Da ist keine Tür!
 	Deine Position: im Ruheraum.
-	Ausgänge: unten links
+	Ausgaunge: unten links
 	
-+Deine Position: Platz der Kategorie Essen.
-	
-Ausgänge: links oben
-	+Deine Position: Platz der Kategorie Essen.
-	Ausgänge: links oben
-	/Deine Position: Platz der Kategorie Getraenke.
-	Ausgänge: recht links
-	*Deine Position: Platz der Kategorie Obst.
-	Ausgänge: recht oben
+XDie Tür ist geschlossen, Du müsst den Schluessel von der schiff Oberfläche bringen.
+	XDie Tür ist geschlossen, Du müsst den Schluessel von der schiff Oberfläche bringen.
 	+Deine Position: in der Schiff Oberfläche.
-	Ausgänge: recht
-	+Deine Position: Platz der Kategorie Essen.
-	Ausgänge: links oben
-	/Deine Position: Platz der Kategorie Getraenke.
-	Ausgänge: recht links
-	*Deine Position: Platz der Kategorie Obst.
-	Ausgänge: recht oben
-	+Deine Position: Platz der Kategorie Essen.
-	Ausgänge: links oben
-	/Deine Position: Platz der Kategorie Getraenke.
-	Ausgänge: recht links
+	Ausgaunge: unten recht
+	Da ist keine Tür!
+	Da ist keine Tür!
+	XDie Tür ist geschlossen, Du müsst den Schluessel von der schiff Oberfläche bringen.
+	+Deine Position: in der Schiff Oberfläche.
+	Ausgaunge: unten recht
+	Da ist keine Tür!
+	XDie Tür ist geschlossen, Du müsst den Schluessel von der schiff Oberfläche bringen.
+	+Deine Position: in der Schiff Oberfläche.
+	Ausgaunge: unten recht
 das Spiel verlassen
 Beweg in einen anderen Raum
 LEs gibt viele Möglichkeiten, sich durch Tippen von Raum zu Raum zu bewegen
@@ -79,6 +52,6 @@
            - gehe oben
 
 ;Ruhe dich aus und mach dich bereit für den nächsten Tag
-Selbst füttern
+"Das ist kein gültiges Kommando!
  sehe alle möglichen Kommandos
 Gehe mal zurueck

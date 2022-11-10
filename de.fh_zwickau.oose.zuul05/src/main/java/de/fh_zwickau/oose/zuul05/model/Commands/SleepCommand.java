@@ -2,10 +2,8 @@ package de.fh_zwickau.oose.zuul05.model.Commands;
 
 import de.fh_zwickau.oose.zuul05.controller.ScreenController;
 import de.fh_zwickau.oose.zuul05.model.Game;
-import de.fh_zwickau.oose.zuul05.model.Items.FoodItem;
 import de.fh_zwickau.oose.zuul05.model.Items.Item;
-import de.fh_zwickau.oose.zuul05.model.Items.MasteryBox;
-import de.fh_zwickau.oose.zuul05.model.Items.Player;
+import de.fh_zwickau.oose.zuul05.model.Player;
 
 
 /**

@@ -1,6 +1,6 @@
 package de.fh_zwickau.oose.zuul05.model.Commands;
 
-import de.fh_zwickau.oose.zuul05.model.Items.Player;
+import de.fh_zwickau.oose.zuul05.model.Player;
 
 /**
  * Implementierung des Kommandos "gehe"

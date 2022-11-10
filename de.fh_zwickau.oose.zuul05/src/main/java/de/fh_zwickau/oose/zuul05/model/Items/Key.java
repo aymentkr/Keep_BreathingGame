@@ -1,8 +1,7 @@
 package de.fh_zwickau.oose.zuul05.model.Items;
 
-import de.fh_zwickau.oose.zuul05.model.Commands.Command;
-import de.fh_zwickau.oose.zuul05.model.Commands.GoCommand;
-import de.fh_zwickau.oose.zuul05.model.Game;
+import de.fh_zwickau.oose.zuul05.model.Player;
+import de.fh_zwickau.oose.zuul05.model.Room;
 
 import java.util.Optional;
 
