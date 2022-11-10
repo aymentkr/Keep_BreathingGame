@@ -19,12 +19,13 @@ public class CommandWords
      */
     public CommandWords()
     {
-        commands = new HashMap<String, Command>();
+        commands = new HashMap<>();
         commands.put("gehe", new GoCommand());
         commands.put("schlafen", new SleepCommand());
         commands.put("zurueck", new BackCommand());
-        commands.put("hilfe", new HelpCommand(this));
         commands.put("benutze", new UseCommand());
+        commands.put("info", new InfoCommand());
+        commands.put("hilfe", new HelpCommand(this));
         commands.put("ende", new QuitCommand());
 
     }

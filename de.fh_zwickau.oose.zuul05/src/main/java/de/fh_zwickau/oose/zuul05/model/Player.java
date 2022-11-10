@@ -2,6 +2,7 @@ package de.fh_zwickau.oose.zuul05.model;
 
 import de.fh_zwickau.oose.zuul05.controller.ScreenController;
 import de.fh_zwickau.oose.zuul05.model.Items.Item;
+import de.fh_zwickau.oose.zuul05.model.Items.Key;
 import de.fh_zwickau.oose.zuul05.utils.PrintUtil;
 
 import java.util.HashMap;
@@ -16,7 +17,7 @@ import java.util.Stack;
  */
 public class Player {
     private Room currentRoom;
-    private final Stack<Room> roomHistory = new Stack<Room>();
+    private final Stack<Room> roomHistory = new Stack<>();
     private final HashMap<String, Item> stuff;
     private int health;
     private int day;
@@ -61,7 +62,7 @@ public class Player {
         if (nextRoom.isEmpty())
             PrintUtil.showMessage("Da ist keine Tür!");
         else if (nextRoom.get().isGeschlossen())
-            PrintUtil.showMessage("Die Tür ist geschlossen, Du müsst den Schluessel von der schiff Oberfläche bringen.");
+            PrintUtil.showMessage("Die Tür ist geschlossen! Du brauchst noch den Schluessel von der schiff Oberfläche, um hier hineinzukommen.");
         else {
             roomHistory.push(getCurrentRoom());
             setCurrentRoom(nextRoom.get());
