@@ -1,6 +1,8 @@
 package de.fh_zwickau.oose.zuul05.model.commands;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -9,18 +11,44 @@ import de.fh_zwickau.oose.zuul05.model.Commands.GoCommand;
 
 class GoCommandTest {
 
-    public Game game;
-    public GoCommand goCommand;
+    public static Player player;
+    public static GoCommand goCommand;
+    public static Room schlaffraum;
+    public static Room essenraum;
+    public static Room schiffsdach;
+    public static Room getraenkraum;
 
+    @BeforeAll
+    static void  setStruktur(){
+        //creat rooms
+        schlaffraum = new Room("im Ruheraum");
+        essenraum = new Room("Platz der Kategorie Essen");
+        essenraum.setGeschlossen(true);
+        schiffsdach = new Room("in der Schiff Oberfläche");
+        //add exits for rooms
+        schlaffraum.setExit("unten", essenraum);
+        schlaffraum.setExit("links", schiffsdach);
+
+        essenraum.setExit("links", getraenkraum);
+        essenraum.setExit("oben", schlaffraum);
+
+        schiffsdach.setExit("recht",schlaffraum);
+
+
+    }
     @BeforeEach
     void init() {
-        game = new Game();
-        this.goCommand = new GoCommand();
+
+        goCommand = new GoCommand();
+        player=new Player();
+
+
 
     }
     @Test
     void testStartRoom() {
-        assertEquals("im Ruheraum", game.getPlayer().getCurrentRoom().getShortDescription());
+        player.setCurrentRoom(schlaffraum);
+        assertEquals("im Ruheraum", player.getCurrentRoom().getShortDescription());
 
     }
     @Test
@@ -38,67 +66,30 @@ class GoCommandTest {
 
     @Test
     void testGoCommandSetSecondWordAndEcecute() {
-        goCommand.setSecondWord("unten");
-        goCommand.execute(game.getPlayer());
+        player.setCurrentRoom(schiffsdach);
 
-        assertEquals("Platz der Kategorie Essen", game.getPlayer().getCurrentRoom().getShortDescription());
-
-    }
-    @Test
-    void testGoCommandFromEssenraumToGetraenkraum() {
-        goCommand.setSecondWord("unten");
-        goCommand.execute(game.getPlayer());
-        goCommand.setSecondWord("links");
-        goCommand.execute(game.getPlayer());
-
-        assertEquals("Platz der Kategorie Getraenke", game.getPlayer().getCurrentRoom().getShortDescription());
-
-    }
-    @Test
-    void testGoCommandFromGetraenkraumToObstraum() {
-        goCommand.setSecondWord("unten");
-        goCommand.execute(game.getPlayer());
-        goCommand.setSecondWord("links");
-        goCommand.execute(game.getPlayer());
-        goCommand.setSecondWord("links");
-        goCommand.execute(game.getPlayer());
-
-
-        assertEquals("Platz der Kategorie Obst", game.getPlayer().getCurrentRoom().getShortDescription());
-
-    }
-    @Test
-    void testGoCommandFromObstraumToSchiffsdach() {
-        goCommand.setSecondWord("unten");
-        goCommand.execute(game.getPlayer());
-        goCommand.setSecondWord("links");
-        goCommand.execute(game.getPlayer());
-        goCommand.setSecondWord("links");
-        goCommand.execute(game.getPlayer());
-        goCommand.setSecondWord("oben");
-        goCommand.execute(game.getPlayer());
-
-
-        assertEquals("in der Schiff Oberfläche", game.getPlayer().getCurrentRoom().getShortDescription());
-
-    }
-    @Test
-    void testGoCommandFromschiffsdachToschlaffraum() {
-        goCommand.setSecondWord("unten");
-        goCommand.execute(game.getPlayer());
-        goCommand.setSecondWord("links");
-        goCommand.execute(game.getPlayer());
-        goCommand.setSecondWord("links");
-        goCommand.execute(game.getPlayer());
-        goCommand.setSecondWord("oben");
-        goCommand.execute(game.getPlayer());
         goCommand.setSecondWord("recht");
-        goCommand.execute(game.getPlayer());
+        goCommand.execute(player);
 
-        assertEquals("im Ruheraum", game.getPlayer().getCurrentRoom().getShortDescription());
+        assertEquals("im Ruheraum", player.getCurrentRoom().getShortDescription());
 
     }
+    @Test
+    void testIfEssenRaumLockedIs() {
+        player.setCurrentRoom(schlaffraum);
 
+        goCommand.setSecondWord("unten");
+        goCommand.execute(player);
+
+        assertEquals("im Ruheraum",player.getCurrentRoom().getShortDescription());
+        assertTrue(essenraum.isGeschlossen());
+
+        goCommand.setSecondWord("links");
+        goCommand.execute(player);
+
+        assertEquals("in der Schiff Oberfläche", player.getCurrentRoom().getShortDescription());
+
+    }
 
 
 }
