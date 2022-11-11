@@ -21,12 +21,9 @@ public class MasteryBox extends Item {
 
     @Override
     public void use(Player player) {
-        player.addItem(schluessel);
-        setAvailable(false);
+        if (player.getItem("schluessel").isPresent())
+            System.out.println("Sie haben schon die schluessel");
+        else player.addItem(schluessel);
     }
 
-    @Override
-    public boolean isAvailable() {
-        return false;
-    }
 }

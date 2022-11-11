@@ -114,6 +114,7 @@ public class Player {
     public void testloss() {
         if (health <= 0) {
             PrintUtil.showMessage("You are dead!");
+            System.exit(0);
             //ScreenController.EndScene("You are dead!");
         }
     }
