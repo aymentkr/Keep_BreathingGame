@@ -2,12 +2,9 @@ package de.fh_zwickau.oose.zuul05.model;
 
 import de.fh_zwickau.oose.zuul05.controller.ScreenController;
 import de.fh_zwickau.oose.zuul05.model.Items.Item;
-import de.fh_zwickau.oose.zuul05.model.Items.Key;
 import de.fh_zwickau.oose.zuul05.utils.PrintUtil;
 
-import java.util.HashMap;
-import java.util.Optional;
-import java.util.Stack;
+import java.util.*;
 
 /**
  * Diese Klasse steht für einen Spieler im Spiel.
@@ -18,7 +15,7 @@ import java.util.Stack;
 public class Player {
     private Room currentRoom;
     private final Stack<Room> roomHistory = new Stack<>();
-    private final HashMap<String, Item> stuff;
+    private final ArrayList<Item> stuff;
     private int health;
     private int day;
 
@@ -29,8 +26,7 @@ public class Player {
         currentRoom = null;
         health = 100;
         day = 1;
-        stuff = new HashMap<>();
-        // addItem(new Key("schluessel", "Den Schlüssel der Tür zum Essensraum"));
+        stuff = new ArrayList<>();
     }
 
     /**
@@ -66,9 +62,19 @@ public class Player {
             PrintUtil.showMessage("Die Tür ist geschlossen! Du brauchst noch den Schluessel von der schiff Oberfläche, um hier hineinzukommen.");
         else {
             roomHistory.push(getCurrentRoom());
+            deleteItemsFromRoom(getCurrentRoom());
             setCurrentRoom(nextRoom.get());
+            addItemsFromRoom(getCurrentRoom());
             PrintUtil.showMessage(nextRoom.get().getLongDescription());
         }
+    }
+
+    private void addItemsFromRoom(Room room) {
+        stuff.addAll(room.getItems());
+    }
+
+    private void deleteItemsFromRoom(Room room) {
+        stuff.removeAll(room.getItems());
     }
 
     /**
@@ -107,7 +113,8 @@ public class Player {
      */
     public void testloss() {
         if (health <= 0) {
-            ScreenController.EndScene("You are dead!");
+            PrintUtil.showMessage("You are dead!");
+            //ScreenController.EndScene("You are dead!");
         }
     }
 
@@ -118,7 +125,10 @@ public class Player {
      * @return the item
      */
     public Optional<Item> getItem(String name) {
-        return Optional.ofNullable(stuff.get(name));
+        return stuff.stream()
+               .filter(item -> item.getName().equals(name))
+               .findFirst();
+        // return Optional.ofNullable(stuff.get(name));
     }
 
     /**
@@ -126,7 +136,7 @@ public class Player {
      *
      * @return the hash map
      */
-    public HashMap<String, Item> getStuff(){
+    public ArrayList<Item> getStuff(){
         return stuff;
     }
 
@@ -137,31 +147,25 @@ public class Player {
      */
     public void addItem(Item item) {
         item.setAvailable(true);
-        stuff.put(item.getName(), item);
+        stuff.add(item);
     }
 
-
-    /**
-     * Remove item.
-     *
-     * @param item the item
-     */
-    public void removeItem(Item item) {
-        item.setAvailable(false);
-        stuff.remove(item.getName());
-    }
 
     /**
      * Remove all items.
      */
     public void removeAllItems() {
+        // all items that the player used before are unavaible that's why need to be available again
+        for (Item i : stuff) {
+            i.setAvailable(true);
+        }
         stuff.clear();
     }
 
     /**
      * Remove connection.
      */
-    public void removeConnection(){
+    public void removeHistory(){
         roomHistory.clear();
     }
 

@@ -74,5 +74,12 @@ public abstract class Item {
         return available;
     }
 
+    public void healing(Player player, int lebenspunkt){
+        if (isAvailable()) {
+            player.setHealth(Math.min(player.getHealth() + lebenspunkt, 100));
+            setAvailable(false);
+        }
+    }
+
 }
 

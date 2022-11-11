@@ -3,7 +3,6 @@ package de.fh_zwickau.oose.zuul05.model.Items;
 import de.fh_zwickau.oose.zuul05.model.Player;
 
 public class FruitItem extends Item{
-
     public final int lebenspunkt = 15;
 
     /**
@@ -18,9 +17,6 @@ public class FruitItem extends Item{
 
     @Override
     public void use(Player player) {
-        if (isAvailable()) {
-            player.setHealth(player.getHealth() + lebenspunkt);
-            setAvailable(false);
-        }
+        healing(player,lebenspunkt);
     }
 }

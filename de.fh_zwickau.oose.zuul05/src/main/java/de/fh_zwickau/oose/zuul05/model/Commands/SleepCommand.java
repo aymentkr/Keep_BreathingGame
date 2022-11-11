@@ -2,7 +2,6 @@ package de.fh_zwickau.oose.zuul05.model.Commands;
 
 import de.fh_zwickau.oose.zuul05.controller.ScreenController;
 import de.fh_zwickau.oose.zuul05.model.Game;
-import de.fh_zwickau.oose.zuul05.model.Items.Item;
 import de.fh_zwickau.oose.zuul05.model.Player;
 
 
@@ -11,22 +10,34 @@ import de.fh_zwickau.oose.zuul05.model.Player;
  */
 public class SleepCommand extends Command {
 
+    /**
+     * The Info.
+     */
     InfoCommand info = new InfoCommand();
     @Override
     public boolean execute(Player player) {
-        player.setHealth(player.getHealth()-75);
-        player.testloss();
-        player.nextDay();
-        info.execute(player);
-        if (player.getCurrentDay() == 7) {
-            ScreenController.EndScene("Woohoo! You Won!");
+        if (player.getCurrentRoom().getShortDescription().equals("im Ruheraum")) {
+            // if you sleep, your health will reduce so stay awake ;)
+            player.setHealth(player.getHealth() - 75);
+            // check if the player still alive
+            player.testloss();
+            // increment number of days
+            player.nextDay();
+            // teh game ends when the number of days has passed 7
+            if (player.getCurrentDay() == 7) {
+                ScreenController.EndScene("Woohoo! You Won!");
+            }
+            // reset Items to start a new day
+            player.removeAllItems();
+            // reset the history of the rooms that the player visited before
+            player.removeHistory();
+            // set the food room locked again
+            Game.getEssenraum().setGeschlossen(true);
+            // show information about the player
+            info.execute(player);
+        } else {
+            System.out.println("Du solltest im Ruheraum sein");
         }
-        for (Item i : player.getStuff().values()) {
-            i.setAvailable(true);
-        }
-        player.removeAllItems();
-        player.removeConnection();
-        Game.createRooms();
         return false;
     }
 

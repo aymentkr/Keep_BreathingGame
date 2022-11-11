@@ -1,5 +1,8 @@
 package de.fh_zwickau.oose.zuul05.model;
 
+import de.fh_zwickau.oose.zuul05.model.Items.Item;
+
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Optional;
 import java.util.Set;
@@ -22,6 +25,7 @@ public class Room
      * Richtung erreichte Raum.
      */
     private final HashMap<String, Room> exits;
+    ArrayList<Item> items = new ArrayList<>();
 
     /**
      * Konstruktor der Klasse Raum.
@@ -111,5 +115,13 @@ public class Room
      */
     public void setGeschlossen(boolean geschlossen) {
         this.geschlossen = geschlossen;
+    }
+
+    public void addItem(Item item) {
+        items.add(item);
+    }
+
+    public ArrayList<Item> getItems() {
+        return items;
     }
 }

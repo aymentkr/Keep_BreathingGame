@@ -19,12 +19,18 @@ package de.fh_zwickau.oose.zuul05.model;
  *
  * @author  Michael Kolling and David J. Barnes
  */
+
 import de.fh_zwickau.oose.zuul05.model.Commands.Command;
+import de.fh_zwickau.oose.zuul05.model.Commands.InfoCommand;
+import de.fh_zwickau.oose.zuul05.model.Items.*;
 import de.fh_zwickau.oose.zuul05.utils.PrintUtil;
 
 public class Game {
     private final Parser parser;
     private static Player player;
+    static Room schlaffraum, obstraum, essenraum, getraenkraum, schiffsdach;
+    Command info = new InfoCommand();
+
 
 
     /**
@@ -48,9 +54,7 @@ public class Game {
     /**
      * Erzeugt alle Räume und die Verbindungen zwischen ihnen.
      */
-    public static void createRooms()
-    {
-        Room schlaffraum, obstraum, essenraum, getraenkraum, schiffsdach;
+    public static void createRooms(){
 
         // Räume erzeugen:
         schlaffraum = new Room("im Ruheraum");
@@ -60,7 +64,11 @@ public class Game {
         getraenkraum = new Room("Platz der Kategorie Getraenke");
         schiffsdach = new Room("in der Schiff Oberfläche");
 
-
+        schiffsdach.addItem(new MasteryBox("masterybox","Solve the quiz to get the key"));
+        obstraum.addItem(new FruitItem("apfel",""));
+        obstraum.addItem(new FruitItem("banana",""));
+        essenraum.addItem(new FoodItem("rindhackfleisch","halel!"));
+        getraenkraum.addItem(new DrinkItem("cola",""));
 
         // Ausgänge aufbauen:
         schlaffraum.setExit("unten", essenraum);
@@ -71,7 +79,6 @@ public class Game {
         getraenkraum.setExit("recht", essenraum);
         obstraum.setExit("recht",getraenkraum);
         obstraum.setExit("oben",schiffsdach);
-
         schiffsdach.setExit("recht",schlaffraum);
         schiffsdach.setExit("unten",obstraum);
 
@@ -107,12 +114,14 @@ public class Game {
         System.out.println("Willkommen beim Keep Breathing !");
         PrintUtil.showMessage("das Spiel des Überlebens und des Lebens neuer Abenteuer.");
         System.out.println("Gib 'hilfe' ein, um Hilfe zu bekommen.");
-        System.out.println("dein lebensPunkte equal : "+player.getHealth());
-        System.out.println(player.getCurrentRoom().getLongDescription());
+        info.execute(player);
     }
 
     public Player getPlayer() {
         return player;
+    }
+    public static Room getEssenraum() {
+        return essenraum;
     }
 
 }

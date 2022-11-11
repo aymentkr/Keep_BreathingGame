@@ -23,10 +23,7 @@ public class FoodItem extends Item {
 
     @Override
     public void use(Player player) {
-        if (isAvailable()) {
-            player.setHealth(player.getHealth() + lebenspunkt);
-            setAvailable(false);
-        }
+        healing(player,lebenspunkt);
     }
 
 }
