@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="de.fh_zwickau.oose.zuul05.model.commands.BackCommandTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-11-11T00:36:23" hostname="AYMENTKZZ" time="0.019">
+<testsuite name="de.fh_zwickau.oose.zuul05.model.commands.BackCommandTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-11-11T00:43:13" hostname="AYMENTKZZ" time="0.019">
   <properties/>
   <testcase name="testBackCommandGetDescription()" classname="de.fh_zwickau.oose.zuul05.model.commands.BackCommandTest" time="0.009"/>
   <testcase name="testBackCommandWithPrecedentRoom()" classname="de.fh_zwickau.oose.zuul05.model.commands.BackCommandTest" time="0.006"/>

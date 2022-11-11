@@ -6,7 +6,7 @@ import de.fh_zwickau.oose.zuul05.model.Player;
  * The type Mastery box.
  */
 public class MasteryBox extends Item {
-    static Key schluessel;
+    private final Key schluessel;
 
     /**
      * Constructor for objects of class Item

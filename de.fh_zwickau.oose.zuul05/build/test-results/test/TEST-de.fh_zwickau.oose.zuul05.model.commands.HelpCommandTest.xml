@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="de.fh_zwickau.oose.zuul05.model.commands.HelpCommandTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-11-11T00:36:23" hostname="AYMENTKZZ" time="0.009">
+<testsuite name="de.fh_zwickau.oose.zuul05.model.commands.HelpCommandTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-11-11T00:43:13" hostname="AYMENTKZZ" time="0.008">
   <properties/>
   <testcase name="testHelpCommandWithCommandEnde()" classname="de.fh_zwickau.oose.zuul05.model.commands.HelpCommandTest" time="0.002"/>
-  <testcase name="testHelpCommandWithCommandGehe()" classname="de.fh_zwickau.oose.zuul05.model.commands.HelpCommandTest" time="0.001"/>
-  <testcase name="testHelpCommandWithCommandSchlafen()" classname="de.fh_zwickau.oose.zuul05.model.commands.HelpCommandTest" time="0.001"/>
-  <testcase name="testHelpCommandWithXYZCommand()" classname="de.fh_zwickau.oose.zuul05.model.commands.HelpCommandTest" time="0.001"/>
+  <testcase name="testHelpCommandWithCommandGehe()" classname="de.fh_zwickau.oose.zuul05.model.commands.HelpCommandTest" time="0.0"/>
+  <testcase name="testHelpCommandWithCommandSchlafen()" classname="de.fh_zwickau.oose.zuul05.model.commands.HelpCommandTest" time="0.0"/>
+  <testcase name="testHelpCommandWithXYZCommand()" classname="de.fh_zwickau.oose.zuul05.model.commands.HelpCommandTest" time="0.0"/>
   <testcase name="testHelpCommandWithCommandHilfe()" classname="de.fh_zwickau.oose.zuul05.model.commands.HelpCommandTest" time="0.001"/>
   <testcase name="testHelpCommandWithCommandZurueck()" classname="de.fh_zwickau.oose.zuul05.model.commands.HelpCommandTest" time="0.001"/>
   <system-out><![CDATA[das Spiel verlassen

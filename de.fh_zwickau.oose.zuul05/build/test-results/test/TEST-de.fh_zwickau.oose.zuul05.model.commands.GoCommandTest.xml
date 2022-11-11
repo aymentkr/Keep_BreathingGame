@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="de.fh_zwickau.oose.zuul05.model.commands.GoCommandTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-11-11T00:36:23" hostname="AYMENTKZZ" time="0.007">
+<testsuite name="de.fh_zwickau.oose.zuul05.model.commands.GoCommandTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-11-11T00:43:13" hostname="AYMENTKZZ" time="0.007">
   <properties/>
   <testcase name="testGoCommandSetSecondWordAndEcecute()" classname="de.fh_zwickau.oose.zuul05.model.commands.GoCommandTest" time="0.003"/>
-  <testcase name="testStartRoom()" classname="de.fh_zwickau.oose.zuul05.model.commands.GoCommandTest" time="0.001"/>
+  <testcase name="testStartRoom()" classname="de.fh_zwickau.oose.zuul05.model.commands.GoCommandTest" time="0.0"/>
   <testcase name="testGoCommandGetDescription()" classname="de.fh_zwickau.oose.zuul05.model.commands.GoCommandTest" time="0.001"/>
   <testcase name="testIfEssenRaumLockedIs()" classname="de.fh_zwickau.oose.zuul05.model.commands.GoCommandTest" time="0.001"/>
   <system-out><![CDATA[Deine Position: im Ruheraum.
