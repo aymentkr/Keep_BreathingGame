@@ -19,10 +19,6 @@ public class MasteryBox extends Item {
         schluessel = new Key("schluessel", "Den Schlüssel der Tür zum Essensraum");
     }
 
-    public static Key getKey() {
-        return schluessel;
-    }
-
     @Override
     public void use(Player player) {
         player.addItem(schluessel);

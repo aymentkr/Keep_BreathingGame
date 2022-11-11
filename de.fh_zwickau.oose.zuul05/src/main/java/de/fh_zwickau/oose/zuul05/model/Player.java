@@ -1,6 +1,6 @@
 package de.fh_zwickau.oose.zuul05.model;
 
-import de.fh_zwickau.oose.zuul05.controller.ScreenController;
+// import de.fh_zwickau.oose.zuul05.controller.ScreenController;
 import de.fh_zwickau.oose.zuul05.model.Items.Item;
 import de.fh_zwickau.oose.zuul05.utils.PrintUtil;
 
@@ -185,13 +185,4 @@ public class Player {
         return day;
     }
 
-    /**
-     * Gets room in exit direction.
-     *
-     * @param direction the direction
-     * @return the room in exit direction
-     */
-    public Optional<Room> getRoomInExitDirection(String direction) {
-        return currentRoom.getExit(direction);
-    }
 }
