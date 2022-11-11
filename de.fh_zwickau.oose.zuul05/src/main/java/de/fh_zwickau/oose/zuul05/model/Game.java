@@ -67,7 +67,7 @@ public class Game {
         schiffsdach.addItem(new MasteryBox("masterybox","Solve the quiz to get the key"));
         obstraum.addItem(new FruitItem("apfel",""));
         obstraum.addItem(new FruitItem("banana",""));
-        essenraum.addItem(new FoodItem("rindhackfleisch","halel!"));
+        essenraum.addItem(new FoodItem("rindhackfleisch","halal!"));
         getraenkraum.addItem(new DrinkItem("cola",""));
 
         // Ausgänge aufbauen:

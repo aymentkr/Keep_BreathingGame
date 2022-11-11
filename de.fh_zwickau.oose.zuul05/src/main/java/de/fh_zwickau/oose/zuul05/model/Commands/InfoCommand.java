@@ -13,9 +13,7 @@ public class InfoCommand extends Command {
         System.out.println("Sie sind am "+player.getCurrentDay()+". Tag " );
         System.out.println(7-player.getCurrentDay()+" Tage bleiben bis zur Ankunft des Rettungsschiffes" );
         System.out.println("Ihr aktueller Raum ist : "  + player.getCurrentRoom().getShortDescription());
-        PrintUtil.showMessage("Items, die Sie benutzen können : |");
-        player.getStuff().forEach((item) -> System.out.print(item.getName() + "|"));
-        System.out.println("\n");
+        player.infoStuff();
 return false;
     }
 

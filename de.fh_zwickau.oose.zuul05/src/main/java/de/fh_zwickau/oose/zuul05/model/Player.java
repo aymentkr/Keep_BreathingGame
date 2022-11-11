@@ -141,6 +141,12 @@ public class Player {
         return stuff;
     }
 
+    public void infoStuff(){
+        System.out.print("Items, die du benutzen kannst : [ ");
+        getStuff().forEach((item) -> System.out.print(item.getName() + " | "));
+        System.out.println("]\n");
+    }
+
     /**
      * Add item.
      *
