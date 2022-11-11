@@ -10,15 +10,16 @@ import org.junit.jupiter.api.Test;
 import de.fh_zwickau.oose.zuul05.model.*;
 
 class HelpCommandTest {
-    public Game game;
+    public Player player;
     public HelpCommand helpCommand;
     public CommandWords commandWords;
 
     @BeforeEach
     void init() {
-        game=new Game();
+
         this.commandWords=new CommandWords();
         this.helpCommand=new  HelpCommand(commandWords);
+        player=new Player();
 
 
 
@@ -27,7 +28,7 @@ class HelpCommandTest {
     void testHelpCommandWithCommandGehe() {
 
         helpCommand.setSecondWord("gehe");
-        helpCommand.execute(game.getPlayer());
+        helpCommand.execute(player);
 
 
         assertEquals("""
@@ -42,20 +43,20 @@ class HelpCommandTest {
 
     }
     @Test
-    void testHelpCommandWithCommandEssen() {
+    void testHelpCommandWithXYZCommand() {
 
-        helpCommand.setSecondWord("essen");
-        helpCommand.execute(game.getPlayer());
+        helpCommand.setSecondWord("");
+        helpCommand.execute(player);
 
 
-        assertEquals("Selbst füttern", helpCommand.getCommandWord());
+        assertEquals("Das ist kein gültiges Kommando!", helpCommand.getCommandWord());
 
     }
     @Test
     void testHelpCommandWithCommandSchlafen() {
 
         helpCommand.setSecondWord("schlafen");
-        helpCommand.execute(game.getPlayer());
+        helpCommand.execute(player);
 
 
         assertEquals("Ruhe dich aus und mach dich bereit für den nächsten Tag", helpCommand.getCommandWord());
@@ -66,7 +67,7 @@ class HelpCommandTest {
     void testHelpCommandWithCommandZurueck() {
 
         helpCommand.setSecondWord("zurueck");
-        helpCommand.execute(game.getPlayer());
+        helpCommand.execute(player);
 
 
         assertEquals("Gehe mal zurueck", helpCommand.getCommandWord());
@@ -77,7 +78,7 @@ class HelpCommandTest {
     void testHelpCommandWithCommandHilfe() {
 
         helpCommand.setSecondWord("hilfe");
-        helpCommand.execute(game.getPlayer());
+        helpCommand.execute(player);
 
 
         assertEquals("sehe alle möglichen Kommandos", helpCommand.getCommandWord());
@@ -88,7 +89,7 @@ class HelpCommandTest {
     void testHelpCommandWithCommandEnde() {
 
         helpCommand.setSecondWord("ende");
-        helpCommand.execute(game.getPlayer());
+        helpCommand.execute(player);
 
 
         assertEquals("das Spiel verlassen", helpCommand.getCommandWord());
