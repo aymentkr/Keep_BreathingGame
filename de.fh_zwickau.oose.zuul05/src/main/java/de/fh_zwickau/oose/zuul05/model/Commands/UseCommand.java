@@ -2,6 +2,7 @@ package de.fh_zwickau.oose.zuul05.model.Commands;
 
 import de.fh_zwickau.oose.zuul05.model.Items.Item;
 import de.fh_zwickau.oose.zuul05.model.Player;
+import de.fh_zwickau.oose.zuul05.utils.PrintUtil;
 
 import java.util.Optional;
 
@@ -14,13 +15,14 @@ public class UseCommand extends Command{
     public boolean execute(Player player) {
         if (hasSecondWord()) {
             Optional<Item> optionalItem = player.getItem(getSecondWord());
-            if (optionalItem.isPresent())
+            if (optionalItem.isPresent() && optionalItem.get().isAvailable())
                 optionalItem.ifPresent(item -> item.use(player));
-            else System.out.println("Sie haben kein gültiges Item");
+            else
+                System.out.println("Sie haben es schon benutzt");
         }
-        else System.out.println("Welches Item möchten Sie benutzen?");
+        else  PrintUtil.showMessage("Sie haben kein gültiges Item");
         return false;
-    }
+}
 
     @Override
     public String getDescription() {
