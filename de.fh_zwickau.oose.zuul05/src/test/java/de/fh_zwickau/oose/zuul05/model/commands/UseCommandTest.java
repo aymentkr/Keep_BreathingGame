@@ -105,5 +105,40 @@ class UseCommandTest {
         assertEquals(25,player.getHealth());
 
     }
+    @Test
+    void testUseCommandWithKeyItem() {
 
+
+        essenraum.setGeschlossen(true);
+
+        player.setCurrentRoom(schlaffraum);
+        player.walk("links");
+        useCommand.setSecondWord("masterybox");
+        useCommand.execute(player);
+        useCommand.setSecondWord("schluessel");
+        useCommand.execute(player);
+
+        assertFalse(Game.getEssenraum().getGeschlossen());
+
+    }
+    @Test
+    void testSleepCommandWithReducingHealth() {
+
+
+
+        player.setHealth(75);
+        player.setCurrentRoom(getraenkraum);
+        player.walk("links");
+        useCommand.setSecondWord("apfel");
+        useCommand.execute(player);
+        player.walk("oben");
+        player.walk("recht");
+        sleepCommand.execute(player);
+
+
+        assertEquals("im Ruheraum",player.getCurrentRoom().getShortDescription());
+
+        assertEquals(15,player.getHealth());
+
+}
 }
