@@ -3,6 +3,7 @@ package de.fh_zwickau.oose.zuul05.model.Items;
 import de.fh_zwickau.oose.zuul05.model.Game;
 import de.fh_zwickau.oose.zuul05.model.Player;
 import de.fh_zwickau.oose.zuul05.model.Room;
+import de.fh_zwickau.oose.zuul05.utils.PrintUtil;
 
 /**
  * The type Key.
@@ -21,7 +22,11 @@ public class Key extends Item {
 
     @Override
     public void use(Player player) {
-        Game.getEssenraum().setGeschlossen(false);
-        System.out.println("Der Raum ist jetzt aufgeschlossen");
+        if (!Game.getEssenraum().isGeschlossen())
+            PrintUtil.showMessage("Sie haben schon die schlüssel genutzt");
+        else {
+            Game.getEssenraum().setGeschlossen(false);
+            System.out.println("Der Raum ist jetzt aufgeschlossen");
+        }
     }
 }

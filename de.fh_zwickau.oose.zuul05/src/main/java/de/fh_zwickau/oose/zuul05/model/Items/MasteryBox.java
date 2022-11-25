@@ -1,16 +1,20 @@
 package de.fh_zwickau.oose.zuul05.model.Items;
 
 import de.fh_zwickau.oose.zuul05.model.Player;
+import de.fh_zwickau.oose.zuul05.model.quiz.Question;
+import de.fh_zwickau.oose.zuul05.model.quiz.QuestionList;
+import de.fh_zwickau.oose.zuul05.utils.PrintUtil;
 
-import java.util.HashMap;
+import java.util.Scanner;
 
 /**
  * The type Mastery box.
  */
 public class MasteryBox extends Item {
     private final Key schluessel;
-  //  private HashMap<Integer,String>
+    private QuestionList questions = new QuestionList();
 
+    private boolean Available = false;
     /**
      * Constructor for objects of class Item
      *
@@ -20,21 +24,41 @@ public class MasteryBox extends Item {
     public MasteryBox(String name, String description) {
         super(name, description);
         schluessel = new Key("schluessel", "Den Schlüssel der Tür zum Essensraum");
+
     }
+
+
+
 
     @Override
     public void use(Player player) {
         if (player.getItem("schluessel").isPresent())
-            System.out.println("Sie haben schon die schluessel");
+            PrintUtil.showMessage("Sie haben schon die schlüssel");
         else {
+            Question question = questions.getQuestions().get(player.getCurrentDay()-1);
+            PrintUtil.showMessage("Sie müssen ein Rätsel lösen, um einen Schlüssel zu erhalten");
+            System.out.println("Frage "+player.getCurrentDay()+": "+question.getQuestion());
+            System.out.println("Option A: "+question.getOptA());
+            System.out.println("Option B: "+question.getOptB());
+            System.out.println("Option C: "+question.getOptC());
+            System.out.println("Option D: "+question.getOptD());
+            //question.setAnswer();
 
-
-
-
-            player.addItem(schluessel);
+            Scanner in = new Scanner(System.in);
+            System.out.println("was ist die Antwort");
+            String b = in.nextLine();
+            if (b.equals(question.getAnswer())) {
+                System.out.println("Richtig");
+                player.addItem(schluessel);
+                Available = false;
+            } else System.out.println("Falsch");
         }
     }
 
 
-
 }
+
+
+
+
+

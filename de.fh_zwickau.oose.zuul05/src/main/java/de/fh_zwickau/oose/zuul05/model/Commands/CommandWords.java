@@ -27,7 +27,6 @@ public class CommandWords
         commands.put("info", new InfoCommand());
         commands.put("hilfe", new HelpCommand(this));
         commands.put("ende", new QuitCommand());
-
     }
 
     /**
