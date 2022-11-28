@@ -12,9 +12,8 @@ import java.util.Scanner;
  */
 public class MasteryBox extends Item {
     private final Key schluessel;
-    private QuestionList questions = new QuestionList();
+    private final QuestionList questions = new QuestionList();
 
-    private boolean Available = false;
     /**
      * Constructor for objects of class Item
      *
@@ -37,11 +36,11 @@ public class MasteryBox extends Item {
         else {
             Question question = questions.getQuestions().get(player.getCurrentDay()-1);
             PrintUtil.showMessage("Sie müssen ein Rätsel lösen, um einen Schlüssel zu erhalten");
-            System.out.println("Frage "+player.getCurrentDay()+": "+question.getQuestion());
-            System.out.println("Option A: "+question.getOptA());
-            System.out.println("Option B: "+question.getOptB());
-            System.out.println("Option C: "+question.getOptC());
-            System.out.println("Option D: "+question.getOptD());
+            PrintUtil.showMessage("Frage "+player.getCurrentDay()+": "+question.getQuestion());
+            PrintUtil.showMessage("Option A: "+question.getOptA());
+            PrintUtil.showMessage("Option B: "+question.getOptB());
+            PrintUtil.showMessage("Option C: "+question.getOptC());
+            PrintUtil.showMessage("Option D: "+question.getOptD());
             //question.setAnswer();
 
             Scanner in = new Scanner(System.in);
@@ -50,8 +49,11 @@ public class MasteryBox extends Item {
             if (b.equals(question.getAnswer())) {
                 System.out.println("Richtig");
                 player.addItem(schluessel);
-                Available = false;
-            } else System.out.println("Falsch");
+                setAvailable(false);
+            } else {
+                System.out.println("Falsch");
+                setAvailable(false);
+            }
         }
     }
 

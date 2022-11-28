@@ -10,25 +10,26 @@ public class QuestionList {
     public QuestionList() {
         questions = new ArrayList<>();
 
-        questions.add(new Question("Galileo war ein italienischer Astronom, der entwickelt hat?", "Teleskop", "Flugzeug", "Elektrizität", "Zug", "Teleskop"));
+        questions.add(new Question("Galileo war ein italienischer Astronom, der entwickelt hat?", "Teleskop", "Flugzeug", "Elektrizität", "Zug", "A"));
 
-        questions.add(new Question("Wer ist der Vater der Geometrie?", "Aristoteles", "Euklid", "Pythagoras", "Kepler", "Euklid"));
+        questions.add(new Question("Wer ist der Vater der Geometrie?", "Aristoteles", "Euklid", "Pythagoras", "Kepler", "B"));
 
-        questions.add(new Question("Wer war als Iron Man of India bekannt?","Govind Ballabh Pant","Jawaharlal Nehru","Subhash Chandra Bose","Sardar Vallabhbhai Patel","Sardar Vallabhbhai Patel"));
+        questions.add(new Question("Wer war als Iron Man of India bekannt?","Govind Ballabh Pant","Jawaharlal Nehru","Subhash Chandra Bose","Sardar Vallabhbhai Patel","D"));
 
-        questions.add(new Question("Die erste Frau im Weltraum war ?", "Valentina Tereshkova", "Sally Ride", "Naidia Comenci", "amara Press", "Valentina Tereshkova"));
+        questions.add(new Question("Die erste Frau im Weltraum war ?", "Valentina Tereshkova", "Sally Ride", "Naidia Comenci", "amara Press", "A"));
 
-        questions.add(new Question("Wer ist der fliegende Sikh von Indien?", "Mohinder Singh", "Joginder Singh", "Ajit Pal Singh", "Milkha Singh", "Milkha Singh"));
+        questions.add(new Question("Wer ist der fliegende Sikh von Indien?", "Mohinder Singh", "Joginder Singh", "Ajit Pal Singh", "Milkha Singh", "D"));
 
-        questions.add(new Question("Der Indianer, der die Computer in mathematischer Zauberei schlägt, ist", "Ramanujam", "Rina Panigrahi", "Raja Ramanna", "Shakunthala Devi", "Shakunthala Devi"));
+        questions.add(new Question("Der Indianer, der die Computer in mathematischer Zauberei schlägt, ist", "Ramanujam", "Rina Panigrahi", "Raja Ramanna", "Shakunthala Devi", "D"));
 
-        questions.add(new Question("Wer ist Larry Pressler?", "Politiker", "Maler", "Schauspieler", "Tennisspieler", "Politiker"));
+        questions.add(new Question("Wer ist Larry Pressler?", "Politiker", "Maler", "Schauspieler", "Tennisspieler", "A"));
 
-        questions.add(new Question("Michael Jackson ist eine angesehene Person auf dem Gebiet von ?", "Popmusik", "Journalismus", "Sport", "Schauspiel", "Popmusik"));
+        questions.add(new Question("Michael Jackson ist eine angesehene Person auf dem Gebiet von ?", "Popmusik", "Journalismus", "Sport", "Schauspiel", "A"));
 
-        questions.add(new Question("Der erste Indianer, der den Ärmelkanal durchschwamm, war ?", "V. Merchant", "P. K. Banerji", "Mihir Sen", "Arati Saha", "Mihir Sen"));
+        questions.add(new Question("Der erste Indianer, der den Ärmelkanal durchschwamm, war ?", "V. Merchant", "P. K. Banerji", "Mihir Sen", "Arati Saha", "C"));
 
-        questions.add(new Question("Wer war der erste Inder, der einen Film drehte?", "Dhundiraj Govind Phalke", "Asha Bhosle", "Ardeshir Irani", "V. Shantaram", "Dhundiraj Govind Phalke"));
+        questions.add(new Question("Wer war der erste Inder, der einen Film drehte?", "Dhundiraj Govind Phalke", "Asha Bhosle", "Ardeshir Irani", "V. Shantaram", "A"));
+        /*
 
         questions.add(new Question("Wer ist bekannt als der 'Heilige der Gossen'?", "B.R.Ambedkar", "Mutter Teresa", "Mahatma Gandhi", "Baba Amte", "Mutter Teresa"));
 
@@ -49,8 +50,8 @@ public class QuestionList {
         questions.add(new Question("Wer hat den Ballon d'or 2014 gewonnen?", "Neymar", "Lionel Messi", "Cristiano Ronaldo", "Kaka", "Cristiano Ronaldo"));
 
         questions.add(new Question("der Gründer der berühmtesten Spielplattform Steam ist ?", "Bill Cliton", "Bill Williams", "Gabe Newell", "Bill Gates", "Gabe Newell"));
-       // this.addAllQuestions(arraylist);
-
+        this.addAllQuestions(arraylist);
+*/
 
     }
 

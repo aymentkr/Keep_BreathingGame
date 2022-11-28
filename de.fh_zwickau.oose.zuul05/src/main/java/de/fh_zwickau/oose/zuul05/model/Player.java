@@ -141,6 +141,9 @@ public class Player {
         return stuff;
     }
 
+    /**
+     * Info stuff.
+     */
     public void infoStuff(){
         System.out.print("Items, die du benutzen kannst : [ ");
         getStuff().forEach((item) -> System.out.print(item.getName() + " | "));
