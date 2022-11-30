@@ -1,21 +1,3 @@
-*Deine Position: Platz der Kategorie Obst.
-Ausgaunge: recht oben
-/Deine Position: Platz der Kategorie Getraenke.
-Ausgaunge: recht links
-+Deine Position: Platz der Kategorie Essen.
-Ausgaunge: links
-+Deine Position: in der Schiff Oberfläche.
-Ausgaunge: unten recht
-#Der Raum ist jetzt aufgeschlossen
-*Deine Position: Platz der Kategorie Obst.
-Ausgaunge: recht oben
-+Deine Position: in der Schiff Oberfläche.
-Ausgaunge: unten recht
-Deine Position: im Ruheraum.
-Ausgaunge: unten links
-.Hallo, Ihre aktuellen Lebenspunkte sind : 15
-Sie sind am 2. Tag 
-55 Tage bleiben bis zur Ankunft des Rettungsschiffes
-&Ihr aktueller Raum ist : im Ruheraum
-$Items, die du benutzen kannst : [ ]
-
++Deine Position: in der Schiff Oberfläche.
+Ausgaunge: recht
+Es ist kein gültiges Item

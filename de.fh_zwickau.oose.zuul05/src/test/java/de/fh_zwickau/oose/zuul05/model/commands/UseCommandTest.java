@@ -29,7 +29,7 @@ class UseCommandTest {
     public static SleepCommand sleepCommand;
     public static Game game;
 
-    public final QuestionList questions = new QuestionList();
+
     @BeforeAll
     static void  setStruktur(){
         //creat rooms with Items
