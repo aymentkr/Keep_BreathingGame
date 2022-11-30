@@ -38,9 +38,10 @@ public class MasteryBox extends Item {
             PrintUtil.showMessage("Option C: "+question.getOptC());
             PrintUtil.showMessage("Option D: "+question.getOptD());
             //question.setAnswer();
+            PrintUtil.showMessage("Um zu antworten, drücken Sie den Buchstaben für die richtige Antwort A B C D ");
 
             Scanner in = new Scanner(System.in);
-            System.out.println("was ist die Antwort  A,B,C oder D?");
+
             String b = in.nextLine();
             if (b.equals(question.getAnswer())) {
                 System.out.println("Richtig");
