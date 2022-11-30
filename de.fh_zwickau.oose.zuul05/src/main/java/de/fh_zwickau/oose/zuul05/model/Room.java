@@ -7,8 +7,6 @@ import java.util.HashMap;
 import java.util.Optional;
 import java.util.Set;
 
-import static de.fh_zwickau.oose.zuul05.model.Game.essenraum;
-
 /**
  * Die Klasse "Room" stellt einen Raum (Ort) in der Spielewelt dar.
  * Die Räume sind miteinander durch Türen verbunden.
@@ -27,6 +25,9 @@ public class Room
      * Richtung erreichte Raum.
      */
     private final HashMap<String, Room> exits;
+    /**
+     * The Items.
+     */
     ArrayList<Item> items = new ArrayList<>();
 
     /**
@@ -118,17 +119,54 @@ public class Room
     public void setGeschlossen(boolean geschlossen) {
         this.geschlossen = geschlossen;
     }
+
+    /**
+     * Get geschlossen boolean.
+     *
+     * @return the boolean
+     */
     public boolean getGeschlossen(){
         return geschlossen;
     }
 
+    /**
+     * Add item.
+     *
+     * @param item the item
+     */
     public void addItem(Item item) {
         items.add(item);
     }
 
+    /**
+     * Gets item.
+     *
+     * @param name the name
+     * @return the item
+     */
+    public Optional<Item> getItem(String name) {
+        return items.stream()
+                .filter(item -> item.getName().equals(name))
+                .findFirst();
+        // return Optional.ofNullable(stuff.get(name));
+    }
+
+    /**
+     * Info items.
+     */
+    public void infoItems(){
+        System.out.print("Items, die du benutzen kannst : [ ");
+        items.forEach((item) -> System.out.print(item.getName() + " | "));
+        System.out.println("]\n");
+    }
+
+    /**
+     * Gets items.
+     *
+     * @return the items
+     */
     public ArrayList<Item> getItems() {
         return items;
     }
-
 
 }

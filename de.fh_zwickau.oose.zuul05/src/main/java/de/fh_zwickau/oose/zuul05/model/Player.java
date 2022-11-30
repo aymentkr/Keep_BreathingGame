@@ -1,10 +1,13 @@
 package de.fh_zwickau.oose.zuul05.model;
 
 // import de.fh_zwickau.oose.zuul05.controller.ScreenController;
+
 import de.fh_zwickau.oose.zuul05.model.Items.Item;
 import de.fh_zwickau.oose.zuul05.utils.PrintUtil;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Optional;
+import java.util.Stack;
 
 /**
  * Diese Klasse steht für einen Spieler im Spiel.
@@ -15,8 +18,9 @@ import java.util.*;
 public class Player {
     private Room currentRoom;
     private final Stack<Room> roomHistory = new Stack<>();
-    private final ArrayList<Item> stuff;
+    private final ArrayList<Item> itemHistory = new ArrayList<>();
     private int health;
+
     private int day;
 
     /**
@@ -26,7 +30,6 @@ public class Player {
         currentRoom = null;
         health = 100;
         day = 1;
-        stuff = new ArrayList<>();
     }
 
     /**
@@ -62,20 +65,11 @@ public class Player {
             PrintUtil.showMessage("Die Tür ist geschlossen! Du brauchst noch den Schluessel von der schiff Oberfläche, um hier hineinzukommen.");
         else {
             roomHistory.push(getCurrentRoom());
-            deleteItemsFromRoom(getCurrentRoom());
             setCurrentRoom(nextRoom.get());
-            addItemsFromRoom(getCurrentRoom());
             PrintUtil.showMessage(nextRoom.get().getLongDescription());
         }
     }
 
-    private void addItemsFromRoom(Room room) {
-        stuff.addAll(room.getItems());
-    }
-
-    private void deleteItemsFromRoom(Room room) {
-        stuff.removeAll(room.getItems());
-    }
 
     /**
      * Returnback.
@@ -119,58 +113,16 @@ public class Player {
         }
     }
 
-    /**
-     * Gets item.
-     *
-     * @param name the name
-     * @return the item
-     */
-    public Optional<Item> getItem(String name) {
-        return stuff.stream()
-               .filter(item -> item.getName().equals(name))
-               .findFirst();
-        // return Optional.ofNullable(stuff.get(name));
-    }
 
     /**
-     * Get stuff hash map.
-     *
-     * @return the hash map
-     */
-    public ArrayList<Item> getStuff(){
-        return stuff;
-    }
-
-    /**
-     * Info stuff.
-     */
-    public void infoStuff(){
-        System.out.print("Items, die du benutzen kannst : [ ");
-        getStuff().forEach((item) -> System.out.print(item.getName() + " | "));
-        System.out.println("]\n");
-    }
-
-    /**
-     * Add item.
+     * Add item to hitory.
      *
      * @param item the item
      */
-    public void addItem(Item item) {
-        item.setAvailable(true);
-        stuff.add(item);
+    public void addItemToHitory(Item item) {
+        itemHistory.add(item);
     }
 
-
-    /**
-     * Remove all items.
-     */
-    public void removeAllItems() {
-        // all items that the player used before are unavaible that's why need to be available again
-        for (Item i : stuff) {
-            i.setAvailable(true);
-        }
-        stuff.clear();
-    }
 
     /**
      * Remove connection.
@@ -193,6 +145,14 @@ public class Player {
      */
     public int getCurrentDay(){
         return day;
+    }
+
+    /**
+     * Reset item history.
+     */
+    public void resetItemHistory() {
+        for (Item item : itemHistory) item.setAvailable(true);
+        itemHistory.clear();
     }
 
 }

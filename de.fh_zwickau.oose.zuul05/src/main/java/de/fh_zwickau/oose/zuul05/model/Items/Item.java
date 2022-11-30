@@ -61,6 +61,11 @@ public abstract class Item {
         return this.name;
     }
 
+    /**
+     * Sets available.
+     *
+     * @param available the available
+     */
     public void setAvailable(boolean available) {
         this.available = available;
     }
@@ -74,7 +79,14 @@ public abstract class Item {
         return available;
     }
 
+    /**
+     * Healing.
+     *
+     * @param player      the player
+     * @param lebenspunkt the lebenspunkt
+     */
     public void healing(Player player, int lebenspunkt){
+        player.addItemToHitory(this);
         if (isAvailable()) {
             player.setHealth(Math.min(player.getHealth() + lebenspunkt, 100));
             setAvailable(false);

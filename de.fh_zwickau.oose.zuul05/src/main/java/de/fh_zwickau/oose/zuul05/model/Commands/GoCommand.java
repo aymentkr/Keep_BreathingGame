@@ -8,10 +8,7 @@ import de.fh_zwickau.oose.zuul05.model.Player;
  * @author Michael Kolling
  * @version 1.0 (December 2002)
  */
-public class GoCommand extends Command
-{
-
-    InfoCommand info =new InfoCommand();
+public class GoCommand extends Command {
     /**
      * Konstruktor.
      */
@@ -32,7 +29,7 @@ public class GoCommand extends Command
         if(hasSecondWord()) {
             String direction = getSecondWord();
             player.walk(direction);
-            player.infoStuff();
+            player.getCurrentRoom().infoItems();
         }
         else {
             // Wenn kein zweites Wort eingegeben wurde, haben wir keine Ahnung, wohin der Spieler gehen will:

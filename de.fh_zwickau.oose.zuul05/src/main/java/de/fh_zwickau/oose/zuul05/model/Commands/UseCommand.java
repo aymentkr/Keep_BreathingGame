@@ -14,10 +14,12 @@ public class UseCommand extends Command{
     @Override
     public boolean execute(Player player) {
         if (hasSecondWord()) {
-            Optional<Item> optionalItem = player.getItem(getSecondWord());
+            Optional<Item> optionalItem = player.getCurrentRoom().getItem(getSecondWord());
             if (optionalItem.isPresent()) {
-                if (optionalItem.get().isAvailable())
+                if (optionalItem.get().isAvailable()){
+                    player.addItemToHitory(optionalItem.get());
                     optionalItem.ifPresent(item -> item.use(player));
+                }
                 else System.out.println("Sie haben es schon benutzt");
             }
             else PrintUtil.showMessage("Es ist kein gültiges Item");

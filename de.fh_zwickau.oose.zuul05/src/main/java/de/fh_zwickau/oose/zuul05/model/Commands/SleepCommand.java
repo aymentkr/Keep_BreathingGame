@@ -27,8 +27,8 @@ public class SleepCommand extends Command {
             if (player.getCurrentDay() == 7) {
                 ScreenController.EndScene("Woohoo! You Won!");
             }
-            // reset Items to start a new day
-            player.removeAllItems();
+            // all items that the player used before are unavaible that's why need to be available again
+            player.resetItemHistory();
             // reset the history of the rooms that the player visited before
             player.removeHistory();
             // set the food room locked again

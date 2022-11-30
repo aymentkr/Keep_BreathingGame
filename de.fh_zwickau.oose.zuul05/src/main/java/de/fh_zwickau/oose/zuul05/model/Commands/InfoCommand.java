@@ -1,7 +1,6 @@
 package de.fh_zwickau.oose.zuul05.model.Commands;
 
 import de.fh_zwickau.oose.zuul05.model.Player;
-import de.fh_zwickau.oose.zuul05.utils.PrintUtil;
 
 /**
  * The type Info command.
@@ -13,7 +12,7 @@ public class InfoCommand extends Command {
         System.out.println("Sie sind am "+player.getCurrentDay()+". Tag " );
         System.out.println(7-player.getCurrentDay()+" Tage bleiben bis zur Ankunft des Rettungsschiffes" );
         System.out.println("Ihr aktueller Raum ist : "  + player.getCurrentRoom().getShortDescription());
-        player.infoStuff();
+        player.getCurrentRoom().infoItems();
 return false;
     }
 

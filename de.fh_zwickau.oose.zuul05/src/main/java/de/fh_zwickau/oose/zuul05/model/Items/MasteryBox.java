@@ -23,7 +23,6 @@ public class MasteryBox extends Item {
     public MasteryBox(String name, String description) {
         super(name, description);
         schluessel = new Key("schluessel", "Den Schlüssel der Tür zum Essensraum");
-
     }
 
 
@@ -31,9 +30,6 @@ public class MasteryBox extends Item {
 
     @Override
     public void use(Player player) {
-        if (player.getItem("schluessel").isPresent())
-            PrintUtil.showMessage("Sie haben schon die schlüssel");
-        else {
             Question question = questions.getQuestions().get(player.getCurrentDay()-1);
             PrintUtil.showMessage("Sie müssen ein Rätsel lösen, um einen Schlüssel zu erhalten");
             PrintUtil.showMessage("Frage "+player.getCurrentDay()+": "+question.getQuestion());
@@ -48,16 +44,13 @@ public class MasteryBox extends Item {
             String b = in.nextLine();
             if (b.equals(question.getAnswer())) {
                 System.out.println("Richtig");
-                player.addItem(schluessel);
+                schluessel.use(player);
                 setAvailable(false);
             } else {
                 System.out.println("Falsch");
                 setAvailable(false);
             }
         }
-    }
-
-
 }
 
 
