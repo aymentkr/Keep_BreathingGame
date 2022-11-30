@@ -40,14 +40,14 @@ public class MasteryBox extends Item {
             //question.setAnswer();
 
             Scanner in = new Scanner(System.in);
-            System.out.println("was ist die Antwort");
+            System.out.println("was ist die Antwort  A,B,C oder D?");
             String b = in.nextLine();
             if (b.equals(question.getAnswer())) {
                 System.out.println("Richtig");
                 schluessel.use(player);
                 setAvailable(false);
             } else {
-                System.out.println("Falsch");
+                System.out.println("Falsch leider haben Sie den heutesVersuch verloren , kommen Sie morgen wieder");
                 setAvailable(false);
             }
         }

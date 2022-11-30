@@ -8,6 +8,8 @@ import de.fh_zwickau.oose.zuul05.model.Game;
 import de.fh_zwickau.oose.zuul05.model.Items.*;
 import de.fh_zwickau.oose.zuul05.model.Player;
 import de.fh_zwickau.oose.zuul05.model.Room;
+import de.fh_zwickau.oose.zuul05.model.quiz.Question;
+import de.fh_zwickau.oose.zuul05.model.quiz.QuestionList;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -27,6 +29,7 @@ class UseCommandTest {
     public static SleepCommand sleepCommand;
     public static Game game;
 
+    public final QuestionList questions = new QuestionList();
     @BeforeAll
     static void  setStruktur(){
         //creat rooms with Items
@@ -81,13 +84,13 @@ class UseCommandTest {
         player.setCurrentRoom(obstraum);
         player.walk("recht");
 
-        assertEquals("saft",player.getStuff().get(0).getName());
+        assertEquals("saft",getraenkraum.getItems().get(0).getName());
 
         player.setCurrentRoom(getraenkraum);
         essenraum.setGeschlossen(false);
         player.walk("recht");
 
-        assertEquals("döner",player.getStuff().get(0).getName());
+        assertEquals("döner",essenraum.getItems().get(0).getName());
 
 
     }
@@ -101,26 +104,11 @@ class UseCommandTest {
         useCommand.setSecondWord("orange");
         useCommand.execute(player);
 
-        assertEquals("orange",player.getStuff().get(0).getName());
+        assertEquals("orange",obstraum.getItems().get(0).getName());
         assertEquals(25,player.getHealth());
 
     }
-    @Test
-    void testUseCommandWithKeyItem() {
 
-
-        essenraum.setGeschlossen(true);
-
-        player.setCurrentRoom(schlaffraum);
-        player.walk("links");
-        useCommand.setSecondWord("masterybox");
-        useCommand.execute(player);
-        useCommand.setSecondWord("schluessel");
-        useCommand.execute(player);
-
-        assertFalse(Game.getEssenraum().getGeschlossen());
-
-    }
     @Test
     void testSleepCommandWithReducingHealth() {
 
