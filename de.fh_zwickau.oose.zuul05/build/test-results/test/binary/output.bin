@@ -1,3 +1,24 @@
 +Deine Position: in der Schiff Oberfläche.
-Ausgaunge: recht
-Es ist kein gültiges Item
+Ausgaunge: unten recht
+$Items, die du benutzen kannst : [ ]
+
+Deine Position: in obstRaum.
+Ausgaunge: recht oben
+$Items, die du benutzen kannst : [ ]
+
+"Deine Position: in Getraenk Raum.
+Ausgaunge: recht links
+$Items, die du benutzen kannst : [ ]
+
++Deine Position: Platz der Kategorie Essen.
+Ausgaunge: links oben
+$Items, die du benutzen kannst : [ ]
+
+"Deine Position: in Getraenk Raum.
+Ausgaunge: recht links
+Deine Position: in obstRaum.
+Ausgaunge: recht oben
++Deine Position: in der Schiff Oberfläche.
+Ausgaunge: unten recht
+Deine Position: im Ruheraum.
+Ausgaunge: unten links
