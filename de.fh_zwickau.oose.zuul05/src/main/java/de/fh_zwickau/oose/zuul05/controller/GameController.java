@@ -1,5 +1,6 @@
 package de.fh_zwickau.oose.zuul05.controller;
 
+import de.fh_zwickau.oose.zuul05.utils.FxUtil;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.Region;
 
@@ -12,11 +13,8 @@ public class GameController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        setBackgroundPositions(content,"image1.png");
+        FxUtil.setBackground(content,"image1.png");
     }
-    void setBackgroundPositions(Region region, String url) {
-        String style = "-fx-background-image: url("+url+");";
-        region.setStyle(style);
-    }
+
 
 }

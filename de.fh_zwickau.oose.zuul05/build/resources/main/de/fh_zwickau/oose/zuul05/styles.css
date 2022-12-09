@@ -1,9 +1,15 @@
-.root{
+VBox{
     -fx-background-size: contain;
     -fx-background-position: bottom;
     -fx-background-repeat: repeat-x;
     -fx-background-image:
             url("backgorund_keep.png");
+}
+AnchorPane {
+    -fx-background-size: contain;
+    -fx-background-position: bottom;
+    -fx-background-repeat: repeat-x;
+    -fx-background-image: url("image1.png");
 }
 #big-yellow {
     -fx-background-color:
