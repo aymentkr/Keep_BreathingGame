@@ -1,15 +1,11 @@
 package de.fh_zwickau.oose.zuul05.model.commands;
 
-import de.fh_zwickau.oose.zuul05.model.Commands.GoCommand;
-import de.fh_zwickau.oose.zuul05.model.Commands.InfoCommand;
 import de.fh_zwickau.oose.zuul05.model.Commands.SleepCommand;
 import de.fh_zwickau.oose.zuul05.model.Commands.UseCommand;
 import de.fh_zwickau.oose.zuul05.model.Game;
 import de.fh_zwickau.oose.zuul05.model.Items.*;
 import de.fh_zwickau.oose.zuul05.model.Player;
 import de.fh_zwickau.oose.zuul05.model.Room;
-import de.fh_zwickau.oose.zuul05.model.quiz.Question;
-import de.fh_zwickau.oose.zuul05.model.quiz.QuestionList;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

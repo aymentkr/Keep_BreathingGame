@@ -22,7 +22,10 @@ package de.fh_zwickau.oose.zuul05.model;
 
 import de.fh_zwickau.oose.zuul05.model.Commands.Command;
 import de.fh_zwickau.oose.zuul05.model.Commands.InfoCommand;
-import de.fh_zwickau.oose.zuul05.model.Items.*;
+import de.fh_zwickau.oose.zuul05.model.Items.DrinkItem;
+import de.fh_zwickau.oose.zuul05.model.Items.FoodItem;
+import de.fh_zwickau.oose.zuul05.model.Items.FruitItem;
+import de.fh_zwickau.oose.zuul05.model.Items.MasteryBox;
 import de.fh_zwickau.oose.zuul05.utils.PrintUtil;
 
 public class Game {

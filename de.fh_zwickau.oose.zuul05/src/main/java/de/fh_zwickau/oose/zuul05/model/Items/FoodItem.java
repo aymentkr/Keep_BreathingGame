@@ -8,6 +8,9 @@ import de.fh_zwickau.oose.zuul05.model.Player;
 public class FoodItem extends Item {
 
 
+    /**
+     * The Lebenspunkt.
+     */
     public final int lebenspunkt = 55;
 
     /**
