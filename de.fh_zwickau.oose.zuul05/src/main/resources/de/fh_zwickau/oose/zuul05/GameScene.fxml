@@ -6,46 +6,37 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 
-<AnchorPane fx:id="content" prefHeight="546.0" prefWidth="1000.0" stylesheets="@styles.css"
-            xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="de.fh_zwickau.oose.zuul05.controller.GameController">
-   <BorderPane layoutX="14.0" layoutY="322.0" prefHeight="200.0" prefWidth="558.0">
+<AnchorPane fx:id="content" prefHeight="546.0" prefWidth="1000.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.fh_zwickau.oose.zuul05.controller.GameController">
+   <BorderPane layoutX="14.0" layoutY="571.0" prefHeight="200.0" prefWidth="558.0">
       <right>
-         <Button id="big-yellow" mnemonicParsing="false" prefHeight="58.0" prefWidth="156.0" text="Schlafen"
-                 BorderPane.alignment="CENTER"/>
+         <Button id="big-yellow" fx:id="sleep" mnemonicParsing="false" onAction="#handleSleepButtonClick" prefHeight="58.0" prefWidth="156.0" text="Schlafen" BorderPane.alignment="CENTER" />
       </right>
       <left>
-         <MenuButton id="big-yellow" mnemonicParsing="false" prefHeight="58.0" prefWidth="156.0" text="Gehe"
-                     BorderPane.alignment="CENTER">
+         <MenuButton id="big-yellow" fx:id="go" mnemonicParsing="false" prefHeight="58.0" prefWidth="156.0" text="Gehe" BorderPane.alignment="CENTER">
             <items>
-               <MenuItem mnemonicParsing="false" text="Links"/>
-               <MenuItem mnemonicParsing="false" text="Recht"/>
-               <MenuItem mnemonicParsing="false" text="Unten"/>
-               <MenuItem mnemonicParsing="false" text="Oben"/>
+               <MenuItem mnemonicParsing="false" text="Links" />
+               <MenuItem mnemonicParsing="false" text="Recht" />
+               <MenuItem mnemonicParsing="false" text="Unten" />
+               <MenuItem mnemonicParsing="false" text="Oben" />
             </items>
          </MenuButton>
       </left>
       <bottom>
-         <Button id="big-yellow" mnemonicParsing="false" prefHeight="58.0" prefWidth="156.0" text="Schlafen"
-                 BorderPane.alignment="CENTER"/>
+         <Button id="big-yellow" fx:id="info" mnemonicParsing="false" onAction="#handleInfoButtonClick" prefHeight="58.0" prefWidth="156.0" text="Info" BorderPane.alignment="CENTER" />
       </bottom>
       <top>
-         <Button id="big-yellow" mnemonicParsing="false" prefHeight="58.0" prefWidth="156.0" text="Benutze"
-                 BorderPane.alignment="CENTER"/>
+         <Button id="big-yellow" fx:id="use" mnemonicParsing="false" prefHeight="58.0" prefWidth="156.0" text="Benutze" BorderPane.alignment="CENTER" />
       </top>
       <center>
-         <Button id="big-yellow" mnemonicParsing="false" prefHeight="58.0" prefWidth="156.0" text="Zurück"
-                 BorderPane.alignment="CENTER"/>
+         <Button id="big-yellow" fx:id="back" mnemonicParsing="false" prefHeight="58.0" prefWidth="156.0" text="Zurück" BorderPane.alignment="CENTER" />
       </center>
    </BorderPane>
-   <BorderPane layoutX="786.0" layoutY="390.0" prefHeight="131.0" prefWidth="200.0">
+   <BorderPane layoutX="1300.0" layoutY="654.0" prefHeight="131.0" prefWidth="200.0">
       <top>
-         <Button id="big-yellow" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="58.0"
-                 prefWidth="156.0" text="Hilfe" BorderPane.alignment="CENTER"/>
+         <Button id="big-yellow" fx:id="help" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#handleHelpButtonClick" prefHeight="58.0" prefWidth="156.0" text="Hilfe" BorderPane.alignment="CENTER" />
       </top>
       <bottom>
-         <Button id="big-yellow" alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="58.0" prefWidth="156.0"
-                 text="Beenden" BorderPane.alignment="CENTER"/>
+         <Button id="big-yellow" fx:id="quit" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#handleQuitButtonClick" prefHeight="58.0" prefWidth="156.0" text="Beenden" BorderPane.alignment="CENTER" />
       </bottom>
    </BorderPane>
 </AnchorPane>
