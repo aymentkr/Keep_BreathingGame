@@ -99,17 +99,6 @@ public class Player {
         this.health = health;
     }
 
-    /**
-     * Testloss.
-     */
-    public void testloss() {
-        if (health <= 0) {
-            PrintUtil.Information_Dialog("Information Dialog", null,("Du bist gestorben"));
-            System.exit(0);
-            //ScreenController.EndScene("You are dead!");
-        }
-    }
-
 
     /**
      * Add item to hitory.

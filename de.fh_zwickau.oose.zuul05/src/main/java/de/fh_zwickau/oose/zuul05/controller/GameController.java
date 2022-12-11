@@ -52,10 +52,16 @@ public class GameController implements Initializable {
      * Handle sleep button click.
      */
     @FXML
-    public void handleSleepButtonClick() {
+    public void handleSleepButtonClick(ActionEvent actionEvent) throws IOException {
         Command command = commandWords.get("schlafen");
         command.execute(game.getPlayer());
-        showLabels();
+        // check if the player still alive
+        if (game.getPlayer().getHealth() <= 0) {
+            MainController.EndScene(actionEvent,"Sorry! Du hast leider verloren :(");
+        } else if (game.getPlayer().getCurrentDay() == 7) {
+            // teh game ends when the number of days has passed 7
+            MainController.EndScene(actionEvent,"Wohoo! Du hast gewonnen");
+        } else showLabels();
     }
 
     /**

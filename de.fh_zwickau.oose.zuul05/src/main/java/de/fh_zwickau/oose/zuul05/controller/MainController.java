@@ -16,4 +16,11 @@ public class MainController {
     public void onStartButtonClick(ActionEvent actionEvent) throws IOException {
         FxUtil.hideAndShow(actionEvent,"GameScene.fxml");
     }
+
+    @FXML
+    public static void EndScene(ActionEvent actionEvent,String text) throws IOException {
+        FxUtil.hideAndShow(actionEvent,"EndScene.fxml");
+        EndController ending = new EndController();
+        ending.setText(text);
+    }
 }

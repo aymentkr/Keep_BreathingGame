@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="de.fh_zwickau.oose.zuul05.controller.ScreenController"
-            prefHeight="400.0" prefWidth="600.0">
+<?import javafx.scene.layout.Pane?>
 
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.fh_zwickau.oose.zuul05.controller.EndController">
+   <children>
+      <Pane fx:id="gameView" layoutX="12.0" layoutY="11.0" prefHeight="379.0" prefWidth="576.0">
+         <children>
+            <Label fx:id="textlabel" layoutX="274.0" layoutY="181.0" text="Label" />
+         </children>
+      </Pane>
+   </children>
 </AnchorPane>

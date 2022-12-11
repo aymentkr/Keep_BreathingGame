@@ -28,6 +28,8 @@ import de.fh_zwickau.oose.zuul05.model.Items.FruitItem;
 import de.fh_zwickau.oose.zuul05.model.Items.MasteryBox;
 import de.fh_zwickau.oose.zuul05.utils.PrintUtil;
 
+import java.io.IOException;
+
 public class Game {
     private final Parser parser;
     private static Player player;
@@ -49,7 +51,7 @@ public class Game {
     /**
      * Die main-Methode instanziiert eine neue Game-Klasse und startet das Spiel.
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Game game = new Game();
         game.play();
     }
@@ -94,8 +96,7 @@ public class Game {
      *  Die Hauptroutine des Spiels
      *  Läuft in einer Schleife, bis das Spiel beendet wird.
      */
-    public void play()
-    {
+    public void play() throws IOException {
         printWelcome();
 
         // Hier werden wiederholt Kommando-Eingaben gelesen und die
