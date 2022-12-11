@@ -1,6 +1,7 @@
 package de.fh_zwickau.oose.zuul05.utils;
 
 import de.fh_zwickau.oose.zuul05.MainApplication;
+import de.fh_zwickau.oose.zuul05.model.Player;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -20,6 +21,12 @@ public class FxUtil {
     public static void setBackground(Region region, String url) {
         region.setStyle("-fx-background-image: url("+ Objects.requireNonNull(MainApplication.class.getResource(url)) +");");
     }
+    public static void updateBackground(Player player, Region content) {
+        switch (player.getCurrentRoom().getShortDescription()) {
+            case "im Ruheraum" -> setBackground(content, "image1.png");
+            case "in der Schiff Oberfläche" -> setBackground(content, "image2.png");
+        }
+    }
     public static void hideAndShow(ActionEvent actionEvent, String url) throws IOException {
         Stage stage = FxUtil.getCurrentStage(actionEvent);
         stage.hide();
@@ -28,5 +35,9 @@ public class FxUtil {
         stage.setScene(startScene);
         stage.show();
         stage.centerOnScreen();
+        stage.setMaximized(true);
+        //stage.setFullScreen(true);
     }
+
+
 }

@@ -64,7 +64,7 @@ public class Game {
         obstraum = new Room("Platz der Kategorie Obst");
         essenraum = new Room("Platz der Kategorie Essen");
         essenraum.setGeschlossen(true);
-        getraenkraum = new Room("Platz der Kategorie Getraenke");
+        getraenkraum = new Room("Platz der Kategorie Getränke");
         schiffsdach = new Room("in der Schiff Oberfläche");
 
         schiffsdach.addItem(new MasteryBox("masterybox","Solve the quiz to get the key"));

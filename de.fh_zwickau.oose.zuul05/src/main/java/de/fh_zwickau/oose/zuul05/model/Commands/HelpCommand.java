@@ -29,23 +29,14 @@ public class HelpCommand extends Command
      * @return immer false.
      */
     public boolean execute(Player player) {
-        // make sure the split afterwards has at least size one
-        if (hasSecondWord()) {
-            PrintUtil.showMessage(commandWords.get(getSecondWord()).getDescription());
-        } else {
-            PrintUtil.showMessage("""
+        PrintUtil.Help_Dialog("""
                 Du bist einsam, verloren und hungrig
                 In einem verlorenen Schiff
                 Alle um dich herum sind gestorben
                 
                 Mögliche Kommandos sind:
-                """
-            );
-            for (String name: CommandWords.getCommands().keySet()) {
-                // String value = CommandWords.getCommands().get(name).getDescription();
-                System.out.println("- "+name);
-            }
-        }
+                """ + String.join(" - ", CommandWords.getCommands().keySet())
+                , commandWords);
         return false;
     }
     @Override

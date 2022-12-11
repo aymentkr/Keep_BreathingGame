@@ -29,3 +29,10 @@ AnchorPane {
 #big-yellow Text {
     -fx-effect: dropshadow( one-pass-box , rgba(255,255,255,0.5) , 0, 0.0 , 0 , 1);
 }
+
+#label {
+    -fx-text-fill: white;
+    -fx-font-family: "Helvetica",sans-serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 35px;
+}

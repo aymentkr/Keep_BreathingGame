@@ -60,13 +60,13 @@ public class Player {
         // Try to leave current room.
         Optional<Room> nextRoom = currentRoom.getExit(direction);
         if (nextRoom.isEmpty())
-            PrintUtil.showMessage("Da ist keine Tür!");
+            PrintUtil.Information_Dialog("Information Dialog",null,"Da ist keine Tür!");
         else if (nextRoom.get().isGeschlossen())
-            PrintUtil.showMessage("Die Tür ist geschlossen! Du brauchst noch den Schluessel von der schiff Oberfläche, um hier hineinzukommen.");
+            PrintUtil.Information_Dialog("Information Dialog",null,"Die Tür ist geschlossen! Du brauchst noch den Schluessel von der schiff Oberfläche, um hier hineinzukommen.");
         else {
             roomHistory.push(getCurrentRoom());
             setCurrentRoom(nextRoom.get());
-            PrintUtil.showMessage(nextRoom.get().getLongDescription());
+            PrintUtil.Information_Dialog("Information Dialog",null,nextRoom.get().getLongDescription());
         }
     }
 
