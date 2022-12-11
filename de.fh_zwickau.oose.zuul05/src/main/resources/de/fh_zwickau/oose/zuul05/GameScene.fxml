@@ -26,7 +26,7 @@
          <Button id="big-yellow" fx:id="info" mnemonicParsing="false" onAction="#handleInfoButtonClick" prefHeight="58.0" prefWidth="156.0" text="Info" BorderPane.alignment="CENTER" />
       </bottom>
       <top>
-         <Button id="big-yellow" fx:id="use" mnemonicParsing="false" prefHeight="58.0" prefWidth="156.0" text="Benutze" BorderPane.alignment="CENTER" />
+         <Button id="big-yellow" fx:id="use" mnemonicParsing="false" onAction="#handleUseButtonClick" prefHeight="58.0" prefWidth="156.0" text="Benutze" BorderPane.alignment="CENTER" />
       </top>
       <center>
          <Button id="big-yellow" fx:id="back" mnemonicParsing="false" onAction="#handleBackButtonClick" prefHeight="58.0" prefWidth="156.0" text="Zurück" BorderPane.alignment="CENTER" />
@@ -41,14 +41,15 @@
       </bottom>
    </BorderPane>
    <BorderPane layoutX="987.0" layoutY="14.0" prefHeight="124.0" prefWidth="499.0">
-      <bottom>
-         <Label id="label" fx:id="place" prefHeight="73.0" prefWidth="527.0" text="place" BorderPane.alignment="BOTTOM_LEFT" />
-      </bottom>
       <right>
          <Label id="label" fx:id="health" prefHeight="73.0" prefWidth="135.0" text="health" BorderPane.alignment="CENTER" />
       </right>
       <left>
          <Label id="label" fx:id="day" prefHeight="51.0" prefWidth="209.0" text="day" BorderPane.alignment="TOP_RIGHT" />
       </left>
+      <top>
+         <Label id="label" fx:id="place" prefHeight="73.0" prefWidth="527.0" text="place" BorderPane.alignment="CENTER" />
+      </top>
    </BorderPane>
+   <Label id="label" fx:id="items" layoutX="605.0" layoutY="698.0" prefHeight="73.0" prefWidth="651.0" text="items" />
 </AnchorPane>

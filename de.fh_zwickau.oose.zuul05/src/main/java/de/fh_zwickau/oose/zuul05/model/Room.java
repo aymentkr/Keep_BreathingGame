@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Optional;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 /**
  * Die Klasse "Room" stellt einen Raum (Ort) in der Spielewelt dar.
@@ -153,11 +154,11 @@ public class Room
 
     /**
      * Info items.
+     *
+     * @return string
      */
-    public void infoItems(){
-        System.out.print("Items, die du benutzen kannst : [ ");
-        items.forEach((item) -> System.out.print(item.getName() + " | "));
-        System.out.println("]\n");
+    public String infoItems(){
+        return "[ "+  items.stream().map(Item::getName).collect(Collectors.joining(","))+" ]";
     }
 
     /**

@@ -29,7 +29,6 @@ public class GoCommand extends Command {
         if(hasSecondWord()) {
             String direction = getSecondWord();
             player.walk(direction);
-            player.getCurrentRoom().infoItems();
         }
         else {
             // Wenn kein zweites Wort eingegeben wurde, haben wir keine Ahnung, wohin der Spieler gehen will:

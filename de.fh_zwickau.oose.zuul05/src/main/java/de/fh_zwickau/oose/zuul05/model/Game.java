@@ -106,17 +106,18 @@ public class Game {
             Command command = parser.getCommand();
             finished = command.execute(player);
         }
-        PrintUtil.showMessage("Danke fürs Spielen! Schönen Tag noch!");
+        PrintUtil.Information_Dialog("Information Dialog", null,"Danke fürs Spielen! Schönen Tag noch!");
     }
 
     /**
      * Gibt die Willkommensnachricht für den Spieler aus.
      */
     private void printWelcome() {
-        System.out.println();
-        System.out.println("Willkommen beim Keep Breathing !");
-        PrintUtil.showMessage("das Spiel des Überlebens und des Lebens neuer Abenteuer.");
-        System.out.println("Gib 'hilfe' ein, um Hilfe zu bekommen.");
+        PrintUtil.Information_Dialog(
+                "Willkommen beim Keep Breathing !",
+                "das Spiel des Überlebens und des Lebens neuer Abenteuer.",
+                "Gib 'hilfe' ein, um Hilfe zu bekommen."
+        );
         info.execute(player);
     }
 

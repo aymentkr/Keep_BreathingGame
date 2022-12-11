@@ -25,7 +25,7 @@ public class GameController implements Initializable {
     public Game game;
     public CommandWords commandWords;
     @FXML
-    public Label day, health, place;
+    public Label day, health, place,items;
     @FXML
     private Button sleep,help,back,info,quit,use;
     @FXML
@@ -45,6 +45,7 @@ public class GameController implements Initializable {
         day.setText("Tag: "+game.getPlayer().getCurrentDay());
         health.setText(game.getPlayer().getHealth()+" %");
         place.setText(game.getPlayer().getCurrentRoom().getShortDescription());
+        items.setText(game.getPlayer().getCurrentRoom().infoItems());
     }
 
     /**
@@ -105,5 +106,11 @@ public class GameController implements Initializable {
         command.execute(game.getPlayer());
         FxUtil.updateBackground(game.getPlayer(),content);
         showLabels();
+    }
+
+    @FXML
+    public void handleUseButtonClick(){
+        Command command = commandWords.get("benutze");
+        command.execute(game.getPlayer());
     }
 }

@@ -3,6 +3,7 @@ package de.fh_zwickau.oose.zuul05.model.Commands;
 import de.fh_zwickau.oose.zuul05.controller.ScreenController;
 import de.fh_zwickau.oose.zuul05.model.Game;
 import de.fh_zwickau.oose.zuul05.model.Player;
+import de.fh_zwickau.oose.zuul05.utils.PrintUtil;
 
 
 /**
@@ -36,7 +37,7 @@ public class SleepCommand extends Command {
             // show information about the player
             info.execute(player);
         } else {
-            System.out.println("Du solltest im Ruheraum sein");
+            PrintUtil.Information_Dialog("Information Dialog", null,"Du solltest im Ruheraum sein");
         }
         return false;
     }

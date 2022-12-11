@@ -1,7 +1,4 @@
 package de.fh_zwickau.oose.zuul05.model;
-
-// import de.fh_zwickau.oose.zuul05.controller.ScreenController;
-
 import de.fh_zwickau.oose.zuul05.model.Items.Item;
 import de.fh_zwickau.oose.zuul05.utils.PrintUtil;
 
@@ -78,9 +75,9 @@ public class Player {
         if (!roomHistory.empty()) {
             Room backroom = roomHistory.pop();
             setCurrentRoom(backroom);
-            System.out.println(backroom.getLongDescription());
+            PrintUtil.Information_Dialog("Information Dialog", null,backroom.getLongDescription());
         } else
-            PrintUtil.showMessage("Das ist leider nicht möglich!");
+            PrintUtil.Information_Dialog("Information Dialog", null,"Das ist leider nicht möglich!");
     }
 
 
@@ -107,7 +104,7 @@ public class Player {
      */
     public void testloss() {
         if (health <= 0) {
-            PrintUtil.showMessage("Du bist gestorben");
+            PrintUtil.Information_Dialog("Information Dialog", null,("Du bist gestorben"));
             System.exit(0);
             //ScreenController.EndScene("You are dead!");
         }
