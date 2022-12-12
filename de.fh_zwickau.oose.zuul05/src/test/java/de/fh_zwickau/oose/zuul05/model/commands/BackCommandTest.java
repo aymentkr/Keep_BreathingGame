@@ -62,7 +62,6 @@ class BackCommandTest {
 
     @Test
     void testBackCommandWithOutPrecedentRoom() {
-
         player.setCurrentRoom(schiffsdach);
         backCommand.execute(player);
         assertEquals("in der Schiff Oberfläche", player.getCurrentRoom().getShortDescription());

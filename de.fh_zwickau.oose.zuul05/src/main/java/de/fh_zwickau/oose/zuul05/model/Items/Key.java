@@ -21,7 +21,6 @@ public class Key extends Item {
     @Override
     public void use(Player player) {
         Game.getEssenraum().setGeschlossen(false);
-        System.out.println("Der Raum ist jetzt aufgeschlossen");
     }
 }
 
