@@ -27,7 +27,7 @@ public class GameController implements Initializable {
     @FXML
     public Label day, health, place,items;
     @FXML
-    private Button sleep,help,back,info,quit,use;
+    private Button sleep,help,back,info,quit,use,reset;
     @FXML
     private MenuButton go;
 
@@ -118,5 +118,14 @@ public class GameController implements Initializable {
     public void handleUseButtonClick(){
         Command command = commandWords.get("benutze");
         command.execute(game.getPlayer());
+        showLabels();
+    }
+
+    @FXML
+    public void handleResetButtonClick(){
+        game = new Game();
+        commandWords = new CommandWords();
+        showLabels();
+        FxUtil.updateBackground(game.getPlayer(),content);
     }
 }
