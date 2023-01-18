@@ -18,9 +18,7 @@ public class MainController {
     }
 
     @FXML
-    public static void EndScene(ActionEvent actionEvent,String text) throws IOException {
+    public static void EndScene(ActionEvent actionEvent) throws IOException {
         FxUtil.hideAndShow(actionEvent,"EndScene.fxml");
-        EndController ending = new EndController();
-        ending.setText(text);
     }
 }

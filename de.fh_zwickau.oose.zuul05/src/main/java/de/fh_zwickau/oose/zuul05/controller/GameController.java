@@ -30,6 +30,7 @@ public class GameController implements Initializable {
     private Button sleep,help,back,info,quit,use,reset;
     @FXML
     private MenuButton go;
+    private String endText="Sorry! Du hast leider verloren :(";
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -57,11 +58,16 @@ public class GameController implements Initializable {
         command.execute(game.getPlayer());
         // check if the player still alive
         if (game.getPlayer().getHealth() <= 0) {
-            MainController.EndScene(actionEvent,"Sorry! Du hast leider verloren :(");
+            MainController.EndScene(actionEvent);
         } else if (game.getPlayer().getCurrentDay() == 7) {
             // teh game ends when the number of days has passed 7
-            MainController.EndScene(actionEvent,"Wohoo! Du hast gewonnen");
+            endText="Wohoo! Du hast gewonnen";
+            MainController.EndScene(actionEvent);
         } else showLabels();
+    }
+
+    public String getEndText() {
+        return endText;
     }
 
     /**
@@ -128,4 +134,5 @@ public class GameController implements Initializable {
         showLabels();
         FxUtil.updateBackground(game.getPlayer(),content);
     }
+
 }

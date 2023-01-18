@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
+<AnchorPane stylesheets="@styles.css" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.fh_zwickau.oose.zuul05.controller.EndController">
 
+      <Label id="label" fx:id="endtext" layoutX="274.0" layoutY="181.0" text="Label" />
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.fh_zwickau.oose.zuul05.controller.EndController">
-   <children>
-      <Pane fx:id="gameView" layoutX="12.0" layoutY="11.0" prefHeight="379.0" prefWidth="576.0">
-         <children>
-            <Label fx:id="textlabel" layoutX="274.0" layoutY="181.0" text="Label" />
-         </children>
-      </Pane>
-   </children>
 </AnchorPane>

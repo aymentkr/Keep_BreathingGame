@@ -25,6 +25,9 @@ public class FxUtil {
         switch (player.getCurrentRoom().getShortDescription()) {
             case "im Ruheraum" -> setBackground(content, "image1.png");
             case "in der Schiff Oberfläche" -> setBackground(content, "image2.png");
+            case "Platz der Kategorie Getränke" -> setBackground(content, "drink.png");
+            case "Platz der Kategorie Essen" -> setBackground(content, "food.png");
+            case "Platz der Kategorie Obst" -> setBackground(content, "fruit.png");
         }
     }
     public static void hideAndShow(ActionEvent actionEvent, String url) throws IOException {

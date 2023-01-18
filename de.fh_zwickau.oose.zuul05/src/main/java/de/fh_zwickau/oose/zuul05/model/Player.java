@@ -63,7 +63,7 @@ public class Player {
         else {
             roomHistory.push(getCurrentRoom());
             setCurrentRoom(nextRoom.get());
-            PrintUtil.Information_Dialog("Information Dialog",null,nextRoom.get().getLongDescription());
+            // PrintUtil.Information_Dialog("Information Dialog",null,nextRoom.get().getLongDescription());
         }
     }
 

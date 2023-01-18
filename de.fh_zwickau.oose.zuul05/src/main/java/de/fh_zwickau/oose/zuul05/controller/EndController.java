@@ -1,14 +1,18 @@
 package de.fh_zwickau.oose.zuul05.controller;
 
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 
-public class EndController {
-    @FXML
-    public Label textlabel;
+import java.net.URL;
+import java.util.ResourceBundle;
 
+public class EndController extends GameController implements Initializable {
     @FXML
-    public void setText(String text) {
-        textlabel.setText(text);
+    public Label endtext;
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        endtext.setText(getEndText());
     }
 }

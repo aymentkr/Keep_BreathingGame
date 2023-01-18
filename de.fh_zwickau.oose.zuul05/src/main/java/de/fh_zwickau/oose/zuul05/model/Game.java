@@ -73,7 +73,7 @@ public class Game {
         obstraum.addItem(new FruitItem("apfel",""));
         obstraum.addItem(new FruitItem("banana",""));
         essenraum.addItem(new FoodItem("rindhackfleisch","halal!"));
-        getraenkraum.addItem(new DrinkItem("cola",""));
+        getraenkraum.addItem(new DrinkItem("wein",""));
 
         // Ausgänge aufbauen:
         schlaffraum.setExit("unten", essenraum);
