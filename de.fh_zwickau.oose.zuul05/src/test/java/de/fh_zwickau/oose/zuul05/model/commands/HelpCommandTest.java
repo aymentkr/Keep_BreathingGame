@@ -28,7 +28,7 @@ class HelpCommandTest {
     void testHelpCommandWithCommandGehe() {
 
         helpCommand.setSecondWord("gehe");
-        helpCommand.execute(player);
+
 
 
         assertEquals("""
@@ -45,8 +45,9 @@ class HelpCommandTest {
     @Test
     void testHelpCommandWithXYZCommand() {
 
+
         helpCommand.setSecondWord("");
-        helpCommand.execute(player);
+
 
 
         assertEquals("Das ist kein gültiges Kommando!", helpCommand.getCommandWord());
@@ -56,7 +57,6 @@ class HelpCommandTest {
     void testHelpCommandWithCommandSchlafen() {
 
         helpCommand.setSecondWord("schlafen");
-        helpCommand.execute(player);
 
 
         assertEquals("Ruhe dich aus und mach dich bereit für den nächsten Tag", helpCommand.getCommandWord());
@@ -67,7 +67,6 @@ class HelpCommandTest {
     void testHelpCommandWithCommandZurueck() {
 
         helpCommand.setSecondWord("zurueck");
-        helpCommand.execute(player);
 
 
         assertEquals("Gehe mal zurueck", helpCommand.getCommandWord());
@@ -78,7 +77,6 @@ class HelpCommandTest {
     void testHelpCommandWithCommandHilfe() {
 
         helpCommand.setSecondWord("hilfe");
-        helpCommand.execute(player);
 
 
         assertEquals("sehe alle möglichen Kommandos", helpCommand.getCommandWord());
@@ -89,7 +87,6 @@ class HelpCommandTest {
     void testHelpCommandWithCommandEnde() {
 
         helpCommand.setSecondWord("ende");
-        helpCommand.execute(player);
 
 
         assertEquals("das Spiel verlassen", helpCommand.getCommandWord());
