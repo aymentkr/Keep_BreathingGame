@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane fx:id="content" prefHeight="546.0" prefWidth="1000.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.fh_zwickau.oose.zuul05.controller.GameController">
+   <BorderPane layoutX="14.0" layoutY="571.0" prefHeight="200.0" prefWidth="558.0">
+      <right>
+         <Button id="big-yellow" fx:id="sleep" mnemonicParsing="false" onAction="#handleSleepButtonClick" prefHeight="58.0" prefWidth="156.0" text="Schlafen" BorderPane.alignment="CENTER" />
+      </right>
+      <left>
+         <MenuButton id="big-yellow" fx:id="go" mnemonicParsing="false" prefHeight="58.0" prefWidth="156.0" text="Gehe" BorderPane.alignment="CENTER">
+            <items>
+               <MenuItem mnemonicParsing="false" onAction="#handleGoButtonClick" text="Links" />
+               <MenuItem mnemonicParsing="false" onAction="#handleGoButtonClick" text="Recht" />
+               <MenuItem mnemonicParsing="false" onAction="#handleGoButtonClick" text="Unten" />
+               <MenuItem mnemonicParsing="false" onAction="#handleGoButtonClick" text="Oben" />
+            </items>
+         </MenuButton>
+      </left>
+      <bottom>
+         <Button id="big-yellow" fx:id="info" mnemonicParsing="false" onAction="#handleInfoButtonClick" prefHeight="58.0" prefWidth="156.0" text="Info" BorderPane.alignment="CENTER" />
+      </bottom>
+      <top>
+         <Button id="big-yellow" fx:id="use" mnemonicParsing="false" onAction="#handleUseButtonClick" prefHeight="58.0" prefWidth="156.0" text="Benutze" BorderPane.alignment="CENTER" />
+      </top>
+      <center>
+         <Button id="big-yellow" fx:id="back" mnemonicParsing="false" onAction="#handleBackButtonClick" prefHeight="58.0" prefWidth="156.0" text="Zurück" BorderPane.alignment="CENTER" />
+      </center>
+   </BorderPane>
+   <BorderPane layoutX="1270.0" layoutY="600.0" prefHeight="192.0" prefWidth="259.0">
+      <top>
+         <Button id="big-yellow" fx:id="help" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#handleHelpButtonClick" prefHeight="58.0" prefWidth="170.0" text="Hilfe" BorderPane.alignment="CENTER" />
+      </top>
+      <bottom>
+         <Button id="big-yellow" fx:id="quit" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#handleQuitButtonClick" prefHeight="58.0" prefWidth="170.0" text="Beenden" BorderPane.alignment="CENTER" />
+      </bottom>
+      <center>
+         <Button id="big-yellow" fx:id="reset" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#handleResetButtonClick" prefHeight="58.0" prefWidth="170.0" text="Zurücksetzen" BorderPane.alignment="CENTER" />
+      </center>
+   </BorderPane>
+   <BorderPane layoutX="987.0" layoutY="14.0" prefHeight="124.0" prefWidth="499.0">
+      <right>
+         <Label id="label" fx:id="health" prefHeight="73.0" prefWidth="135.0" text="health" BorderPane.alignment="CENTER" />
+      </right>
+      <left>
+         <Label id="label" fx:id="day" prefHeight="51.0" prefWidth="209.0" text="day" BorderPane.alignment="TOP_RIGHT" />
+      </left>
+      <top>
+         <Label id="label" fx:id="place" prefHeight="73.0" prefWidth="527.0" text="place" BorderPane.alignment="CENTER" />
+      </top>
+   </BorderPane>
+   <Label id="label" fx:id="items" layoutX="605.0" layoutY="698.0" prefHeight="73.0" prefWidth="651.0" text="items" />
+</AnchorPane>
