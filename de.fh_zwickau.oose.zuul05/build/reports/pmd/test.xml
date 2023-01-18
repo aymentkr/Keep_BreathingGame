@@ -2,7 +2,7 @@
 <pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
-    version="6.21.0" timestamp="2023-01-18T12:56:26.456">
+    version="6.21.0" timestamp="2023-01-18T17:28:35.139">
 <error filename="D:\Computer Science\Bachelor\WHZ\3. Semester\Objektorientierte Softwareentwicklung\students-2022ws-05\de.fh_zwickau.oose.zuul05\src\test\java\de\fh_zwickau\oose\zuul05\model\commands\HelpCommandTest.java" msg="PMDException: Error while parsing D:\Computer Science\Bachelor\WHZ\3. Semester\Objektorientierte Softwareentwicklung\students-2022ws-05\de.fh_zwickau.oose.zuul05\src\test\java\de\fh_zwickau\oose\zuul05\model\commands\HelpCommandTest.java">
 <![CDATA[net.sourceforge.pmd.PMDException: Error while parsing D:\Computer Science\Bachelor\WHZ\3. Semester\Objektorientierte Softwareentwicklung\students-2022ws-05\de.fh_zwickau.oose.zuul05\src\test\java\de\fh_zwickau\oose\zuul05\model\commands\HelpCommandTest.java
 	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:110)
@@ -56,6 +56,36 @@ Caused by: net.sourceforge.pmd.lang.java.ast.ParseException: Line 34, Column 22:
 	at net.sourceforge.pmd.lang.java.AbstractJavaParser.parse(AbstractJavaParser.java:62)
 	at net.sourceforge.pmd.SourceCodeProcessor.parse(SourceCodeProcessor.java:121)
 	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:185)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:107)
+	... 10 more
+]]>
+</error>
+<error filename="D:\Computer Science\Bachelor\WHZ\3. Semester\Objektorientierte Softwareentwicklung\students-2022ws-05\de.fh_zwickau.oose.zuul05\src\test\java\de\fh_zwickau\oose\zuul05\model\commands\UseCommandTest.java" msg="PMDException: Error while processing D:\Computer Science\Bachelor\WHZ\3. Semester\Objektorientierte Softwareentwicklung\students-2022ws-05\de.fh_zwickau.oose.zuul05\src\test\java\de\fh_zwickau\oose\zuul05\model\commands\UseCommandTest.java">
+<![CDATA[net.sourceforge.pmd.PMDException: Error while processing D:\Computer Science\Bachelor\WHZ\3. Semester\Objektorientierte Softwareentwicklung\students-2022ws-05\de.fh_zwickau.oose.zuul05\src\test\java\de\fh_zwickau\oose\zuul05\model\commands\UseCommandTest.java
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:113)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:89)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:51)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:78)
+	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:24)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 61
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:195)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:176)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:162)
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:283)
+	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:110)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1618)
+	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:210)
+	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
+	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
+	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:118)
+	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:163)
+	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:190)
 	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:107)
 	... 10 more
 ]]>
@@ -119,36 +149,6 @@ Caused by: net.sourceforge.pmd.lang.java.ast.ParseException: Line 56, Column 22:
 </error>
 <error filename="D:\Computer Science\Bachelor\WHZ\3. Semester\Objektorientierte Softwareentwicklung\students-2022ws-05\de.fh_zwickau.oose.zuul05\src\test\java\de\fh_zwickau\oose\zuul05\model\commands\BackCommandTest.java" msg="PMDException: Error while processing D:\Computer Science\Bachelor\WHZ\3. Semester\Objektorientierte Softwareentwicklung\students-2022ws-05\de.fh_zwickau.oose.zuul05\src\test\java\de\fh_zwickau\oose\zuul05\model\commands\BackCommandTest.java">
 <![CDATA[net.sourceforge.pmd.PMDException: Error while processing D:\Computer Science\Bachelor\WHZ\3. Semester\Objektorientierte Softwareentwicklung\students-2022ws-05\de.fh_zwickau.oose.zuul05\src\test\java\de\fh_zwickau\oose\zuul05\model\commands\BackCommandTest.java
-	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:113)
-	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:89)
-	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:51)
-	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:78)
-	at net.sourceforge.pmd.processor.PmdRunnable.call(PmdRunnable.java:24)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 61
-	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:195)
-	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:176)
-	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:162)
-	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:283)
-	at net.sourceforge.pmd.lang.java.typeresolution.PMDASMClassLoader.getImportedClasses(PMDASMClassLoader.java:110)
-	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.populateClassName(ClassTypeResolver.java:1618)
-	at net.sourceforge.pmd.lang.java.typeresolution.ClassTypeResolver.visit(ClassTypeResolver.java:210)
-	at net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit.jjtAccept(ASTCompilationUnit.java:44)
-	at net.sourceforge.pmd.lang.java.typeresolution.TypeResolutionFacade.initializeWith(TypeResolutionFacade.java:21)
-	at net.sourceforge.pmd.lang.java.AbstractJavaHandler$5.start(AbstractJavaHandler.java:118)
-	at net.sourceforge.pmd.SourceCodeProcessor.usesTypeResolution(SourceCodeProcessor.java:163)
-	at net.sourceforge.pmd.SourceCodeProcessor.processSource(SourceCodeProcessor.java:190)
-	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:107)
-	... 10 more
-]]>
-</error>
-<error filename="D:\Computer Science\Bachelor\WHZ\3. Semester\Objektorientierte Softwareentwicklung\students-2022ws-05\de.fh_zwickau.oose.zuul05\src\test\java\de\fh_zwickau\oose\zuul05\model\commands\UseCommandTest.java" msg="PMDException: Error while processing D:\Computer Science\Bachelor\WHZ\3. Semester\Objektorientierte Softwareentwicklung\students-2022ws-05\de.fh_zwickau.oose.zuul05\src\test\java\de\fh_zwickau\oose\zuul05\model\commands\UseCommandTest.java">
-<![CDATA[net.sourceforge.pmd.PMDException: Error while processing D:\Computer Science\Bachelor\WHZ\3. Semester\Objektorientierte Softwareentwicklung\students-2022ws-05\de.fh_zwickau.oose.zuul05\src\test\java\de\fh_zwickau\oose\zuul05\model\commands\UseCommandTest.java
 	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCodeWithoutCache(SourceCodeProcessor.java:113)
 	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:89)
 	at net.sourceforge.pmd.SourceCodeProcessor.processSourceCode(SourceCodeProcessor.java:51)

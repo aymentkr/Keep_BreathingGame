@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="de.fh_zwickau.oose.zuul05.model.commands.UseCommandTest" tests="3" skipped="0" failures="2" errors="0" timestamp="2023-01-18T11:56:31" hostname="AYMENTKZZ" time="0.005">
+<testsuite name="de.fh_zwickau.oose.zuul05.model.commands.UseCommandTest" tests="3" skipped="0" failures="2" errors="0" timestamp="2023-01-18T16:28:36" hostname="AYMENTKZZ" time="0.007">
   <properties/>
-  <testcase name="testUseCommandWithIncreasingHealth()" classname="de.fh_zwickau.oose.zuul05.model.commands.UseCommandTest" time="0.002">
+  <testcase name="testUseCommandWithIncreasingHealth()" classname="de.fh_zwickau.oose.zuul05.model.commands.UseCommandTest" time="0.004">
     <failure message="java.lang.NoClassDefFoundError: Could not initialize class javafx.scene.control.Label" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class javafx.scene.control.Label
 	at javafx.scene.control.DialogPane.createContentLabel(DialogPane.java:167)
 	at javafx.scene.control.DialogPane.&lt;init&gt;(DialogPane.java:218)
@@ -98,7 +98,7 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testAddAndRemoveItemsFromRoom()" classname="de.fh_zwickau.oose.zuul05.model.commands.UseCommandTest" time="0.001"/>
+  <testcase name="testAddAndRemoveItemsFromRoom()" classname="de.fh_zwickau.oose.zuul05.model.commands.UseCommandTest" time="0.0"/>
   <testcase name="testSleepCommandWithReducingHealth()" classname="de.fh_zwickau.oose.zuul05.model.commands.UseCommandTest" time="0.001">
     <failure message="java.lang.NoClassDefFoundError: Could not initialize class javafx.scene.control.Label" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class javafx.scene.control.Label
 	at javafx.scene.control.DialogPane.createContentLabel(DialogPane.java:167)

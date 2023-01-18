@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="de.fh_zwickau.oose.zuul05.model.commands.BackCommandTest" tests="4" skipped="0" failures="3" errors="0" timestamp="2023-01-18T11:56:31" hostname="AYMENTKZZ" time="0.349">
+<testsuite name="de.fh_zwickau.oose.zuul05.model.commands.BackCommandTest" tests="4" skipped="0" failures="3" errors="0" timestamp="2023-01-18T16:28:36" hostname="AYMENTKZZ" time="0.346">
   <properties/>
-  <testcase name="testBackCommandGetDescription()" classname="de.fh_zwickau.oose.zuul05.model.commands.BackCommandTest" time="0.014"/>
-  <testcase name="testBackCommandWithPrecedentRoom()" classname="de.fh_zwickau.oose.zuul05.model.commands.BackCommandTest" time="0.328">
+  <testcase name="testBackCommandGetDescription()" classname="de.fh_zwickau.oose.zuul05.model.commands.BackCommandTest" time="0.013"/>
+  <testcase name="testBackCommandWithPrecedentRoom()" classname="de.fh_zwickau.oose.zuul05.model.commands.BackCommandTest" time="0.326">
     <failure message="java.lang.ExceptionInInitializerError" type="java.lang.ExceptionInInitializerError">java.lang.ExceptionInInitializerError
 	at javafx.scene.control.DialogPane.createContentLabel(DialogPane.java:167)
 	at javafx.scene.control.DialogPane.&lt;init&gt;(DialogPane.java:218)

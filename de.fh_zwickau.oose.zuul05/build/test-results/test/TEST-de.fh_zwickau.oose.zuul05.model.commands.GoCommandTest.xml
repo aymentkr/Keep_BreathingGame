@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="de.fh_zwickau.oose.zuul05.model.commands.GoCommandTest" tests="4" skipped="0" failures="1" errors="0" timestamp="2023-01-18T11:56:31" hostname="AYMENTKZZ" time="0.02">
+<testsuite name="de.fh_zwickau.oose.zuul05.model.commands.GoCommandTest" tests="4" skipped="0" failures="1" errors="0" timestamp="2023-01-18T16:28:36" hostname="AYMENTKZZ" time="0.009">
   <properties/>
-  <testcase name="testGoCommandSetSecondWordAndEcecute()" classname="de.fh_zwickau.oose.zuul05.model.commands.GoCommandTest" time="0.014"/>
+  <testcase name="testGoCommandSetSecondWordAndEcecute()" classname="de.fh_zwickau.oose.zuul05.model.commands.GoCommandTest" time="0.004"/>
   <testcase name="testStartRoom()" classname="de.fh_zwickau.oose.zuul05.model.commands.GoCommandTest" time="0.001"/>
   <testcase name="testGoCommandGetDescription()" classname="de.fh_zwickau.oose.zuul05.model.commands.GoCommandTest" time="0.001"/>
   <testcase name="testIfEssenRaumLockedIs()" classname="de.fh_zwickau.oose.zuul05.model.commands.GoCommandTest" time="0.001">

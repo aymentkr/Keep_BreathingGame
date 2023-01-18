@@ -13,6 +13,8 @@ public class EndController extends GameController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        endtext.setText(getEndText());
+        if (getEndTest())
+            endtext.setText("Wohoo! Du hast gewonnen");
+        else endtext.setText("Sorry! Du hast leider verloren :(");
     }
 }
